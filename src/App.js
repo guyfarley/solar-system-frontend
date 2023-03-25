@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ExplorePlanets from "./components/explorePlanets";
+import SolarSystem from "./components/solarSystem/solarSystem";
 
 function App() {
   return (
     <div className="App">
-      <ExplorePlanets />
+      <SolarSystem />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
