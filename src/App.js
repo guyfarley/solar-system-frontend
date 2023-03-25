@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import ExplorePlanets from './components/explorePlanets';
 
 function App() {
   return (
+
     <div className="App">
+      <ExplorePlanets />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
