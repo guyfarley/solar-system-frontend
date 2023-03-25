@@ -1,25 +1,22 @@
-import logo from "./logo.svg";
-import "./App.css";
-import SolarSystem from "./components/solarSystem/solarSystem";
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home/home.js';
+import Planet from './pages/planet/planet.js';
+
+
+// query database for full list of planets & moons?
+// set into context/state?
 
 function App() {
+
   return (
     <div className="App">
-      <SolarSystem />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/planet/:id" element={<Planet />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
