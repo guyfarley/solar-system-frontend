@@ -1,6 +1,9 @@
 .universe {
     position: relative;
-    background: #000;
+  
+    background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars2.jpg');
+    //background: #0000006b;
+    background-size: cover;
     width: 100%;
     max-width: 1280px;
     margin-left: auto;
@@ -16,7 +19,7 @@
 
 .solarSystem {
     padding-top: 2rem;
-    background: #000;
+    //background: #0000009e;
     width: 100%;
     height: 100%;
     display: flex;
@@ -46,7 +49,7 @@
 
 .orbit {
     border-radius: 50%;
-    border: 1px grey dotted;
+    border: 1px rgb(244, 238, 238) dotted;
     position: absolute;
     // top: 50%;
     // left: 50%;

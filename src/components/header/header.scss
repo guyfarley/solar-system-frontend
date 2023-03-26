@@ -1,13 +1,20 @@
+@use '../../styles/variables' as *;
+
 a:link {
-  color: rgb(36, 37, 93);
+  color: white;
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(36, 37, 93);
+  color: $color-light-1;
   text-decoration: none;
 }
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
-  background-color: rgb(36, 37, 93);
+  background-color: $color-light-1;
+}
+.header { background-color: $color-dark-2;
+  &__container{
+    background-color: $color-dark-2;
+  }
 }
