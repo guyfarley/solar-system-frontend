@@ -1,6 +1,8 @@
 import "./explorePlanets.scss";
 
 const ExplorePlanets = () => {
+  //create function that when the slider-container is pressed the user can
+  //side the cards on the x axis
   return (
     <section className="explore">
       <h1 className="explore__header">Explore the Planets</h1>
@@ -8,6 +10,78 @@ const ExplorePlanets = () => {
         Click on a planet to locate in the solar system
       </h3>
       <div className="explore__slider-container">
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="explore__slider-cards">
+          <div className="explore__card-wrapper">
+            <div className="explore__card">
+              <div className="explore__card--img"></div>
+              <div className="explore__card--info"></div>
+            </div>
+          </div>
+        </div>
+
         <div className="explore__slider-cards">
           <div className="explore__card-wrapper">
             <div className="explore__card">
