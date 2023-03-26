@@ -1,10 +1,26 @@
-.solarSystem {
+.universe {
+    position: relative;
     background: #000;
-    height: 400px;
+    width: 100%;
+    height: 80vh;
+    overflow: scroll;
+    padding-top: 4rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  
+}
+
+.solarSystem {
+    padding-top: 2rem;
+    background: #000;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
+    
     //to tilt for 3d look
     // transform: scaleX(5);
     
@@ -12,8 +28,8 @@
 
 
 .sun {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: rgb(251, 243, 9);
     background-repeat: no-repeat;
@@ -25,107 +41,104 @@
 }
 
 .orbit {
+    border-radius: 50%;
+    border: 1px grey dotted;
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    
+}
+.orbit {
     //each order needs width/height
     //need to transfor planets but it isn't working
     //animation: correcting 12s infinite linear;
-    &__mecury{
-        width:150px;
-        height:150px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 14s infinite linear;
+    &__inner{
         position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-top: -1rem;
+        margin-left: -5%;
+    }
+    &__innerQuarter{
+        position: absolute;
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-top: -1rem;
+        margin-left: -2%;
+    }
+    &__innerMid{
+        position: absolute;
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-top: -1rem;
+        margin-left: -3%;
+    }
+   
+    &__innerPluto{
+        position: absolute;
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-top: -1rem;
+        margin-left: -.25%;
+    }
+    &__mecury{
+        width:100px;
+        height:100px;
+        animation: rotating 3s infinite linear;
+        
+        
     }
     &__venus{
-        width:300px;
-        height:300px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:150px;
+        height:150px;
+        animation: rotating 6s infinite linear;
+        
     }
     &__earth{
-        width:450px;
-        height:450px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:200px;
+        height:200px;
+        animation: rotating 6.5s infinite linear;
+        
     }
     &__mars{
-        width:900px;
-        height:900px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:300px;
+        height:300px;
+        animation: rotating 13s infinite linear;
+        
     }
     &__jupiter{
-        width:1800px;
-        height:1800px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:450px;
+        height:450px;
+        animation: rotating 50s infinite linear;
+        
     }
     &__saturn{
-        width:650px;
-        height:650px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:550px;
+        height:550px;
+        animation: rotating 100s infinite linear;
+        
     }
     &__uranus{
-        width:750px;
-        height:750px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:650px;
+        height:650px;
+        animation: rotating 300s infinite linear;
+        
     }
     &__neptune{
-        width:850px;
-        height:850px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:700px;
+        height:700px;
+        animation: rotating 600s infinite linear;
+        
     }
     &__pluto{
-        width:950px;
-        height:950px;
-        border-radius: 50%;
-        border: 1px grey dotted;
-        animation: rotating 12s infinite linear;
-        position: absolute;
-        display: flex;
-        justify-content:center;
-        transform-style: preserve-3d; 
+        width:750px;
+        height:750px;
+        animation: rotating 1200s infinite linear;
+        
     }
     
 }
@@ -138,20 +151,21 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
-        left:40px;
+        
+        
     }
     &__venus {
-        width: 1.25rem;
-        height: 1.25rem;
+        width: 1rem;
+        height: 1rem;
         background:rgb(224, 166, 4);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
-       
+        
     }
     &__earth {
-        width: 1.25rem;
-        height: 1.25rem;
+        width: 1rem;
+        height: 1rem;
         background:rgb(4, 75, 3);
         border-radius: 50%;
         position: absolute;
@@ -168,33 +182,33 @@
         
     }
     &__jupiter {
-        width: 6rem;
-        height: 6rem;
+        width: 2rem;
+        height: 2rem;
         background:rgb(237, 190, 72);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
-       
+        
     }
     &__saturn {
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        height: 2rem;
         background:rgb(245, 207, 151);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
     }
     &__uranus {
-        width: 3rem;
-        height: 3rem;
+        width: 1.75rem;
+        height: 1.75rem;
         background:rgb(85, 229, 248);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
     }
     &__neptune {
-        width: 3rem;
-        height: 3rem;
+        width: 1.75rem;
+        height: 1.75rem;
         background:rgb(16, 115, 236);
         border-radius: 50%;
         position: absolute;
