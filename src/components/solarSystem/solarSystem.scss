@@ -2,8 +2,11 @@
     position: relative;
     background: #000;
     width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
     height: 80vh;
-    overflow: scroll;
+    overflow: hidden;
     padding-top: 4rem;
     // display: flex;
     // justify-content: center;

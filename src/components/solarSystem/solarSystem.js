@@ -1,10 +1,74 @@
 import React from "react";
 import "./solarSystem.scss";
+import { useState, useRef } from "react";
 
 function SolarSystem() {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [dragging, setDragging] = useState(false);
+  const containerRef = useRef(null);
+
+  //handles mouse down and up for moving the universe so the
+  //user can see the entire universe within the div
+  const handleMouseDown = (e) => {
+    setDragging(true);
+    const container = containerRef.current;
+    const offsetX = container.offsetLeft - e.clientX;
+    const offsetY = container.offsetTop - e.clientY;
+
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+
+    function handleMouseMove(e) {
+      setPosition({
+        x: e.clientX + offsetX,
+        y: e.clientY + offsetY,
+      });
+    }
+
+    function handleMouseUp() {
+      setDragging(false);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+    }
+  };
+
+  //handle move from mobile move
+  //doesn't work
+  const handleTouchMove = (e) => {
+    setDragging(true);
+    const container = containerRef.current;
+    const offsetX = container.offsetLeft - e.clientX;
+    const offsetY = container.offsetTop - e.clientY;
+
+    document.addEventListener("touchmove", handleTouchMove);
+    document.addEventListener("touchend", handleTouchEnd);
+
+    function handleTouchMove(e) {
+      setPosition({
+        x: e.clientX + offsetX,
+        y: e.clientY + offsetY,
+      });
+    }
+
+    function handleTouchEnd() {
+      setDragging(false);
+      document.removeEventListener("touchmove", handleTouchMove);
+      document.removeEventListener("touchend", handleTouchEnd);
+    }
+  };
+
   return (
-    <div className="universe">
-      <div className="solarSystem">
+    <div ref={containerRef} className="universe" id="uni">
+      <div
+        className="solarSystem"
+        style={{
+          left: position.x + "px",
+          top: position.y + "px",
+          cursor: "move",
+        }}
+        onMouseDown={handleMouseDown}
+        onTouchMove={handleTouchMove}
+      >
         <div className="sun"></div>
 
         <div className="orbit orbit__mecury">
