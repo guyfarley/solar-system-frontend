@@ -1,14 +1,12 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/home/home.js';
-import Planet from './pages/planet/planet.js';
-
+import "./App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/home.js";
+import Planet from "./pages/planet/planet.js";
 
 // query database for full list of planets & moons?
 // set into context/state?
 
 function App() {
-
   return (
     <div className="App">
       <BrowserRouter>

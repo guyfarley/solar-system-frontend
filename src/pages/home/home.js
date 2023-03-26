@@ -6,7 +6,7 @@ const Home = () => {
       <SolarSystem />
       <p>home page</p>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
