@@ -97,7 +97,10 @@ function SolarSystem() {
 
         <div className="orbit orbit__jupiter">
           <div className="orbit__innerMid">
-            <div className="planet__jupiter"></div>
+            <div className="planet__jupiter">
+              <div className="planet__jupiter--layer1"></div>
+              <div className="planet__jupiter--layer3"></div>
+            </div>
           </div>
         </div>
 

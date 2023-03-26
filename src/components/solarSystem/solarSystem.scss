@@ -11,7 +11,7 @@
     // display: flex;
     // justify-content: center;
     // align-items: center;
-  
+    
 }
 
 .solarSystem {
@@ -31,13 +31,14 @@
 
 
 .sun {
-    width: 75px;
-    height: 75px;
+    width: 4.688rem;
+    height: 4.688rem;
     border-radius: 50%;
-    background-color: rgb(251, 243, 9);
+    background: radial-gradient(circle at 2rem 2rem, #f0f0e6, #fbf309);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 4 4 60px rgba(251, 248, 9, 0.4) 0 0 rgb(251, 243, 9); 
+    box-shadow:
+    0 0 10px 5px #fbf309;
     position: absolute;
     //to tilt for 3d look
     // transform: scaleX(.2);
@@ -61,7 +62,7 @@
         width: 2rem;
         height: 2rem;
         margin-top: -1rem;
-        margin-left: -5%;
+        margin-left: -4%;
     }
     &__innerQuarter{
         position: absolute;
@@ -79,7 +80,7 @@
         margin-top: -1rem;
         margin-left: -3%;
     }
-   
+    
     &__innerPluto{
         position: absolute;
         top: 50%;
@@ -150,17 +151,17 @@
     &__mecury {
         width: .5rem;
         height: .5rem;
-        background:red;
+        background: radial-gradient(circle at .25rem .25rem, #908f8e, #383737);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
-        
         
     }
     &__venus {
         width: 1rem;
         height: 1rem;
-        background:rgb(224, 166, 4);
+        background:#e1a605;
+        background: radial-gradient(circle at .5rem .5rem, #e1a605, #383737);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -169,7 +170,8 @@
     &__earth {
         width: 1rem;
         height: 1rem;
-        background:rgb(4, 75, 3);
+        background:#1fb81c;
+        background: radial-gradient(circle at .5rem .5rem, #1fb81c, #383737);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -178,7 +180,9 @@
     &__mars {
         width: .65rem;
         height: .65rem;
-        background:rgb(103, 4, 4);
+        background:#e82020;
+        background: radial-gradient(circle at .4rem .4rem, #e82020, #383737);
+
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -187,11 +191,36 @@
     &__jupiter {
         width: 2rem;
         height: 2rem;
-        background:rgb(237, 190, 72);
+        background:#edbe48;
+        background: radial-gradient(circle at 1rem 1rem, #edbe48, #383737);
         border-radius: 50%;
-        position: absolute;
+        position:relative;
         transform-style: preserve-3d;
+        z-index:1;
         
+        &--layer1{
+            background-color: #866102;
+            //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
+            width: 100%;
+            height: 2%;
+           position:absolute;
+           top:40%;
+           right: 1%;
+           box-shadow: 
+           0px 2px 5px 1px white;
+        }
+        &--layer3{
+            background-color: #866102;
+            //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
+            width: 100%;
+            height: 2%;
+           position:absolute;
+           top:60%;
+           right: 1%;
+           box-shadow: 
+           0px -2px 5px 1px white;
+        }
+       
     }
     &__saturn {
         width: 2rem;
@@ -232,24 +261,25 @@
 
 
 @keyframes rotating {
-    0%{
-        transform: rotateZ(0deg);
-    }
-    100% {
-        transform: rotateZ(-360deg);
-    }
-    
-}
-
-@keyframes correcting {
-    0%{
-        transform: rotateX(-45deg) rotateY(360deg) rotateZ(0deg);    
-    }
-    100% {
-        transform: rotateX(-45deg) rotateY(0deg) rotateZ(0deg);
-    }
-    
-}
-
-
-
+        0%{
+                transform: rotateZ(0deg);
+            }
+            100% {
+                    transform: rotateZ(-360deg);
+                }
+            
+            }
+            
+            @keyframes correcting {
+                0%{
+                    transform: rotateX(-45deg) rotateY(360deg) rotateZ(0deg);    
+                }
+                100% {
+                    transform: rotateX(-45deg) rotateY(0deg) rotateZ(0deg);
+                }
+                
+            }
+            
+            
+            
+            
