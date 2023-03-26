@@ -1,10 +1,13 @@
 import "./explorePlanets.scss";
 import Carousel from "../carousel/carousel";
+import planets from "../../data";
 
 const ExplorePlanets = () => {
   //create function that when the slider-container is pressed the user can
   //side the cards on the x axis
-  const data = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
+
+
+  // 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'
 
   return (
     <section className="explore">
@@ -12,7 +15,7 @@ const ExplorePlanets = () => {
       <h3 className="explore__subhead">
         Click on a planet to locate in the solar system
       </h3>
-      <Carousel data={data} />
+      <Carousel data={planets} />
       {/* <div className="explore__slider-container">
         <div className="explore__slider-cards">
           <div className="explore__card-wrapper">

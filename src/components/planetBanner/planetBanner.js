@@ -1,7 +1,10 @@
-const PlanetBanner = () => {
+const PlanetBanner = ({ planet }) => {
+
+  console.log('planet from planet banner: ', planet);
+
   return (
     <div>
-      <p>banner for this planet</p>
+      <h1>{`banner for ${planet.name}`}</h1>
     </div>
   )
 }
