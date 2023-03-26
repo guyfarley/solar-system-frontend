@@ -6,15 +6,18 @@ a:link {
 }
 
 a:visited {
-  color: $color-light-1;
+  color: white;
   text-decoration: none;
 }
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
   background-color: $color-light-1;
 }
-.header { background-color: $color-dark-2;
-  &__container{
+
+.header {
+  background-color: $color-dark-2;
+
+  &__container {
     background-color: $color-dark-2;
   }
 }

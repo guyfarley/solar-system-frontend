@@ -1,6 +1,6 @@
 const PlanetBanner = ({ planet }) => {
 
-  console.log('planet from planet banner: ', planet);
+  // console.log('planet from planet banner: ', planet);
 
   return (
     <div>
