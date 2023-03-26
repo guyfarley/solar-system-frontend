@@ -9,28 +9,29 @@ import Typography from '@mui/material/Typography';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import './carousel.scss';
+import { Link } from "react-router-dom";
+import { CardActionArea } from '@mui/material';
+
 
 const Carousel = ({ data }) => {
-
+  console.log(data);
   const listRef = useRef(null);
 
   const scrollLeft = () => {
-
     if (listRef.current) {
       listRef.current.scrollBy({
         top: 0,
-        left: -370,
+        left: -240,
         behavior: "smooth"
       });
     }
   }
 
   const scrollRight = () => {
-
     if (listRef.current) {
       listRef.current.scrollBy({
         top: 0,
-        left: 370,
+        left: 240,
         behavior: "smooth"
       });
     }
@@ -38,39 +39,37 @@ const Carousel = ({ data }) => {
 
   return (
     <div className="slide-container">
-      <ChevronLeftIcon fontSize="large" onClick={scrollLeft}></ChevronLeftIcon>
+      <ChevronLeftIcon fontSize="large" cursor="pointer" onClick={scrollLeft}></ChevronLeftIcon>
 
       <div className="items-container" ref={listRef}>
 
-        {data.map((planet) => {
+        {data.map((item) => {
           return (
-            <div className="single-item-container">
+            <div key={item} className="single-item-container">
 
-              <Card sx={{ width: 330 }}>
-                <CardMedia
-                  component="img"
-                  alt={planet}
-                  height="330"
-                  image="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ-1200-80.jpg"
-                />
+              <Card sx={{ width: 200 }} >
+                <CardActionArea component={Link} to={`/planets/${item}`}>
+                  <CardMedia
+                    component="img"
+                    alt={item}
+                    height="200"
+                    image="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ-1200-80.jpg"
+                  />
+                </CardActionArea>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {planet}
+                  <Typography variant="h5" component="div">
+                    {item}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                   </Typography>
                 </CardContent>
-                {/* <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
-                </CardActions> */}
               </Card>
             </div>
           )
         })}
       </div>
 
-      <ChevronRightIcon fontSize="large" onClick={scrollRight}></ChevronRightIcon>
+      <ChevronRightIcon fontSize="large" cursor="pointer" onClick={scrollRight}></ChevronRightIcon>
     </div>
   )
 }
