@@ -4,35 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.planet {
-    // width: 100px;
-    // height: 100px;
-    //background:color;
-    border-radius: 50%;
-    //transform: scaleX(.2);
-    &__mecury {
-        width: 20px;
-        height: 20px;
-        background:red;
-        border-radius: 50%;
-    transform: scaleX(.2);
-    }
+    position: relative;
+    //to tilt for 3d look
+    // transform: scaleX(5);
+    
 }
 
-.orbit {
-    //each order needs width/height
-    border-radius: 50%;
-    transform: scaleX(5);
-    border: 1px grey dotted;
-    &__mecury{
-        width:50px;
-        width:50px;
-        border-radius: 50%;
-        transform: scaleX(5);
-        border: 1px grey dotted;
-    }
-}
 
 .sun {
     width: 100px;
@@ -41,5 +18,221 @@
     background-color: rgb(251, 243, 9);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 4 4 60px rgba(251, 248, 9, 0.4) 0 0 rgb(251, 243, 9); }
+    box-shadow: 4 4 60px rgba(251, 248, 9, 0.4) 0 0 rgb(251, 243, 9); 
+    position: absolute;
+    //to tilt for 3d look
+    // transform: scaleX(.2);
+}
+
+.orbit {
+    //each order needs width/height
+    //need to transfor planets but it isn't working
+    //animation: correcting 12s infinite linear;
+    &__mecury{
+        width:150px;
+        height:150px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 14s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__venus{
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__earth{
+        width:450px;
+        height:450px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__mars{
+        width:900px;
+        height:900px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__jupiter{
+        width:1800px;
+        height:1800px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__saturn{
+        width:650px;
+        height:650px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__uranus{
+        width:750px;
+        height:750px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__neptune{
+        width:850px;
+        height:850px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
+    &__pluto{
+        width:950px;
+        height:950px;
+        border-radius: 50%;
+        border: 1px grey dotted;
+        animation: rotating 12s infinite linear;
+        position: absolute;
+        display: flex;
+        justify-content:center;
+        transform-style: preserve-3d; 
+    }
     
+}
+
+.planet { 
+    &__mecury {
+        width: .5rem;
+        height: .5rem;
+        background:red;
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+        left:40px;
+    }
+    &__venus {
+        width: 1.25rem;
+        height: 1.25rem;
+        background:rgb(224, 166, 4);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+       
+    }
+    &__earth {
+        width: 1.25rem;
+        height: 1.25rem;
+        background:rgb(4, 75, 3);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+        
+    }
+    &__mars {
+        width: .65rem;
+        height: .65rem;
+        background:rgb(103, 4, 4);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+        
+    }
+    &__jupiter {
+        width: 6rem;
+        height: 6rem;
+        background:rgb(237, 190, 72);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+       
+    }
+    &__saturn {
+        width: 4rem;
+        height: 4rem;
+        background:rgb(245, 207, 151);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+    }
+    &__uranus {
+        width: 3rem;
+        height: 3rem;
+        background:rgb(85, 229, 248);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+    }
+    &__neptune {
+        width: 3rem;
+        height: 3rem;
+        background:rgb(16, 115, 236);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+    }
+    &__pluto {
+        width: .225rem;
+        height: .225rem;
+        background:rgb(249, 153, 8);
+        border-radius: 50%;
+        position: absolute;
+        transform-style: preserve-3d;
+    }
+}
+
+
+
+
+
+@keyframes rotating {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+    
+}
+
+@keyframes correcting {
+    0%{
+        transform: rotateX(-45deg) rotateY(360deg) rotateZ(0deg);    
+    }
+    100% {
+        transform: rotateX(-45deg) rotateY(0deg) rotateZ(0deg);
+    }
+    
+}
+
+
+
