@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .slide-container {
   display: flex;
   align-items: center;
@@ -22,4 +24,23 @@
 
 .items-container::-webkit-scrollbar {
   display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-11qr2p8-MuiButtonBase-root-MuiButton-root {
+  background-color: $color-dark-2 !important;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $color-light-2;
+  text-decoration: none;
 }
