@@ -18,29 +18,61 @@ const Resources = () => {
           Dive into the resources to continue your learning journey
         </h3>
       </div>
-
-      <div className="resources__div-wrapper">
-        <div className="resources__div1">
-          {" "}
-          <div className="resourceCard">
-            <img className="resourceCard__img" src={nasa} alt={nasa} />
+      <div className="resources__div-parent-wrapper">
+        <div className="resources__div-child-wrapper">
+          <div className="resources__div1">
+            {" "}
+            <a
+              href="https://solarsystem.nasa.gov/planets/overview/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="resourceCard">
+                <img className="resourceCard__img" src={nasa} alt={nasa} />
+              </div>
+            </a>
+            <a
+              href="https://www.esa.int/kids/en/learn/Our_Universe/Planets_and_moons/The_Solar_System_and_its_planets"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="resourceCard">
+                <img className="resourceCard__img" src={esa} alt={esa} />
+              </div>
+            </a>
           </div>
-          <div className="resourceCard">
-            <img className="resourceCard__img" src={esa} alt={esa} />
-          </div>
+          <div className="resources__div2"></div>
         </div>
-
-        <div className="resources__div2">
-          {" "}
-          <div className="resourceCard">
-            <img className="resourceCard__img" src={solarRap} alt={solarRap} />
-          </div>
-          <div className="resourceCard">
-            <img
-              className="resourceCard__img"
-              src={nationalGeo}
-              alt={nationalGeo}
-            />
+        <div className="resources__div-child-wrapper">
+          <div className="resources__div2"></div>
+          <div className="resources__div1">
+            {" "}
+            <a
+              href="https://www.youtube.com/watch?v=libKVRa01L8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="resourceCard">
+                <img
+                  className="resourceCard__img"
+                  src={solarRap}
+                  alt={solarRap}
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=Vb2ZXRh74WU"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="resourceCard">
+                <img
+                  className="resourceCard__img"
+                  src={nationalGeo}
+                  alt={nationalGeo}
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>
