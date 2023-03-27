@@ -9,11 +9,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { HashLink as Link } from 'react-router-hash-link';
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
-import { Link } from "react-router-dom";
 import "./header.scss";
-// import Avatar from '@mui/material/Avatar';
-// import Tooltip from '@mui/material/Tooltip';
+
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -83,25 +82,25 @@ const Header = () => {
               }}
             >
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link to="/#explore-planets">
+                <Link smooth to="/#explore-planets">
                   <Typography textAlign="center">Planets</Typography>
                 </Link>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link to="/#resources">
+                <Link smooth to="/#resources">
                   <Typography textAlign="center">Resources</Typography>
                 </Link>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link to="/#fun-facts">
+                <Link smooth to="/#fun-facts">
                   <Typography textAlign="center">Fun Facts</Typography>
                 </Link>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
-                <Link to="/#about-us">
+                <Link smooth to="/#about-us">
                   <Typography textAlign="center">About Us</Typography>
                 </Link>
               </MenuItem>

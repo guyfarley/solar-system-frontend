@@ -4,6 +4,9 @@ import ExplorePlanets from "../../components/explorePlanets/explorePlanets";
 import Resources from "../../components/resources/resources";
 
 const Home = () => {
+
+  // ping the server to query database for all planet data - save to variable
+
   return (
     <div>
       <Header />

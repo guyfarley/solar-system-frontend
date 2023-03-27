@@ -6,9 +6,6 @@ const ExplorePlanets = () => {
   //create function that when the slider-container is pressed the user can
   //side the cards on the x axis
 
-
-  // 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'
-
   return (
     <section className="explore">
       <h1 className="explore__header">Explore the Planets</h1>
