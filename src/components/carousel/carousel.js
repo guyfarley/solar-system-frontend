@@ -45,20 +45,20 @@ const Carousel = ({ data }) => {
 
         {data.map((item) => {
           return (
-            <div key={item} className="single-item-container">
+            <div key={item.id} className="single-item-container">
 
               <Card sx={{ width: 200 }} >
-                <CardActionArea component={Link} to={`/planets/${item}`}>
+                <CardActionArea component={Link} to={`/planets/${item.name}`}>
                   <CardMedia
                     component="img"
-                    alt={item}
+                    alt={item.name}
                     height="200"
                     image="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ-1200-80.jpg"
                   />
                 </CardActionArea>
                 <CardContent>
                   <Typography variant="h5" component="div">
-                    {item}
+                    {item.name}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                   </Typography>
