@@ -1,8 +1,9 @@
 @use '../../styles/variables' as *;
 
 .resources{
-    background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars2.jpg');
-    background-size: cover;
+    // background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars2.jpg');
+    // background-size: cover;
+    background-color: $color-dark-3;
     width: 100%;
     height: 700px;
     padding: 2rem;

@@ -6,6 +6,10 @@ import solarRap from "../../assets/images/solarRap.png";
 import nationalGeo from "../../assets/images/vidnational.png";
 
 const Resources = () => {
+  //create a Ref function that when the section is fully in view the picture scroll up but the title stays fixed
+  //work on the images and they need to be clickable to the source
+  //the clickable source should open a new page
+
   return (
     <section className="resources">
       <div className="resources__header">
