@@ -14,7 +14,7 @@ import { CardActionArea } from '@mui/material';
 
 
 const Carousel = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   const listRef = useRef(null);
 
   const scrollLeft = () => {

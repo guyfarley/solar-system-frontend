@@ -30,9 +30,11 @@ const Header = () => {
     <AppBar position="static" className="header">
       <Container maxWidth="xl" className="header__container">
         <Toolbar disableGutters>
-          <RocketLaunchIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 3 }}
-          />
+          <Link to="/">
+            <RocketLaunchIcon
+              sx={{ display: { xs: "none", md: "flex" }, mr: 3 }}
+            />
+          </Link>
           {/* <Typography
             variant="h6"
             noWrap
@@ -105,9 +107,11 @@ const Header = () => {
               </MenuItem>
             </Menu>
           </Box>
-          <RocketLaunchIcon
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-          />
+          <Link to="/">
+            <RocketLaunchIcon
+              sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+            />
+          </Link>
           {/* <Typography
             variant="h5"
             noWrap

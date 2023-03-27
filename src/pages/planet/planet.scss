@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+
+.planet {
+    padding: 2rem;
+    max-width: $desktop-width;
+    margin: 1rem auto;
+
+    &__header {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    &__subhead {
+        font-size: 1.25rem;
+        text-align: start;
+        margin: 1.5rem 2rem 2rem;
+    }
+
+    &__slider-container {
+        width: 200%;
+        display: flex;
+
+    }
+
+    &__slider-cards {
+        height: 250px;
+        width: 200px;
+        background-color: $color-dark-3;
+        margin: 0 2rem;
+
+    }
+}
+
+.carousel__container {
+    display: flex;
+    justify-content: center;
+}
