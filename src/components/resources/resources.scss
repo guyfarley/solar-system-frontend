@@ -1,7 +1,7 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
-.resources{
-    // background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars2.jpg');
+.resources {
+    // background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url("../../assets/images/stars2.jpg");
     // background-size: cover;
     background-color: $color-dark-3;
     width: 100%;
@@ -11,7 +11,7 @@
     margin: 1rem auto;
     position: relative;
     //overflow: visible
-    
+
     &__header {
         font-size: 3rem;
         text-align: center;
@@ -21,34 +21,40 @@
         top: 50%;
         transform: translateY(-50%)
     }
+
     &__title {
         font-size: 3rem;
         text-align: start;
         color: white;
     }
+
     &__subtitle {
         font-size: 1.25rem;
         text-align: start;
         margin: 1.5rem 2rem 2rem;
         color: white;
     }
+
     &__div-parent-wrapper {
         margin-top: 10rem;
         //overflow-y: scroll;
         height: 500px;
         //justify-content: space-between;
     }
+
     &__div-child-wrapper {
         margin-bottom: 5rem;
         height: 50%;
         display: flex;
         justify-content: space-between;
     }
+
     &__div1 {
         width: 100%;
         display: flex;
         justify-content: space-around;
     }
+
     &__div2 {
         width: 40%;
         display: flex;
@@ -61,8 +67,10 @@
     height: 10rem;
     border: 2px white solid;
     border-radius: 10px;
-    box-shadow: 0 10px 15px -3px rgba(40, 39, 39, 0.816), 0 4px 6px -4px rgba(37, 37, 37, 0.827);;
-    &__img{
+    box-shadow: 0 10px 15px -3px rgba(40, 39, 39, 0.816), 0 4px 6px -4px rgba(37, 37, 37, 0.827);
+    ;
+
+    &__img {
         border-radius: 10px;
         // padding: .25rem;
         width: 100%;

@@ -33,7 +33,7 @@ function SolarSystem() {
   };
 
   //handle move from mobile move
-  //doesn't work
+  //doesn"t work
   const handleTouchMove = (e) => {
     setDragging(true);
     const container = containerRef.current;
