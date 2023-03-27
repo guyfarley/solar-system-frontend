@@ -1,15 +1,15 @@
-import * as React from 'react';
-import { useRef } from 'react';
+import * as React from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import './carousel.scss';
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import "./carousel.scss";
 
 
 const Carousel = ({ data }) => {
@@ -17,7 +17,7 @@ const Carousel = ({ data }) => {
   const listRef = useRef(null);
   let isPlanet = false;
 
-  if (data[0].category === 'Planet') {
+  if (data[0].category === "Planet") {
     isPlanet = true;
   };
 
@@ -67,7 +67,7 @@ const Carousel = ({ data }) => {
                   </Typography> */}
                 </CardContent>
                 {isPlanet === true &&
-                  <CardActions className='button-container'>
+                  <CardActions className="button-container">
                     <Button className="carousel-button" size="small" variant="contained">Zoom</Button>
                     <Button className="carousel-button" size="small" variant="contained" component={Link} to={`/planets/${item.name}`}>Learn More</Button>
                   </CardActions>

@@ -96,7 +96,7 @@ const ExplorePlanets = () => {
         </div>
       </div> */}
       {/* carousel showing all 9 planets */}
-      {/* clicking a planet dynamically routes user to planet's page (`/planets/${planet.id}`) */}
+      {/* clicking a planet dynamically routes user to planet"s page (`/planets/${planet.id}`) */}
     </section>
   );
 };
