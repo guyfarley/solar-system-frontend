@@ -163,8 +163,8 @@
 
 }
 
-.planet {
-    &__mecury {
+.pl {
+    &-me {
         width: .5rem;
         height: .5rem;
         background: radial-gradient(circle at .25rem .25rem, #908f8e, #383737);
@@ -174,7 +174,7 @@
 
     }
 
-    &__venus {
+    &-ve {
         width: 1rem;
         height: 1rem;
         background: #e1a605;
@@ -185,7 +185,7 @@
 
     }
 
-    &__earth {
+    &-ea {
         width: 1rem;
         height: 1rem;
         background: radial-gradient(circle at .35rem .35rem, #f5f7f5, #1d03a1);
@@ -195,7 +195,7 @@
 
     }
 
-    &__mars {
+    &-ma {
         width: .65rem;
         height: .65rem;
         // background: #e82020;
@@ -207,7 +207,7 @@
 
     }
 
-    &__jupiter {
+    &-ju {
         width: 2rem;
         height: 2rem;
         background: #edbe48;
@@ -245,7 +245,7 @@
 
     }
 
-    &__saturn {
+    &-sa {
         width: 2rem;
         height: 2rem;
         background: radial-gradient(circle at 1rem 1rem, #f8f3eb, #f5cf97);
@@ -263,7 +263,7 @@
        
     }
 
-    &__uranus {
+    &-ur {
         width: 1.75rem;
         height: 1.75rem;
         background: radial-gradient(circle at 1rem 1rem, #f8f3eb, rgb(85, 229, 248));
@@ -272,7 +272,7 @@
         transform-style: preserve-3d;
     }
 
-    &__neptune {
+    &-ne {
         width: 1.75rem;
         height: 1.75rem;
         background: radial-gradient(circle at .75rem .75rem, #f8f3eb, rgb(16, 115, 236));
@@ -281,7 +281,7 @@
         transform-style: preserve-3d;
     }
 
-    &__pluto {
+    &-p {
         width: .225rem;
         height: .225rem;
         background: radial-gradient(circle at .15rem .15rem, #f8f3eb, rgb(249, 153, 8));
