@@ -6,14 +6,16 @@ import axios from 'axios';
 
 const URL = "http://localhost:8080/"
 
-const getPostData = () => {
+const getInfo = () => {
   axios
   .get(URL)
-  .then(data => console.log(data.data))
-  .catch(error => console.log(error))
+  .then((response) => {
+    console.log(response.data)
+  })
+  .catch((err) => console.log(err))
 }
 
-getPostData()
+getInfo()
 
 const Home = () => {
 
