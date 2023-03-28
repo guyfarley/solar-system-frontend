@@ -103,7 +103,7 @@ const Carousel = () => {
                     size="small"
                     variant="contained"
                     component={Link}
-                    to={`/planets/${item.planet_id}`}
+                    to={`/planet/${item.planet_id}`}
                   >
                     Learn More
                   </Button>
