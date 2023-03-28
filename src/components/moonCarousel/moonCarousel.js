@@ -4,34 +4,16 @@ import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-//import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import "./carousel.scss";
+import "./moonCarousel.scss";
 import "../solarSystem/solarSystem.scss";
-import axios from "axios";
-import { useState, useEffect } from "react";
 
-const Carousel = () => {
-  const URL = "http://localhost:8080/";
+const MoonCarousel = ({ data }) => {
 
-  const [planetData, setPlanetData] = useState([]);
-
-  const getPlanets2 = async () => {
-    try {
-      const response = await axios.get(URL);
-      setPlanetData(response.data.rows);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  useEffect(() => {
-    getPlanets2();
-  }, []);
-
-  console.log("planet data: ", planetData);
+  console.log('moon data from moon carousel', data);
   const listRef = useRef(null);
 
   //Kayle I took this out so until the data comes in this doesn't trigger
@@ -70,27 +52,27 @@ const Carousel = () => {
       ></ChevronLeftIcon>
 
       <div className="items-container" ref={listRef}>
-        {planetData.map((item) => {
+        {data.map((item) => {
           return (
             <div key={item.id} className="single-item-container">
               <Card sx={{ width: 200 }}>
-                <div className="un">
+                {/* <div className="un">
                   <div className={item.planet_id}>
                     <div className={`${item.planet_id}-l1`}></div>
                     <div className={`${item.planet_id}-l2`}></div>
                   </div>
-                </div>
+                </div> */}
 
                 <CardContent>
                   <Typography variant="h5" component="div">
-                    {item.planet_name}
+                    {item.name}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    {item.planet_type}
+                    {item.size}
                   </Typography>
                 </CardContent>
 
-                <CardActions className="button-container">
+                {/* <CardActions className="button-container">
                   <Button
                     className="carousel-button"
                     size="small"
@@ -103,11 +85,11 @@ const Carousel = () => {
                     size="small"
                     variant="contained"
                     component={Link}
-                    to={`/planets/${item.planet_id}`}
+                    to={`/planets/${item.planet_name}`}
                   >
                     Learn More
                   </Button>
-                </CardActions>
+                </CardActions> */}
               </Card>
             </div>
           );
@@ -123,4 +105,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default MoonCarousel;

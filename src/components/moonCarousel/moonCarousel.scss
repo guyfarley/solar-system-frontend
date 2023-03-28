@@ -1,0 +1,46 @@
+@use '../../styles/variables' as *;
+
+.slide-container {
+  display: flex;
+  align-items: center;
+  max-width: 80rem;
+  overflow-y: auto;
+}
+
+.single-item-container {
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  // min-width: 10rem;
+}
+
+.items-container {
+  display: flex;
+  overflow-y: hidden;
+  justify-content: flex-start;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.items-container::-webkit-scrollbar {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-11qr2p8-MuiButtonBase-root-MuiButton-root {
+  background-color: $color-dark-2 !important;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $color-light-2;
+  text-decoration: none;
+}
