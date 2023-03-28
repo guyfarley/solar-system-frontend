@@ -78,6 +78,8 @@ const Carousel = () => {
                   <div className={item.planet_id}>
                     <div className={`${item.planet_id}-l1`}></div>
                     <div className={`${item.planet_id}-l2`}></div>
+                    <div className={`${item.planet_id}-l3`}></div>
+                    <div className={`${item.planet_id}-l4`}></div>
                   </div>
                 </div>
 
