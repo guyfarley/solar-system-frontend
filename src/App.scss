@@ -8,64 +8,56 @@
 
 .pl {
   &-me {
-      width: .5rem;
-      height: .5rem;
-      background: radial-gradient(circle at .25rem .25rem, #908f8e, #383737);
+      width: 6rem;
+      height: 6rem;
+      background: radial-gradient(circle at 3rem 3rem, #908f8e, #383737);
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
-
+      z-index: 1;
+     
   }
 
   &-ve {
-      width: 1rem;
-      height: 1rem;
+      width: 6rem;
+      height: 6rem;
       background: #e1a605;
-      background: radial-gradient(circle at .35rem .35rem, #e1a605, #383737);
+      background: radial-gradient(circle at 3rem 3rem, #e1a605, #383737);
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
+      
+      z-index: 1;
 
   }
 
   &-ea {
-      width: 1rem;
-      height: 1rem;
-      background: radial-gradient(circle at .35rem .35rem, #f5f7f5, #1d03a1);
+      width: 6rem;
+      height: 6rem;
+      background: radial-gradient(circle at 3rem 3rem, #f5f7f5, #1d03a1);
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
+      
 
   }
 
   &-ma {
-      width: .65rem;
-      height: .65rem;
-      // background: #e82020;
-      // background: radial-gradient(circle at .4rem .4rem, #e82020, #383737);
+      width: 6rem;
+      height: 6rem;
       background: radial-gradient(circle at center, #e82020), conic-gradient(from 45deg, rgb(65, 3, 2) 250deg, rgb(167, 34, 34)  280deg, rgb(169, 86, 86) 353deg);
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
+     
 
   }
 
   &-ju {
-      width: 2rem;
-      height: 2rem;
+      width: 6rem;
+      height: 6rem;
       background: #edbe48;
       background: radial-gradient(circle at 1rem 1rem, #edbe48, #383737);
-      border-radius: 50%;
-      position: relative;
-      transform-style: preserve-3d;
-      z-index: 1;
+     position: relative;
 
-      &--layer1 {
+      &-l1 {
           background-color: #866102;
           filter: blur(1px);
           //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
           width: 100%;
-          height: 2%;
+          height: 5%;
           position: absolute;
           top: 40%;
           right: 1%;
@@ -73,7 +65,7 @@
               -2px 2px 5px 1px white;
       }
 
-      &--layer3 {
+      &-l2 {
           background-color: #866102;
           filter: blur(1px);
           //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
@@ -89,47 +81,56 @@
   }
 
   &-sa {
-      width: 2rem;
-      height: 2rem;
+      width: 6rem;
+      height: 6rem;
       background: radial-gradient(circle at 1rem 1rem, #f8f3eb, #f5cf97);
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
-      &--ring {
-          width: .5rem;
-          height: .5rem;
+     
+      &-l1 {
+          width: 1.4rem;
+          height: 1.4rem;
           background: radial-gradient(circle at center, white, transparent 60%), conic-gradient(from 25deg, transparent 45deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent  280deg, transparent 353deg);
           border-radius: 50%;
           transform: scaleX(8);
-          margin: 0.78rem
+          margin: 2.1rem
       }
      
   }
 
   &-ur {
-      width: 1.75rem;
-      height: 1.75rem;
-      background: radial-gradient(circle at 1rem 1rem, #f8f3eb, rgb(85, 229, 248));
+      width: 6rem;
+      height: 6rem;
+      background: radial-gradient(circle at 3rem 3rem, #f8f3eb, rgb(85, 229, 248));
       border-radius: 50%;
       position: absolute;
       transform-style: preserve-3d;
   }
 
   &-ne {
-      width: 1.75rem;
-      height: 1.75rem;
-      background: radial-gradient(circle at .75rem .75rem, #f8f3eb, rgb(16, 115, 236));
+      width: 6rem;
+      height: 6rem;
+      background: radial-gradient(circle at 3rem 3rem, #f8f3eb, rgb(16, 115, 236));
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
+    
   }
 
   &-p {
-      width: .225rem;
-      height: .225rem;
-      background: radial-gradient(circle at .15rem .15rem, #f8f3eb, rgb(249, 153, 8));
+      width: 6rem;
+      height: 6rem;
+      background: radial-gradient(circle at 3rem 3rem, #f8f3eb, rgb(249, 153, 8));
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
+      
   }
+}
+
+.un {
+  background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('./assets/images/stars2.jpg');
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
