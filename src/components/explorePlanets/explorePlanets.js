@@ -14,7 +14,7 @@ const ExplorePlanets = ({ planetData }) => {
       <h3 className="explore__subhead">
         Click on a planet to locate in the solar system
       </h3>
-      <Carousel data={planetData} />
+      <Carousel data={planets} />
       {/* <div className="explore__slider-container">
         <div className="explore__slider-cards">
           <div className="explore__card-wrapper">
