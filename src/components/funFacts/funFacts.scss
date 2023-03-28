@@ -1,0 +1,25 @@
+@use "../../styles/variables" as *;
+
+.funFacts{
+    padding: 2rem;
+    max-width: $desktop-width;
+    margin: 1rem auto;
+    &__header {
+        font-size: 3rem;
+        margin-top: 2.5rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-align: start;
+        text-align: start;
+    }
+
+    &__subtitle {
+        font-size: 1.25rem;
+        text-align: start;
+        margin: 1.5rem 2rem 2rem;
+        text-align: start;
+    }
+
+}
