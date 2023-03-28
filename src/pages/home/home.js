@@ -2,6 +2,18 @@ import SolarSystem from "../../components/solarSystem/solarSystem";
 import Header from "../../components/header/header.js";
 import ExplorePlanets from "../../components/explorePlanets/explorePlanets";
 import Resources from "../../components/resources/resources";
+import axios from 'axios';
+
+const URL = "http://localhost:8080/"
+
+const getPostData = () => {
+  axios
+  .get(URL)
+  .then(data => console.log(data.data))
+  .catch(error => console.log(error))
+}
+
+getPostData()
 
 const Home = () => {
 
