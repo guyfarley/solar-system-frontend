@@ -33,7 +33,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/planets/:planetSlug" element={<Planet />}></Route>
+          <Route exact path="/planet/:planetSlug" element={<Planet />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
