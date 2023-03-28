@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+//import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -54,12 +54,13 @@ const Carousel = ({ data }) => {
           return (
             <div key={item.id} className="single-item-container">
               <Card sx={{ width: 200 }}>
-                <CardMedia
-                  component="img"
-                  alt={item.name}
-                  height="200"
-                  image="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ-1200-80.jpg"
-                />
+                <div className="un">
+                  <div className="pl-ur">
+                    <div className="pl-ur-l1"></div>
+                    <div className="pl-ur-l2"></div>
+                  </div>
+                </div>
+
                 <CardContent>
                   <Typography variant="h5" component="div">
                     {item.name}
