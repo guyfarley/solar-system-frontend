@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./carousel.scss";
-
+import "../solarSystem/solarSystem.scss";
 
 const Carousel = ({ data }) => {
   // console.log(data);
@@ -19,39 +19,41 @@ const Carousel = ({ data }) => {
 
   if (data[0].category === "Planet") {
     isPlanet = true;
-  };
+  }
 
   const scrollLeft = () => {
     if (listRef.current) {
       listRef.current.scrollBy({
         top: 0,
         left: -240,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
-  }
+  };
 
   const scrollRight = () => {
     if (listRef.current) {
       listRef.current.scrollBy({
         top: 0,
         left: 240,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
-  }
+  };
 
   return (
     <div className="slide-container">
-      <ChevronLeftIcon fontSize="large" cursor="pointer" onClick={scrollLeft}></ChevronLeftIcon>
+      <ChevronLeftIcon
+        fontSize="large"
+        cursor="pointer"
+        onClick={scrollLeft}
+      ></ChevronLeftIcon>
 
       <div className="items-container" ref={listRef}>
-
         {data.map((item) => {
           return (
             <div key={item.id} className="single-item-container">
-
-              <Card sx={{ width: 200 }} >
+              <Card sx={{ width: 200 }}>
                 <CardMedia
                   component="img"
                   alt={item.name}
@@ -66,21 +68,39 @@ const Carousel = ({ data }) => {
                     {item.type}
                   </Typography> */}
                 </CardContent>
-                {isPlanet === true &&
+                {isPlanet === true && (
                   <CardActions className="button-container">
-                    <Button className="carousel-button" size="small" variant="contained">Zoom</Button>
-                    <Button className="carousel-button" size="small" variant="contained" component={Link} to={`/planets/${item.name}`}>Learn More</Button>
+                    <Button
+                      className="carousel-button"
+                      size="small"
+                      variant="contained"
+                    >
+                      Zoom
+                    </Button>
+                    <Button
+                      className="carousel-button"
+                      size="small"
+                      variant="contained"
+                      component={Link}
+                      to={`/planets/${item.name}`}
+                    >
+                      Learn More
+                    </Button>
                   </CardActions>
-                }
+                )}
               </Card>
             </div>
-          )
+          );
         })}
       </div>
 
-      <ChevronRightIcon fontSize="large" cursor="pointer" onClick={scrollRight}></ChevronRightIcon>
+      <ChevronRightIcon
+        fontSize="large"
+        cursor="pointer"
+        onClick={scrollRight}
+      ></ChevronRightIcon>
     </div>
-  )
-}
+  );
+};
 
 export default Carousel;

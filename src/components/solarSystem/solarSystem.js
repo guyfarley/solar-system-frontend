@@ -77,7 +77,7 @@ function SolarSystem() {
           </div>
         </div>
 
-        <div className="orbit orbit__venus">
+        <div className=" orbit orbit__venus">
           <div className="orbit__inner">
             <div className="planet__venus"></div>
           </div>
@@ -107,6 +107,7 @@ function SolarSystem() {
         <div className="orbit orbit__saturn">
           <div className="orbit__innerMid">
             <div className="planet__saturn"></div>
+            <div className="planet__saturn--ring"></div>
           </div>
         </div>
 
