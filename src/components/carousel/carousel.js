@@ -31,7 +31,6 @@ const Carousel = () => {
     getPlanets2();
   }, []);
 
-  console.log("planet data: ", planetData);
   const listRef = useRef(null);
 
   //Kayle I took this out so until the data comes in this doesn't trigger
