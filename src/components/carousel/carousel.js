@@ -11,13 +11,36 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./carousel.scss";
 import "../solarSystem/solarSystem.scss";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
-const Carousel = ({ data }) => {
-  // console.log(data);
+const Carousel = () => {
+  const URL = "http://localhost:8080/";
+
+  // Guy's changes below
+  const [planetData, setPlanetData] = useState([]);
+
+  const getPlanets2 = async () => {
+    try {
+      const response = await axios.get(URL);
+      setPlanetData(response.data);
+      console.log(planetData);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  // useEffect(() => {
+  //   getPlanets2();
+  // }, []);
+
+  getPlanets2();
+  console.log("planet data: ", planetData);
+  // Guy's changes above
+  console.log(planetData);
   const listRef = useRef(null);
   let isPlanet = false;
 
-  if (data[0].category === "Planet") {
+  if (planetData[0].category === "Planet") {
     isPlanet = true;
   }
 
@@ -50,7 +73,7 @@ const Carousel = ({ data }) => {
       ></ChevronLeftIcon>
 
       <div className="items-container" ref={listRef}>
-        {data.map((item) => {
+        {planetData.map((item) => {
           return (
             <div key={item.id} className="single-item-container">
               <Card sx={{ width: 200 }}>
