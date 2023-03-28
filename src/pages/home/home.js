@@ -4,29 +4,49 @@ import ExplorePlanets from "../../components/explorePlanets/explorePlanets";
 import Resources from "../../components/resources/resources";
 import axios from "axios";
 import FunFacts from "../../components/funFacts/funFacts";
+import { useState, useEffect } from 'react';
 
 const URL = "http://localhost:8080/";
 
-const getInfo = () => {
-  axios
-    .get(URL)
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((err) => console.log(err));
-};
+// const getInfo = () => {
+//   axios
+//     .get(URL)
+//     .then((response) => {
+//       console.log(response.data);
+//     })
+//     .catch((err) => console.log(err));
+// };
 
-getInfo();
+// getInfo();
+
 
 const Home = () => {
-  // ping the server to query database for all planet data - save to variable
+
+  // Guy's changes below
+  const [planetData, setPlanetData] = useState();
+
+  useEffect(() => {
+    const getPlanets = () => {
+      axios
+        .get(URL)
+        .then(response => {
+          const planets = response.data;
+          setPlanetData(planets.rows);
+        })
+        .catch(error => console.log(error))
+    }
+    getPlanets();
+  }, []);
+
+  console.log("planet data: ", planetData);
+  // Guy's changes above
 
   return (
     <div>
       <Header />
       <SolarSystem />
       <section id="explore-planets">
-        <ExplorePlanets />
+        <ExplorePlanets planetData={planetData} />
       </section>
       <section id="resources">
         <Resources />
