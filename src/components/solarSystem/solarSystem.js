@@ -73,59 +73,59 @@ function SolarSystem() {
 
         <div className="orbit orbit__mecury">
           <div className="orbit__inner">
-            <div className="pl-me"></div>
+            <div className="planet-me"></div>
           </div>
         </div>
 
         <div className=" orbit orbit__venus">
           <div className="orbit__inner">
-            <div className="pl-ve"></div>
+            <div className="planet-ve"></div>
           </div>
         </div>
 
         <div className="orbit orbit__earth">
           <div className="orbit__inner">
-            <div className="pl-ea"></div>
+            <div className="planet-ea"></div>
           </div>
         </div>
 
         <div className="orbit orbit__mars">
           <div className="orbit__innerQuarter">
-            <div className="pl-ma"></div>
+            <div className="planet-ma"></div>
           </div>
         </div>
 
         <div className="orbit orbit__jupiter">
           <div className="orbit__innerMid">
-            <div className="pl-ju">
-              <div className="pl-ju--layer1"></div>
-              <div className="pl-ju--layer3"></div>
+            <div className="planet-ju">
+              <div className="planet-ju--layer1"></div>
+              <div className="planet-ju--layer3"></div>
             </div>
           </div>
         </div>
 
         <div className="orbit orbit__saturn">
           <div className="orbit__innerMid">
-            <div className="pl-sa"></div>
-            <div className="pl-sa--ring"></div>
+            <div className="planet-sa"></div>
+            <div className="planet-sa--ring"></div>
           </div>
         </div>
 
         <div className="orbit orbit__uranus">
           <div className="orbit__innerQuarter">
-            <div className="pl-ur"></div>
+            <div className="planet-ur"></div>
           </div>
         </div>
 
         <div className="orbit orbit__neptune">
           <div className="orbit__innerQuarter">
-            <div className="pl-ne"></div>
+            <div className="planet-ne"></div>
           </div>
         </div>
 
         <div className="orbit orbit__pluto">
           <div className="orbit__innerPluto">
-            <div className="pl-pl"></div>
+            <div className="planet-pl"></div>
           </div>
         </div>
       </div>

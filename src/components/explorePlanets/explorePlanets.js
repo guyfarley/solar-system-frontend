@@ -1,12 +1,9 @@
 import "./explorePlanets.scss";
 import Carousel from "../carousel/carousel";
-import planets from "../../data";
 
 const ExplorePlanets = () => {
   //create function that when the slider-container is pressed the user can
   //side the cards on the x axis
-
-  //console.log("planet data from ExplorePlanets: ", planetData);
 
   return (
     <section className="explore">

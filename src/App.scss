@@ -8,67 +8,65 @@
 
 .pl {
   &-me {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: radial-gradient(circle at 3rem 3rem, #908f8e, #383737);
       border-radius: 50%;
-      z-index: 1;
      
   }
 
   &-ve {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: #e1a605;
       background: radial-gradient(circle at 3rem 3rem, #e1a605, #383737);
       border-radius: 50%;
-      
-      z-index: 1;
 
   }
 
   &-ea {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: radial-gradient(circle at 3rem 3rem, #f5f7f5, #1d03a1);
       border-radius: 50%;
-      
 
   }
 
   &-ma {
-      width: 6rem;
-      height: 6rem;
-      background: radial-gradient(circle at center, #e82020), conic-gradient(from 45deg, rgb(65, 3, 2) 250deg, rgb(167, 34, 34)  280deg, rgb(169, 86, 86) 353deg);
+      width: 10rem;
+      height: 10rem;
+      background: radial-gradient(circle at 3rem 3rem, #f5f7f5, #e82020);
+
+      //background: radial-gradient(circle at center, #e82020), conic-gradient(from 45deg, rgb(65, 3, 2) 250deg, rgb(167, 34, 34)  280deg, rgb(169, 86, 86) 353deg);
       border-radius: 50%;
-     
+      // z-index: 1;
 
   }
 
   &-ju {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: #edbe48;
       background: radial-gradient(circle at 1rem 1rem, #edbe48, #383737);
-     position: relative;
+      position: relative;
+      border-radius: 50%;
+
 
       &-l1 {
           background-color: #866102;
           filter: blur(1px);
-          //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
           width: 100%;
           height: 5%;
-          position: absolute;
           top: 40%;
           right: 1%;
           box-shadow:
               -2px 2px 5px 1px white;
+              position: absolute;
       }
 
       &-l2 {
           background-color: #866102;
           filter: blur(1px);
-          //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
           width: 100%;
           height: 2%;
           position: absolute;
@@ -76,13 +74,14 @@
           right: 1%;
           box-shadow:
               2px -2px 5px 1px white;
+              position: absolute;
       }
 
   }
 
   &-sa {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: radial-gradient(circle at 1rem 1rem, #f8f3eb, #f5cf97);
       border-radius: 50%;
      
@@ -98,25 +97,24 @@
   }
 
   &-ur {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: radial-gradient(circle at 3rem 3rem, #f8f3eb, rgb(85, 229, 248));
       border-radius: 50%;
-      position: absolute;
-      transform-style: preserve-3d;
+    
   }
 
   &-ne {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: radial-gradient(circle at 3rem 3rem, #f8f3eb, rgb(16, 115, 236));
       border-radius: 50%;
     
   }
 
   &-p {
-      width: 6rem;
-      height: 6rem;
+      width: 10rem;
+      height: 10rem;
       background: radial-gradient(circle at 3rem 3rem, #f8f3eb, rgb(249, 153, 8));
       border-radius: 50%;
       

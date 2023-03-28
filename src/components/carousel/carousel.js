@@ -17,13 +17,11 @@ import { useState, useEffect } from "react";
 const Carousel = () => {
   const URL = "http://localhost:8080/";
 
-  // Guy's changes below
   const [planetData, setPlanetData] = useState([]);
 
   const getPlanets2 = async () => {
     try {
       const response = await axios.get(URL);
-      // console.log(response.data.rows);
       setPlanetData(response.data.rows);
     } catch (error) {
       console.error(error);
@@ -34,10 +32,10 @@ const Carousel = () => {
   }, []);
 
   console.log("planet data: ", planetData);
-  // Guy's changes above
-  // console.log(planetData);
   const listRef = useRef(null);
-  let isPlanet = false;
+
+  //Kayle I took this out so until the data comes in this doesn't trigger
+  //let isPlanet = false;
 
   // if (planetData[0].category === "Planet") {
   //   isPlanet = true;
@@ -77,40 +75,39 @@ const Carousel = () => {
             <div key={item.id} className="single-item-container">
               <Card sx={{ width: 200 }}>
                 <div className="un">
-                  <div className="pl-ur">
-                    <div className="pl-ur-l1"></div>
-                    <div className="pl-ur-l2"></div>
+                  <div className={item.planet_id}>
+                    <div className={`${item.planet_id}-l1`}></div>
+                    <div className={`${item.planet_id}-l2`}></div>
                   </div>
                 </div>
 
                 <CardContent>
                   <Typography variant="h5" component="div">
-                    {item.name}
+                    {item.planet_name}
                   </Typography>
-                  {/* <Typography variant="body2" color="text.secondary">
-                    {item.type}
-                  </Typography> */}
+                  <Typography variant="body2" color="text.secondary">
+                    {item.planet_type}
+                  </Typography>
                 </CardContent>
-                {isPlanet === true && (
-                  <CardActions className="button-container">
-                    <Button
-                      className="carousel-button"
-                      size="small"
-                      variant="contained"
-                    >
-                      Zoom
-                    </Button>
-                    <Button
-                      className="carousel-button"
-                      size="small"
-                      variant="contained"
-                      component={Link}
-                      to={`/planets/${item.name}`}
-                    >
-                      Learn More
-                    </Button>
-                  </CardActions>
-                )}
+
+                <CardActions className="button-container">
+                  <Button
+                    className="carousel-button"
+                    size="small"
+                    variant="contained"
+                  >
+                    Zoom
+                  </Button>
+                  <Button
+                    className="carousel-button"
+                    size="small"
+                    variant="contained"
+                    component={Link}
+                    to={`/planets/${item.planet_name}`}
+                  >
+                    Learn More
+                  </Button>
+                </CardActions>
               </Card>
             </div>
           );
