@@ -16,10 +16,10 @@
     }
     
     &-ve {
-        width: 10rem;
-        height: 10rem;
+        width: 5rem;
+        height: 5rem;
         background: #e1a605;
-        background: radial-gradient(circle at 3rem 3rem, #e1a605, #383737);
+        background: radial-gradient(circle at 3rem 3rem, #f8c53ac2, #bb9b66,  #070707);
         border-radius: 50%;
         
     }
@@ -95,11 +95,12 @@
     &-ju {
         width: 11rem;
         height: 11rem;
-        background: #edbe48;
-        background: radial-gradient(circle at 4rem 3rem, #edbe48, #383737);
+        //background: #edbe48;
+        background: radial-gradient(circle at 2rem 3rem, #edbe48, #383737);
         position: relative;
         border-radius: 50%;
         &-l1 {
+            
             background-color: white;
             filter: blur(5px);
             width: 100%;
@@ -169,9 +170,9 @@
     }
     
     &-ur {
-        width: 10rem;
-        height: 10rem;
-        background: radial-gradient(circle at 3rem 3rem, #f8f3eb, rgb(85, 229, 248));
+        width: 6rem;
+        height: 6rem;
+        background: radial-gradient(circle at 4rem 3rem, #889da5, rgb(16, 16, 17));
         border-radius: 50%;
         
     }
