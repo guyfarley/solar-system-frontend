@@ -13,11 +13,13 @@ import "./carousel.scss";
 import "../solarSystem/solarSystem.scss";
 
 const Carousel = ({ data }) => {
-  // console.log(data);
+
+  console.log('data from Carousel: ', data);
+
   const listRef = useRef(null);
   let isPlanet = false;
 
-  if (data[0].category === "Planet") {
+  if (data[0].planet_name === "Earth") {
     isPlanet = true;
   }
 
@@ -52,17 +54,17 @@ const Carousel = ({ data }) => {
       <div className="items-container" ref={listRef}>
         {data.map((item) => {
           return (
-            <div key={item.id} className="single-item-container">
+            <div key={item.planet_id} className="single-item-container">
               <Card sx={{ width: 200 }}>
                 <CardMedia
                   component="img"
-                  alt={item.name}
+                  alt={item.planet_name}
                   height="200"
                   image="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ-1200-80.jpg"
                 />
                 <CardContent>
                   <Typography variant="h5" component="div">
-                    {item.name}
+                    {item.planet_name}
                   </Typography>
                   {/* <Typography variant="body2" color="text.secondary">
                     {item.type}
@@ -82,7 +84,7 @@ const Carousel = ({ data }) => {
                       size="small"
                       variant="contained"
                       component={Link}
-                      to={`/planets/${item.name}`}
+                      to={`/planets/${item.planet_name}`}
                     >
                       Learn More
                     </Button>

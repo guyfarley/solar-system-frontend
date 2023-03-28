@@ -19,6 +19,7 @@ const Planet = () => {
       <Header />
       <div className="planet">
         <PlanetBanner planet={currentPlanet} />
+        <PlanetInfo planet={currentPlanet} />
         <div className="planet__header">
           <h1 className="planet__title">Moons</h1>
           <h1 className="planet__subtitle">Check out the moons</h1>
@@ -26,7 +27,6 @@ const Planet = () => {
         <div className="carousel__container">
           <Carousel data={currentPlanet.moons} />
         </div>
-        <PlanetInfo planet={currentPlanet} />
       </div>
     </>
   );
