@@ -23,26 +23,25 @@ const Carousel = () => {
   const getPlanets2 = async () => {
     try {
       const response = await axios.get(URL);
-      setPlanetData(response.data);
-      console.log(planetData);
+      // console.log(response.data.rows);
+      setPlanetData(response.data.rows);
     } catch (error) {
       console.error(error);
     }
   };
-  // useEffect(() => {
-  //   getPlanets2();
-  // }, []);
+  useEffect(() => {
+    getPlanets2();
+  }, []);
 
-  getPlanets2();
   console.log("planet data: ", planetData);
   // Guy's changes above
-  console.log(planetData);
+  // console.log(planetData);
   const listRef = useRef(null);
   let isPlanet = false;
 
-  if (planetData[0].category === "Planet") {
-    isPlanet = true;
-  }
+  // if (planetData[0].category === "Planet") {
+  //   isPlanet = true;
+  // }
 
   const scrollLeft = () => {
     if (listRef.current) {
