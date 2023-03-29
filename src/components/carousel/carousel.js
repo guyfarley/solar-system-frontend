@@ -36,6 +36,7 @@ const Carousel = () => {
   const listRef = useRef(null);
 
   const handleClick = (name) => {
+    window.scrollTo(0, 0);
     console.log('planet clicked: ', name);
     updateClickedPlanets(name);
   }
