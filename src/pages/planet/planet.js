@@ -92,7 +92,7 @@ const Planet = () => {
         <PlanetBanner planet={planetData} />
         <PlanetInfo planet={planetData} />
         <div className="planetheader">
-          <h1 className="planettitle">Moons</h1>
+          {/* <h1 className="planettitle">Moons</h1> */}
           <h1 className="planet__subtitle">Check out the moons</h1>
         </div>
         <div className="carousel__container">
