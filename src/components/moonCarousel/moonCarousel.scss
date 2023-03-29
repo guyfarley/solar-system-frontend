@@ -6,7 +6,7 @@ $layout-breakpoint-small: 800px;
   width: 100%;
   max-width: $desktop-width;
   height: 40vh;
-  margin: 280px auto 1rem;
+  margin: 50vh auto 1rem;
 }
 
 .slide-container {
@@ -84,9 +84,14 @@ a:visited {
   text-align: start;
 }
 
+.no-moons {
+  font-size: 3rem;
+  text-align: start;
+}
+
 @media (min-width: $layout-breakpoint-small) {
   .moon-carousel {
-    margin: 10px auto 1rem;
+    margin: 10vh auto 1rem;
   }
 
   .planet__header {
