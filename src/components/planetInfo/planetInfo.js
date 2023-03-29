@@ -2,7 +2,7 @@ import "./planetInfo.scss";
 import React from "react";
 
 const PlanetInfo = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <section className="planet-info">
       <div className="planet-info__header">

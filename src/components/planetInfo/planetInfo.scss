@@ -1,19 +1,19 @@
 @use "../../styles/variables" as *;
-$layout-breakpoint-small: 600px;
+$layout-breakpoint-small: 800px;
 
 .planet-info {
+  position: relative;
   width: 100%;
   height: 50vh;
   max-width: $desktop-width;
   margin: 4rem auto 1rem;
-  // position: relative;
 
   &__header {
     font-size: 3rem;
     text-transform: uppercase;
     text-align: start;
     // position: relative;
-    margin: 2rem;
+    margin: 1rem;
   }
 
   &__planet-data {

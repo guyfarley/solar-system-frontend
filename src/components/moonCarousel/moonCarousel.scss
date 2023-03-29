@@ -1,4 +1,13 @@
 @use '../../styles/variables' as *;
+$layout-breakpoint-small: 800px;
+
+.moon-carousel {
+  position: relative;
+  width: 100%;
+  max-width: $desktop-width;
+  height: 40vh;
+  margin: 280px auto 1rem;
+}
 
 .slide-container {
   display: flex;
@@ -35,6 +44,16 @@
   background-color: $color-dark-2 !important;
 }
 
+.moon-size {
+  margin-top: 1rem;
+  text-align: start;
+}
+
+.moon-history {
+  margin-top: .5rem;
+  text-align: start;
+}
+
 a:link {
   color: white;
   text-decoration: none;
@@ -43,4 +62,36 @@ a:link {
 a:visited {
   color: $color-light-2;
   text-decoration: none;
+}
+
+
+.carousel__container {
+  display: flex;
+  justify-content: center;
+}
+
+.planet__header {
+  // font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  // position: relative;
+}
+
+.planet__title {
+  font-size: 3rem;
+  text-align: start;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .moon-carousel {
+    margin: 10px auto 1rem;
+  }
+
+  .planet__header {
+    text-align: center;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
 }
