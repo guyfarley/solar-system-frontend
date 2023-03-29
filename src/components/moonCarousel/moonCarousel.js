@@ -12,8 +12,7 @@ import "./moonCarousel.scss";
 import "../solarSystem/solarSystem.scss";
 
 const MoonCarousel = ({ data }) => {
-
-  console.log('moon data from moon carousel', data);
+  console.log("moon data from moon carousel", data);
   const listRef = useRef(null);
 
   //Kayle I took this out so until the data comes in this doesn't trigger
@@ -65,10 +64,10 @@ const MoonCarousel = ({ data }) => {
 
                 <CardContent>
                   <Typography variant="h5" component="div">
-                    {item.name}
+                    {item.moon_name}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    {item.size}
+                    {item.moon_size}
                   </Typography>
                 </CardContent>
 

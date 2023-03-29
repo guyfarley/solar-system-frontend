@@ -95,9 +95,9 @@ const Planet = () => {
           <h1 className="planettitle">Moons</h1>
           <h1 className="planet__subtitle">Check out the moons</h1>
         </div>
-        {/* <div className="carousel__container">
-          <MoonCarousel data={planetData.moons} />
-        </div> */}
+        <div className="carousel__container">
+          <MoonCarousel data={planetData} />
+        </div>
       </div>
     </>
   );
