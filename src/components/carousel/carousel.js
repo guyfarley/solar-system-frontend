@@ -12,12 +12,14 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./carousel.scss";
 import "../solarSystem/solarSystem.scss";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { PlanetsContext } from "../../context/context";
 
 const Carousel = () => {
   const URL = "http://localhost:8080/";
 
   const [planetData, setPlanetData] = useState([]);
+  const { updateClickedPlanets } = useContext(PlanetsContext);
 
   const getPlanets2 = async () => {
     try {
@@ -33,8 +35,9 @@ const Carousel = () => {
 
   const listRef = useRef(null);
 
-  const handleClick = (id) => {
-    console.log('planet clicked: ', id);
+  const handleClick = (name) => {
+    console.log('planet clicked: ', name);
+    updateClickedPlanets(name);
   }
 
   //Kayle I took this out so until the data comes in this doesn't trigger
@@ -100,7 +103,7 @@ const Carousel = () => {
                     className="carousel-button"
                     size="small"
                     variant="contained"
-                    onClick={() => handleClick(item.planet_id)}
+                    onClick={() => handleClick(item.planet_name)}
                   >
                     Zoom
                   </Button>
