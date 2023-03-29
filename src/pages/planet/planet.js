@@ -5,13 +5,8 @@ import PlanetInfo from "../../components/planetInfo/planetInfo.js";
 import MoonCarousel from "../../components/moonCarousel/moonCarousel.js";
 import { useParams } from "react-router-dom";
 import "./planet.scss";
-<<<<<<< HEAD
-import axios from "axios";
-import { useState, useEffect } from "react";
-=======
 import { useState, useEffect } from "react";
 import axios from "axios";
->>>>>>> b72eaf918178395355b5f1a6d8ae05e80fc8fb7f
 
 const Planet = () => {
   const URL = "http://localhost:8080/";
@@ -36,7 +31,7 @@ const Planet = () => {
 
   const dummyPlanet = {
     planet_id: 123,
-    planet_name: 'Dummy Planet',
+    planet_name: "Dummy Planet",
     moons: [
       {
         id: 1.1,
@@ -60,16 +55,14 @@ const Planet = () => {
         category: "Moon",
       },
     ],
-  }
+  };
 
   // console.log(dummyPlanet.moons);
 
   const { planetSlug } = useParams();
-<<<<<<< HEAD
   //let planet = planets.filter((planet) => planet.name === planetSlug);
   //let bannerPlanet = currentPlanet[0];
   console.log(currentPlanet);
-=======
 
   // const URL = `http://localhost:8080/planet/${planetSlug}`;
 
@@ -77,7 +70,9 @@ const Planet = () => {
 
   const getPlanet = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/planet/${planetSlug}`);
+      const response = await axios.get(
+        `http://localhost:8080/planet/${planetSlug}`
+      );
       console.log(response.data);
       setPlanetData(response.data);
     } catch (error) {
@@ -88,33 +83,29 @@ const Planet = () => {
     getPlanet();
   }, []);
 
-  console.log('planet data from planet page: ', planetData);
+  console.log("planet data from planet page: ", planetData);
 
   // let planet = planetData.filter(planet => planet.planet_id === planetSlug);
   // let currentPlanet = planet[0];
 
   // console.log("current planet: ", currentPlanet);
 
->>>>>>> b72eaf918178395355b5f1a6d8ae05e80fc8fb7f
   return (
     <>
       <Header />
       <div className="planet">
-        <PlanetBanner planet={dummyPlanet} />
-        <PlanetInfo planet={dummyPlanet} />
+        <PlanetBanner planet={currentPlanet} />
+        <PlanetInfo planet={currentPlanet} />
         <div className="planet__header">
           <h1 className="planet__title">Moons</h1>
           <h1 className="planet__subtitle">Check out the moons</h1>
         </div>
-<<<<<<< HEAD
         {/* <div className="carousel__container">
           <Carousel data={bannerPlanet.moons} />
         </div> */}
-=======
         <div className="carousel__container">
           <MoonCarousel data={dummyPlanet.moons} />
         </div>
->>>>>>> b72eaf918178395355b5f1a6d8ae05e80fc8fb7f
       </div>
     </>
   );
