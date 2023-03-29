@@ -28,7 +28,7 @@ const Planet = () => {
 
   useEffect(() => {
     getPlanet();
-    console.log("planet data from planet page: ", planetData);
+    // console.log("planet data from planet page: ", planetData);
   }, []);
 
   if (isLoading) {
@@ -41,13 +41,7 @@ const Planet = () => {
       <div className="planet">
         <PlanetBanner data={planetData} />
         <PlanetInfo data={planetData} />
-        <div className="planetheader">
-          {/* <h1 className="planettitle">Moons</h1> */}
-          <h1 className="planet__subtitle">Check out the moons</h1>
-        </div>
-        <div className="carousel__container">
-          <MoonCarousel data={planetData} />
-        </div>
+        <MoonCarousel data={planetData} />
       </div>
     </>
   );

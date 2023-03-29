@@ -1,8 +1,8 @@
 import "./planetBanner.scss";
 
 const PlanetBanner = ({ data }) => {
-  console.log("planet from planet banner: ", data[0]);
-  console.log(data);
+  // console.log("planet from planet banner: ", data[0]);
+  // console.log(data);
   return (
     <div className="planet-banner">
       <div className="planet-banner__planet">
