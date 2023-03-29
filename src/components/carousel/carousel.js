@@ -71,7 +71,7 @@ const Carousel = () => {
       <div className="items-container" ref={listRef}>
         {planetData.map((item) => {
           return (
-            <div key={item.id} className="single-item-container">
+            <div key={item.planet_id} className="single-item-container">
               <Card sx={{ width: 200 }}>
                 <div className="un">
                   <div className={item.planet_id}>

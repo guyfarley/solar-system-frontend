@@ -53,7 +53,7 @@ const MoonCarousel = ({ data }) => {
       <div className="items-container" ref={listRef}>
         {data.map((item) => {
           return (
-            <div key={item.id} className="single-item-container">
+            <div key={item.moon_id} className="single-item-container">
               <Card sx={{ width: 200 }}>
                 {/* <div className="un">
                   <div className={item.planet_id}>
