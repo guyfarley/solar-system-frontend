@@ -56,6 +56,9 @@ https://github.com/guyfarley/solar-system-backend
 
 5.  Following the README file within the backend repo to clone and run the backend.
 
+## 🖊️ Wireframe
+https://www.figma.com/file/SKLo9xQkuOUE3LnJN2Jczx/SolarSystemHackathon?node-id=0%3A1&t=TJt5GIPi0GyAOFmV-1
+
 ## 📸 Images
 
 ## 🎥 Demo
