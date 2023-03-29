@@ -54,6 +54,7 @@
 }
 
 .orbit {
+
     //each order needs width/height
     //need to transfor planets but it isn't working
     //animation: correcting 12s infinite linear;
@@ -64,7 +65,7 @@
         height: 2rem;
         margin-top: -1rem;
         margin-left: -4%;
-        
+
     }
 
     &__innerQuarter {
@@ -106,7 +107,6 @@
         height: 150px;
         animation: rotating1 6s infinite linear;
 
-        
     }
 
     &__earth {
@@ -167,17 +167,40 @@
         position: absolute;
         transform-style: preserve-3d;
 
+        &--label {
+            position: relative;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.05rem;
+            animation: maintain 3s linear infinite;
+            // rotate: 90deg;
+        }
+
     }
 
     &-ve {
         width: 1rem;
         height: 1rem;
         background: #e1a605;
-        background: radial-gradient(circle at .35rem .35rem, #f8c53ac2, #bb9b66,  #070707);
+        background: radial-gradient(circle at .35rem .35rem, #f8c53ac2, #bb9b66, #070707);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
 
+        &--label {
+            position: relative;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.25rem;
+            animation: maintain 6s linear infinite;
+            rotate: -40deg;
+        }
     }
 
     &-ea {
@@ -187,6 +210,7 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
+
         &--l1 {
             background-color: rgb(48, 114, 22);
             border-radius: 50%;
@@ -199,7 +223,7 @@
             // -2px 2px 3px 1px rgb(48, 114, 22);
             position: absolute;
         }
-        
+
         &--l2 {
             background-color: rgb(48, 114, 22);
             filter: blur(2px);
@@ -213,6 +237,7 @@
             // 2px -2px 3px 1px rgb(48, 114, 22);
             position: absolute;
         }
+
         &--l3 {
             background-color: rgb(247, 250, 246);
             filter: blur(4px);
@@ -226,6 +251,7 @@
             // 2px -2px 3px 1px rgb(250, 251, 250);
             position: absolute;
         }
+
         &--l4 {
             background-color: rgb(247, 250, 246);
             filter: blur(4px);
@@ -236,10 +262,10 @@
             top: 70%;
             left: 1%;
             box-shadow:
-            2px -2px 3px 1px rgb(250, 251, 250);
+                2px -2px 3px 1px rgb(250, 251, 250);
             position: absolute;
         }
-        
+
 
         &--label {
             position: relative;
@@ -249,8 +275,8 @@
             // top: 50%;
             // left: 50%;
             margin-left: 0.25rem;
-            animation: maintain 2.5s linear infinite;
-          
+            animation: maintain 6.5s linear infinite;
+            rotate: -90deg;
         }
 
     }
@@ -263,7 +289,17 @@
         position: absolute;
         transform-style: preserve-3d;
 
-
+        &--label {
+            position: absolute;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.25rem;
+            animation: maintain 13s linear infinite;
+            rotate: 180deg;
+        }
     }
 
     &-ju {
@@ -277,19 +313,19 @@
         z-index: 1;
 
         &--l1 {
-                background-color: white;
-                filter: blur(2px);
-                width: 100%;
-                height: 2%;
-                top: 30%;
-                right: 1%;
-                box-shadow:
+            background-color: white;
+            filter: blur(2px);
+            width: 100%;
+            height: 2%;
+            top: 30%;
+            right: 1%;
+            box-shadow:
                 2px 3px 5px 2px #866102;
-                position: absolute;
+            position: absolute;
         }
 
         &--l2 {
-                background-color: white;
+            background-color: white;
             filter: blur(2px);
             width: 100%;
             height: 2%;
@@ -297,10 +333,21 @@
             top: 63%;
             right: 1%;
             box-shadow:
-            2px 3px 5px 2px #866102;
+                2px 3px 5px 2px #866102;
             position: absolute;
         }
 
+        &--label {
+            position: relative;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.15rem;
+            animation: maintain 50s linear infinite;
+            // rotate: 40deg;
+        }
     }
 
     &-sa {
@@ -321,7 +368,7 @@
         //     position: absolute;
 
         // }
-        &--l1{
+        &--l1 {
             background-color: white;
             filter: blur(7px);
             width: 100%;
@@ -329,10 +376,11 @@
             top: 15%;
             right: 1%;
             box-shadow:
-            2px 2px 5px 2px #866102;
+                2px 2px 5px 2px #866102;
             position: absolute;
         }
-        &--l2{
+
+        &--l2 {
             background-color: white;
             filter: blur(7px);
             width: 100%;
@@ -341,18 +389,31 @@
             top: 70%;
             right: 1%;
             box-shadow:
-            2px 10px 5px 2px #866102;
+                2px 10px 5px 2px #866102;
             position: absolute;
         }
+
         &--l3 {
             width: .5rem;
             height: .5rem;
-            background: radial-gradient(circle at center, white, transparent 80%), conic-gradient(from 25deg, transparent 35deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent  280deg, transparent 353deg);
+            background: radial-gradient(circle at center, white, transparent 80%), conic-gradient(from 25deg, transparent 35deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent 280deg, transparent 353deg);
             border-radius: 50%;
             transform: scaleX(8);
             margin: 0.78rem;
             position: absolute;
 
+        }
+
+        &--label {
+            position: relative;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.15rem;
+            animation: maintain 100s linear infinite;
+            rotate: -40deg;
         }
 
     }
@@ -364,6 +425,18 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
+
+        &--label {
+            position: relative;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.15rem;
+            animation: maintain 300s linear infinite;
+            rotate: -90deg;
+        }
     }
 
     &-ne {
@@ -373,6 +446,18 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
+
+        &--label {
+            position: relative;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.15rem;
+            animation: maintain 600s linear infinite;
+            rotate: -180deg;
+        }
     }
 
     &-pl {
@@ -382,7 +467,18 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
-        
+
+        &--label {
+            position: relative;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin-left: 0.15rem;
+            animation: maintain 1200s linear infinite;
+            // rotate: -180deg;
+        }
     }
 }
 
@@ -411,6 +507,7 @@
     }
 
 }
+
 @keyframes rotating3 {
     0% {
         transform: rotateZ(180deg);
@@ -421,6 +518,7 @@
     }
 
 }
+
 @keyframes rotating {
     0% {
         transform: rotateZ(0deg);
@@ -434,10 +532,10 @@
 
 @keyframes maintain {
     0% {
-        transform: rotateX(15deg);
+        transform: rotate(0deg);
     }
-   
+
     100% {
-        transform: rotateX(-15deg);
+        transform: rotate(-360deg);
     }
 }

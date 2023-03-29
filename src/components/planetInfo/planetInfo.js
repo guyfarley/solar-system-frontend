@@ -11,6 +11,8 @@ const PlanetInfo = ({ data }) => {
     planetType = "Terrestrial";
   } else if (data[0].planet_type === "dwarf_planet") {
     planetType = "Dwarf Planet";
+  } else if (data[0].planet_type === "ice_giant") {
+    planetType = "Ice Giant";
   }
 
   return (

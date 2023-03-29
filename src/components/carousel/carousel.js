@@ -37,16 +37,9 @@ const Carousel = () => {
 
   const handleClick = (name) => {
     window.scrollTo(0, 0);
-    console.log('planet clicked: ', name);
+    // console.log('planet clicked: ', name);
     updateClickedPlanets(name);
   }
-
-  //Kayle I took this out so until the data comes in this doesn't trigger
-  //let isPlanet = false;
-
-  // if (planetData[0].category === "Planet") {
-  //   isPlanet = true;
-  // }
 
   const scrollLeft = () => {
     if (listRef.current) {
@@ -106,7 +99,7 @@ const Carousel = () => {
                     variant="contained"
                     onClick={() => handleClick(item.planet_name)}
                   >
-                    Zoom
+                    Locate
                   </Button>
                   <Button
                     className="carousel-button"
