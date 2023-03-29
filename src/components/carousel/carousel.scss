@@ -32,16 +32,24 @@
 }
 
 .css-11qr2p8-MuiButtonBase-root-MuiButton-root {
-  background-color: $color-dark-2 !important;
+  background-color: $color-dark-1 !important;
 }
 
-a:link {
-  color: white;
-  text-decoration: none;
+.carousel-button {
+  // background-color: $color-dark-1 !important;
+  color: white !important;
+
+  a:visited {
+    color: $color-light-2;
+  }
 }
 
-a:visited {
-  color: $color-light-2;
-  text-decoration: none;
-}
+// a:link {
+//   color: white;
+//   text-decoration: none;
+// }
 
+// a:visited {
+//   color: $color-light-2 !important;
+//   text-decoration: none;
+// }
