@@ -85,6 +85,7 @@ function SolarSystem() {
 
         <div className="orbit orbit__earth">
           <div className="orbit__inner">
+            <div className="planet-ea--label">Earth</div>
             <div className="planet-ea"></div>
           </div>
         </div>

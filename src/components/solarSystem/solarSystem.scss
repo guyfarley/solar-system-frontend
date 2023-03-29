@@ -28,7 +28,7 @@
     position: absolute;
 
     //to tilt for 3d look
-     //transform: scaleX(5);
+    //transform: scaleX(5);
 
 }
 
@@ -137,7 +137,7 @@
         width: 550px;
         height: 550px;
         animation: rotating 100s infinite linear;
-        
+
     }
 
     &__uranus {
@@ -193,6 +193,16 @@
         position: absolute;
         transform-style: preserve-3d;
 
+        &--label {
+            position: absolute;
+            font-size: large;
+            color: white;
+            z-index: 10;
+            // top: 50%;
+            // left: 50%;
+            margin: 0.15rem;
+            animation: maintain 6.5s linear infinite;
+        }
     }
 
     &-ma {
@@ -200,10 +210,11 @@
         height: .65rem;
         // background: #e82020;
         // background: radial-gradient(circle at .4rem .4rem, #e82020, #383737);
-        background: radial-gradient(circle at center, #e82020), conic-gradient(from 45deg, rgb(65, 3, 2) 250deg, rgb(167, 34, 34)  280deg, rgb(169, 86, 86) 353deg);
+        background: radial-gradient(circle at center, #e82020), conic-gradient(from 45deg, rgb(65, 3, 2) 250deg, rgb(167, 34, 34) 280deg, rgb(169, 86, 86) 353deg);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
+
 
     }
 
@@ -252,15 +263,16 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
+
         &--ring {
             width: .5rem;
             height: .5rem;
-            background: radial-gradient(circle at center, white, transparent 60%), conic-gradient(from 25deg, transparent 45deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent  280deg, transparent 353deg);
+            background: radial-gradient(circle at center, white, transparent 60%), conic-gradient(from 25deg, transparent 45deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent 280deg, transparent 353deg);
             border-radius: 50%;
             transform: scaleX(8);
             margin: 0.78rem
         }
-       
+
     }
 
     &-ur {
@@ -306,3 +318,12 @@
 
 }
 
+@keyframes maintain {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

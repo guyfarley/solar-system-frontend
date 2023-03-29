@@ -33,6 +33,10 @@ const Carousel = () => {
 
   const listRef = useRef(null);
 
+  const handleClick = (id) => {
+    console.log('planet clicked: ', id);
+  }
+
   //Kayle I took this out so until the data comes in this doesn't trigger
   //let isPlanet = false;
 
@@ -96,6 +100,7 @@ const Carousel = () => {
                     className="carousel-button"
                     size="small"
                     variant="contained"
+                    onClick={() => handleClick(item.planet_id)}
                   >
                     Zoom
                   </Button>
