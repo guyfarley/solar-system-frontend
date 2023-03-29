@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const Planet = () => {
+<<<<<<< HEAD
   const URL = "http://localhost:8080/";
 
   const [currentPlanet, setCurrentPlanet] = useState([]);
@@ -66,23 +67,39 @@ const Planet = () => {
 
   // const URL = `http://localhost:8080/planet/${planetSlug}`;
 
+=======
+
+  const { planetSlug } = useParams();
+  const URLplanet = `http://localhost:8080/planet/${planetSlug}`;
+  const [isLoading, setLoading] = useState(true);
+>>>>>>> dev
   const [planetData, setPlanetData] = useState([]);
 
-  const getPlanet = async () => {
+  const getPlanet = () => {
     try {
+<<<<<<< HEAD
       const response = await axios.get(
         `http://localhost:8080/planet/${planetSlug}`
       );
       console.log(response.data);
       setPlanetData(response.data);
+=======
+      axios.get(URLplanet).then(response => {
+        setPlanetData(response.data.rows);
+        setLoading(false);
+      })
+>>>>>>> dev
     } catch (error) {
       console.error(error);
     }
   };
+
   useEffect(() => {
     getPlanet();
+    // console.log("planet data from planet page: ", planetData);
   }, []);
 
+<<<<<<< HEAD
   console.log("planet data from planet page: ", planetData);
 
   // let planet = planetData.filter(planet => planet.planet_id === planetSlug);
@@ -90,10 +107,17 @@ const Planet = () => {
 
   // console.log("current planet: ", currentPlanet);
 
+=======
+  if (isLoading) {
+    return <div>Loading...</div>
+  }
+
+>>>>>>> dev
   return (
     <>
       <Header />
       <div className="planet">
+<<<<<<< HEAD
         <PlanetBanner planet={currentPlanet} />
         <PlanetInfo planet={currentPlanet} />
         <div className="planet__header">
@@ -106,6 +130,11 @@ const Planet = () => {
         <div className="carousel__container">
           <MoonCarousel data={dummyPlanet.moons} />
         </div>
+=======
+        <PlanetBanner data={planetData} />
+        <PlanetInfo data={planetData} />
+        <MoonCarousel data={planetData} />
+>>>>>>> dev
       </div>
     </>
   );
