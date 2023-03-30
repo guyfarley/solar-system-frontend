@@ -1,5 +1,7 @@
 @use '../../styles/variables' as *;
-$layout-breakpoint-small: 800px;
+@use '../../styles/mixins' as *;
+
+//$layout-breakpoint-small: 800px;
 
 .moon-carousel {
   position: relative;
@@ -7,6 +9,9 @@ $layout-breakpoint-small: 800px;
   max-width: $desktop-width;
   height: 40vh;
   margin: 50vh auto 1rem;
+  @include tablet {
+    margin: 7vh auto 10vh;
+  }
 }
 
 .slide-container {
@@ -47,10 +52,37 @@ $layout-breakpoint-small: 800px;
 .moon-size {
   margin-top: 1rem;
   text-align: start;
+  &-history{
+    margin-top: .5rem;
+    text-align: start;
+  }
 }
 
-.moon-history {
-  margin-top: .5rem;
+.carousel__container {
+  display: flex;
+  justify-content: center;
+}
+
+.planet__header {
+  // font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  // position: relative;
+  @include tablet {
+    text-align: center;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    font-size: 3rem;
+    text-align: start;
+  }
+}
+
+.no-moons {
+  font-size: 3rem;
   text-align: start;
 }
 
@@ -65,38 +97,15 @@ a:visited {
 }
 
 
-.carousel__container {
-  display: flex;
-  justify-content: center;
-}
+// @media (min-width: $layout-breakpoint-small) {
+//   .moon-carousel {
+//     margin: 10vh auto 10vh;
+//   }
 
-.planet__header {
-  // font-size: 3rem;
-  text-align: center;
-  padding-top: 3rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-  // position: relative;
-}
+//   .planet__header {
+//     text-align: center;
+//     padding-left: 1rem;
+//     margin-bottom: 2rem;
+//   }
+// }
 
-.planet__title {
-  font-size: 3rem;
-  text-align: start;
-}
-
-.no-moons {
-  font-size: 3rem;
-  text-align: start;
-}
-
-@media (min-width: $layout-breakpoint-small) {
-  .moon-carousel {
-    margin: 10vh auto 1rem;
-  }
-
-  .planet__header {
-    text-align: center;
-    padding-left: 1rem;
-    margin-bottom: 2rem;
-  }
-}
