@@ -85,7 +85,12 @@ function SolarSystem() {
 
         <div className="orbit orbit__earth">
           <div className="orbit__inner">
-            <div className="planet-ea"></div>
+            <div className="planet-ea">
+              <div className="planet-ea--l1"></div>
+              <div className="planet-ea--l2"></div>
+              <div className="planet-ea--l3"></div>
+              <div className="planet-ea--l4"></div>
+            </div>
           </div>
         </div>
 
@@ -98,8 +103,8 @@ function SolarSystem() {
         <div className="orbit orbit__jupiter">
           <div className="orbit__innerMid">
             <div className="planet-ju">
-              <div className="planet-ju--layer1"></div>
-              <div className="planet-ju--layer3"></div>
+              <div className="planet-ju--l1"></div>
+              <div className="planet-ju--l2"></div>
             </div>
           </div>
         </div>
@@ -107,7 +112,9 @@ function SolarSystem() {
         <div className="orbit orbit__saturn">
           <div className="orbit__innerMid">
             <div className="planet-sa"></div>
-            <div className="planet-sa--ring"></div>
+            <div className="planet-sa--l1"></div>
+            <div className="planet-sa--l2"></div>
+            <div className="planet-sa--l3"></div>
           </div>
         </div>
 

@@ -178,7 +178,7 @@
         width: 1rem;
         height: 1rem;
         background: #e1a605;
-        background: radial-gradient(circle at .35rem .35rem, #e1a605, #383737);
+        background: radial-gradient(circle at .35rem .35rem, #f8c53ac2, #bb9b66,  #070707);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -192,15 +192,66 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
+        &--l1 {
+            background-color: rgb(48, 114, 22);
+            border-radius: 50%;
+            filter: blur(2px);
+            width: 25%;
+            height: 65%;
+            top: 30%;
+            left: 20%;
+            // box-shadow:
+            // -2px 2px 3px 1px rgb(48, 114, 22);
+            position: absolute;
+        }
+        
+        &--l2 {
+            background-color: rgb(48, 114, 22);
+            filter: blur(2px);
+            border-radius: 40%;
+            width: 60%;
+            height: 30%;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            // box-shadow:
+            // 2px -2px 3px 1px rgb(48, 114, 22);
+            position: absolute;
+        }
+        &--l3 {
+            background-color: rgb(247, 250, 246);
+            filter: blur(4px);
+            border-radius: 40%;
+            width: 99%;
+            height: 5%;
+            position: absolute;
+            top: 20%;
+            left: 1%;
+            // box-shadow:
+            // 2px -2px 3px 1px rgb(250, 251, 250);
+            position: absolute;
+        }
+        &--l4 {
+            background-color: rgb(247, 250, 246);
+            filter: blur(4px);
+            border-radius: 40%;
+            width: 99%;
+            height: 5%;
+            position: absolute;
+            top: 70%;
+            left: 1%;
+            box-shadow:
+            2px -2px 3px 1px rgb(250, 251, 250);
+            position: absolute;
+        }
+        
 
     }
 
     &-ma {
         width: .65rem;
         height: .65rem;
-        // background: #e82020;
-        // background: radial-gradient(circle at .4rem .4rem, #e82020, #383737);
-        background: radial-gradient(circle at center, #e82020), conic-gradient(from 45deg, rgb(65, 3, 2) 250deg, rgb(167, 34, 34)  280deg, rgb(169, 86, 86) 353deg);
+        background: radial-gradient(circle at .4rem .4rem, #e82020, #5e301e);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -217,30 +268,29 @@
         transform-style: preserve-3d;
         z-index: 1;
 
-        &--layer1 {
-            background-color: #866102;
-            filter: blur(1px);
-            //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
-            width: 100%;
-            height: 2%;
-            position: absolute;
-            top: 40%;
-            right: 1%;
-            box-shadow:
-                -2px 2px 5px 1px white;
+        &--l1 {
+                background-color: white;
+                filter: blur(2px);
+                width: 100%;
+                height: 2%;
+                top: 30%;
+                right: 1%;
+                box-shadow:
+                2px 3px 5px 2px #866102;
+                position: absolute;
         }
 
-        &--layer3 {
-            background-color: #866102;
-            filter: blur(1px);
-            //background: linear-gradient(184deg, #edbe489d 0%, #efb41e9d 35%, #f6b2069d 100%);
+        &--l2 {
+                background-color: white;
+            filter: blur(2px);
             width: 100%;
             height: 2%;
             position: absolute;
             top: 60%;
             right: 1%;
             box-shadow:
-                2px -2px 5px 1px white;
+            2px 3px 5px 2px #866102;
+            position: absolute;
         }
 
     }
@@ -252,13 +302,46 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
-        &--ring {
+        // &--ring {
+        //     width: .5rem;
+        //     height: .5rem;
+        //     background: radial-gradient(circle at center, white, transparent 60%), conic-gradient(from 25deg, transparent 45deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent  280deg, transparent 353deg);
+        //     border-radius: 50%;
+        //     transform: scaleX(8);
+        //     margin: 0.78rem
+        // }
+        &--l1{
+            background-color: white;
+            filter: blur(7px);
+            width: 100%;
+            height: 2%;
+            top: 15%;
+            right: 1%;
+            box-shadow:
+            2px 2px 5px 2px #866102;
+            position: absolute;
+        }
+        &--l2{
+            background-color: white;
+            filter: blur(7px);
+            width: 100%;
+            height: 2%;
+            position: absolute;
+            top: 70%;
+            right: 1%;
+            box-shadow:
+            2px 10px 5px 2px #866102;
+            position: absolute;
+        }
+        &--l3 {
             width: .5rem;
             height: .5rem;
-            background: radial-gradient(circle at center, white, transparent 60%), conic-gradient(from 25deg, transparent 45deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent  280deg, transparent 353deg);
+            background: radial-gradient(circle at center, white, transparent 80%), conic-gradient(from 25deg, transparent 35deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent  280deg, transparent 353deg);
             border-radius: 50%;
             transform: scaleX(8);
-            margin: 0.78rem
+            margin: 0.78rem;
+            position: absolute;
+
         }
        
     }
@@ -266,7 +349,7 @@
     &-ur {
         width: 1.75rem;
         height: 1.75rem;
-        background: radial-gradient(circle at 1rem 1rem, #f8f3eb, rgb(85, 229, 248));
+        background: radial-gradient(circle at 1rem 1rem, #889da5, rgb(16, 16, 17));
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -275,16 +358,16 @@
     &-ne {
         width: 1.75rem;
         height: 1.75rem;
-        background: radial-gradient(circle at .75rem .75rem, #f8f3eb, rgb(16, 115, 236));
+        background: radial-gradient(circle at .75rem .75rem, #7039f0, rgb(16, 16, 17));
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
     }
 
-    &-p {
+    &-pl {
         width: .225rem;
         height: .225rem;
-        background: radial-gradient(circle at .15rem .15rem, #f8f3eb, rgb(249, 153, 8));
+        background: radial-gradient(circle at .15rem .15rem, rgb(244, 208, 154), rgb(11, 11, 11));
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -295,14 +378,14 @@
 
 
 
-@keyframes rotating {
-    0% {
-        transform: rotateZ(0deg);
-    }
+// @keyframes rotating {
+//     0% {
+//         transform: rotateZ(0deg);
+//     }
 
-    100% {
-        transform: rotateZ(-360deg);
-    }
+//     100% {
+//         transform: rotateZ(-360deg);
+//     }
 
-}
+// }
 
