@@ -3,13 +3,13 @@ const Footer = () => {
     <section className="footer">
       <div className="footer__wrapper">
         <div className="footer__nav">
-          <a href="">
+          <a href="#explore-planets">
             <h4>Planets</h4>
           </a>
-          <a href="">
+          <a href="#fun-facts">
             <h4>Fun Facts</h4>
           </a>
-          <a href="">
+          <a href="#resources">
             <h4>Resources</h4>
           </a>
         </div>
