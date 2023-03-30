@@ -35,9 +35,9 @@ a:visited {
     justify-content: space-around;
     border-bottom: 1px solid $color-light-2;
     &--name{
-      margin: 0 auto;
+      margin: -1rem auto 0;
       display: flex;
-      margin-top: -1rem;
+      
       color: $color-light-1;
       
     }
@@ -50,19 +50,19 @@ a:visited {
   }
   &__copyright{
     padding-bottom: 1rem;
-    color:$color-light-1;
+    color:$color-light-3;
   }
   &__team
   { 
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 170px;
     align-items: center;
     margin: 0 auto;
     
     &--mem {
-      width: 35px;
-      height: 35px;
+      width: 45px;
+      height: 45px;
       background-color: transparent;
       border-radius: 50%;
       // background-image: url('../../assets/images/guy.png');
@@ -76,8 +76,8 @@ a:visited {
         cursor: pointer;
       }
       &--img{
-        width: 25px;
-        height: 25px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         &:hover {
           width: 75px;
