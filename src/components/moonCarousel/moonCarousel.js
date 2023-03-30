@@ -88,7 +88,7 @@ const MoonCarousel = ({ data }) => {
 
                               <div className="moon-history">
                                 <Typography variant="body2" color="white">
-                                  {`History of Name: ${item.moon_fun_fact}`}
+                                  {`History of Name: ${item.moon_name_history}`}
                                 </Typography>
                               </div>
                             </CardContent>
