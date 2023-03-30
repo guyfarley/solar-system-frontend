@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import "./planet.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Footer from "../../components/footer/footer.js";
 
 const Planet = () => {
   const { planetSlug } = useParams();
@@ -41,6 +42,7 @@ const Planet = () => {
         <PlanetBanner data={planetData} />
         <PlanetInfo data={planetData} />
         <MoonCarousel data={planetData} />
+        <Footer />
       </div>
     </>
   );

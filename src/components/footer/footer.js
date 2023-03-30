@@ -2,6 +2,9 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./footer.scss";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
+import guy from "../../assets/images/guy.png";
+import kayle from "../../assets/images/kayle.png";
+import luna from "../../assets/images/luna.png";
 
 const Footer = () => {
   return (
@@ -22,23 +25,36 @@ const Footer = () => {
           <div className="footer__nav--name">
             <RocketLaunchIcon
               sx={{
-                display: { xs: "none", md: "flex" },
                 mr: 1,
-                fill: "white",
+                fill: "$color-light-1",
               }}
             />
-            <h4>TEAM PLUTO</h4>
+            <h3>TEAM PLUTO</h3>
           </div>
         </div>
         <div className="footer__team">
-          <div className="footer__team--mem"></div>
-          <div className="footer__team--mem"></div>
-          <div className="footer__team--mem"></div>
+          <Link smooth to="https://github.com/guyfarley" target={"_blank"}>
+            <div className="footer__team--mem">
+              <img className="footer__team--mem--img" src={guy} alt={"guy"} />
+            </div>
+          </Link>
+          <Link smooth to="https://github.com/revyrob" target={"_blank"}>
+            <div className="footer__team--mem">
+              <img
+                className="footer__team--mem--img"
+                src={kayle}
+                alt={"kayle"}
+              />
+            </div>
+          </Link>
+          <Link smooth to="https://github.com/madxb98" target={"_blank"}>
+            <div className="footer__team--mem">
+              <img className="footer__team--mem--img" src={luna} alt={"luna"} />
+            </div>
+          </Link>
         </div>
       </div>
       <div className="footer__copyright">©️ Team Pluto 2023</div>
-
-      {/* nav bar: planets, resources, fun facts, team */}
     </section>
   );
 };

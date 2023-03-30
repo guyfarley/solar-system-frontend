@@ -16,12 +16,12 @@ a:visited {
 
 .footer {
   background-color: $color-dark-2 !important;
-  height: 30vh;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
+  
+  
   &__wrapper {
     background-color: $color-dark-2;
     display: flex;
@@ -29,23 +29,28 @@ a:visited {
   }
   &__nav {
     display: flex;
+    flex-direction: column;
     margin: 4rem 4rem 2rem;
     padding-bottom: 2rem;
     justify-content: space-around;
     border-bottom: 1px solid $color-light-2;
     &--name{
+      margin: 0 auto;
       display: flex;
-      width: 55%;
+      margin-top: -1rem;
+      color: $color-light-1;
+      
     }
     &--title{
       display: flex;
       justify-content: space-around;
       width: 45%;
+      
     }
   }
   &__copyright{
-    margin-bottom: 1rem;
-    color:white;
+    padding-bottom: 1rem;
+    color:$color-light-1;
   }
   &__team
   { 
@@ -56,10 +61,32 @@ a:visited {
     margin: 0 auto;
     
     &--mem {
-      width: 25px;
-      height: 25px;
-      background-color: white;
+      width: 35px;
+      height: 35px;
+      background-color: transparent;
       border-radius: 50%;
+      // background-image: url('../../assets/images/guy.png');
+      // background-size: cover;
+      &:hover {
+        width: 75px;
+        height: 75px;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 1s;
+        cursor: pointer;
+      }
+      &--img{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        &:hover {
+          width: 75px;
+          height: 75px;
+          transition-property: all;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration:  1s;
+        }
+      }
     }
   }
 }
