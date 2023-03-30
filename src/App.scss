@@ -12,6 +12,7 @@
         height: 2rem;
         background: radial-gradient(circle at 1.5rem 1.5rem, #7f7f7f, #383737);
         border-radius: 50%;
+        position: absolute;
         
     }
     
@@ -203,5 +204,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }

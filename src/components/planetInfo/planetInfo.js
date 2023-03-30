@@ -15,9 +15,9 @@ const PlanetInfo = ({ data }) => {
 
   return (
     <section className="planet-info">
-      <div className="planet-info__header">
+      {/* <div className="planet-info__header">
         <h1>{data[0].planet_name}</h1>
-      </div>
+      </div> */}
 
       <div className="planet-info__planet-data">
         <div className="planet-info__container">

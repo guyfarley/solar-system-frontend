@@ -44,20 +44,16 @@
         0 0 10px 5px #fbf309;
     position: absolute;
     //to tilt for 3d look
-    //transform: scaleX(.2);
+    // transform: scaleX(.2);
 }
 
 .orbit {
     border-radius: 50%;
     border: 1px rgb(244, 238, 238) dotted;
     position: absolute;
-    // top: 50%;
-    // left: 50%;
-
 }
 
 .orbit {
-
     //each order needs width/height
     //need to transfor planets but it isn't working
     //animation: correcting 12s infinite linear;
@@ -68,6 +64,7 @@
         height: 2rem;
         margin-top: -1rem;
         margin-left: -4%;
+        
     }
 
     &__innerQuarter {
@@ -102,28 +99,26 @@
         height: 100px;
         animation: rotating 3s infinite linear;
 
-
     }
 
     &__venus {
         width: 150px;
         height: 150px;
-        animation: rotating 6s infinite linear;
+        animation: rotating1 6s infinite linear;
 
+        
     }
 
     &__earth {
         width: 200px;
         height: 200px;
-        animation: rotating 6.5s infinite linear;
-
+        animation: rotating2 6.5s infinite linear;
     }
 
     &__mars {
         width: 300px;
         height: 300px;
-        animation: rotating 13s infinite linear;
-
+        animation: rotating3 13s infinite linear;
     }
 
     &__jupiter {
@@ -136,21 +131,21 @@
     &__saturn {
         width: 550px;
         height: 550px;
-        animation: rotating 100s infinite linear;
+        animation: rotating1 100s infinite linear;
 
     }
 
     &__uranus {
         width: 650px;
         height: 650px;
-        animation: rotating 300s infinite linear;
+        animation: rotating2 300s infinite linear;
 
     }
 
     &__neptune {
         width: 700px;
         height: 700px;
-        animation: rotating 600s infinite linear;
+        animation: rotating3 600s infinite linear;
 
     }
 
@@ -253,8 +248,9 @@
             z-index: 10;
             // top: 50%;
             // left: 50%;
-            margin: 0.15rem;
-            animation: maintain 6.5s linear infinite;
+            margin-left: 0.25rem;
+            animation: maintain 2.5s linear infinite;
+          
         }
 
     }
@@ -386,6 +382,7 @@
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
+        
     }
 }
 
@@ -393,23 +390,54 @@
 
 
 
+@keyframes rotating1 {
+    0% {
+        transform: rotateZ(40deg);
+    }
+
+    100% {
+        transform: rotateZ(400deg);
+    }
+
+}
+
+@keyframes rotating2 {
+    0% {
+        transform: rotateZ(90deg);
+    }
+
+    100% {
+        transform: rotateZ(450deg);
+    }
+
+}
+@keyframes rotating3 {
+    0% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(540deg);
+    }
+
+}
 @keyframes rotating {
     0% {
         transform: rotateZ(0deg);
     }
 
     100% {
-        transform: rotateZ(-360deg);
+        transform: rotateZ(360deg);
     }
 
 }
 
 @keyframes maintain {
     0% {
-        transform: rotate(0);
+        transform: rotateX(15deg);
     }
-
+   
     100% {
-        transform: rotate(360deg);
+        transform: rotateX(-15deg);
     }
 }

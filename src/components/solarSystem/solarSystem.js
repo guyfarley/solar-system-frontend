@@ -102,7 +102,12 @@ function SolarSystem() {
         ) : (
           <div className="orbit orbit__earth">
             <div className="orbit__inner">
-              <div className="planet-ea"></div>
+              <div className="planet-ea">
+                <div className="planet-ea--l1"></div>
+                <div className="planet-ea--l2"></div>
+                <div className="planet-ea--l3"></div>
+                <div className="planet-ea--l4"></div>
+              </div>
             </div>
           </div>
         )}

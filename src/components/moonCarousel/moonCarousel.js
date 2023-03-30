@@ -2,7 +2,6 @@ import * as React from "react";
 import { useRef } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./moonCarousel.scss";
@@ -17,7 +16,6 @@ const MoonCarousel = ({ data }) => {
   //let isPlanet = false;
 
   useEffect(() => {
-
     if (data[0].num_moons !== 0) {
       setHasMoons(true);
     }
@@ -45,55 +43,73 @@ const MoonCarousel = ({ data }) => {
 
   return (
     <>
-      <div className="moon-carousel">
+      <div className="moonCarousel">
+        {hasMoons === true && (
+          <>
+            <div className="moonCarousel__header">
+              <h1 className="moonCarousel__header--title">Moons</h1>
+              <h3 className="moonCarousel__header--subtitle">
+                Check out the moons of this planet...
+              </h3>
+            </div>
+            <div className="carousel__container">
+              <div className="slide-container">
+                <ChevronLeftIcon
+                  fontSize="large"
+                  cursor="pointer"
+                  onClick={scrollLeft}
+                ></ChevronLeftIcon>
 
-        {hasMoons === true &&
-
-          (
-            <>
-              <div className="planet__header">
-                {/* <h1 className="planettitle">Moons</h1> */}
-                <h1 className="planet__title">Check out the moons</h1>
-              </div>
-              <div className="carousel__container">
-                <div className="slide-container">
-                  <ChevronLeftIcon
-                    fontSize="large"
-                    cursor="pointer"
-                    onClick={scrollLeft}
-                  ></ChevronLeftIcon>
-
-                  <div className="items-container" ref={listRef}>
-                    {data.map((item) => {
-                      return (
-                        <div key={item.moon_id} className="single-item-container">
-                          <Card sx={{ width: 200, height: 350, bgcolor: "rgb(36, 37, 93)" }}>
-                            {/* <div className="un">
+                <div className="items-container" ref={listRef}>
+                  {data.map((item) => {
+                    return (
+                      <div key={item.moon_id} className="single-item-container">
+                        <Card
+                          sx={{
+                            width: 250,
+                            height: 325,
+                            bgcolor: "rgb(36, 37, 93)",
+                            padding: "1rem",
+                          }}
+                        >
+                          {/* <div className="un">
                   <div className={item.planet_id}>
                     <div className={`${item.planet_id}-l1`}></div>
                     <div className={`${item.planet_id}-l2`}></div>
                   </div>
                 </div> */}
 
-                            <CardContent>
-                              <Typography variant="h5" component="div" color="white">
+                          <CardContent>
+                            <div className="moonCarousel__title">
+                              <p className="moonCarousel__title--label">
+                                NAME:
+                              </p>
+                              <p className="moonCarousel__input--moon">
                                 {item.moon_name}
-                              </Typography>
+                              </p>
+                            </div>
 
-                              <div className="moon-size">
-                                <Typography variant="body2" color="white">
-                                  {`Size: ${item.moon_size} miles`}
-                                </Typography>
-                              </div>
+                            <div className="moonCarousel__title">
+                              <p className="moonCarousel__title--label">
+                                SIZE:
+                              </p>
 
-                              <div className="moon-history">
-                                <Typography variant="body2" color="white">
-                                  {`History of Name: ${item.moon_name_history}`}
-                                </Typography>
-                              </div>
-                            </CardContent>
+                              <p className="moonCarousel__input">
+                                {`${item.moon_size} miles`}
+                              </p>
+                            </div>
 
-                            {/* <CardActions className="button-container">
+                            <div className="moonCarousel__title--history">
+                              <p className="moonCarousel__title--history--label">
+                                HISTORY OF NAME
+                              </p>
+                              <p className="moonCarousel__input">
+                                {item.moon_name_history}
+                              </p>
+                            </div>
+                          </CardContent>
+
+                          {/* <CardActions className="button-container">
                   <Button
                     className="carousel-button"
                     size="small"
@@ -111,23 +127,22 @@ const MoonCarousel = ({ data }) => {
                     Learn More
                   </Button>
                 </CardActions> */}
-                          </Card>
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  <ChevronRightIcon
-                    fontSize="large"
-                    cursor="pointer"
-                    onClick={scrollRight}
-                  ></ChevronRightIcon>
+                        </Card>
+                      </div>
+                    );
+                  })}
                 </div>
+
+                <ChevronRightIcon
+                  fontSize="large"
+                  cursor="pointer"
+                  onClick={scrollRight}
+                ></ChevronRightIcon>
               </div>
-            </>
-          )
-        }
-      </div >
+            </div>
+          </>
+        )}
+      </div>
     </>
   );
 };
