@@ -1,8 +1,13 @@
 import React from "react";
 import "./solarSystem.scss";
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import { PlanetsContext } from "../../context/context";
 
 function SolarSystem() {
+
+  const { clickedPlanets } = useContext(PlanetsContext);
+  console.log(clickedPlanets);
+
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const containerRef = useRef(null);
@@ -83,11 +88,21 @@ function SolarSystem() {
           </div>
         </div>
 
-        <div className="orbit orbit__earth">
-          <div className="orbit__inner">
-            <div className="planet-ea"></div>
+        {clickedPlanets.Earth === true ? (
+          <div className="orbit orbit__earth">
+            <div className="orbit__inner">
+              <div className="planet-ea--label">Earth</div>
+              <div className="planet-ea"></div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="orbit orbit__earth">
+            <div className="orbit__inner">
+              <div className="planet-ea"></div>
+            </div>
+          </div>
+        )
+        }
 
         <div className="orbit orbit__mars">
           <div className="orbit__innerQuarter">
