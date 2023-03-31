@@ -17,7 +17,8 @@ import { PlanetsContext } from "../../context/context";
 
 const Carousel = () => {
 
-  const SERVER = process.env.SERVER || "http://localhost:8080/";
+  const SERVER = process.env.REACT_APP_SERVER;
+  // const SERVER = process.env.SERVER || "http://localhost:8080/";
   // const URL = "http://localhost:8080/";
 
   const [planetData, setPlanetData] = useState([]);
