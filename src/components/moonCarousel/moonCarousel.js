@@ -66,10 +66,11 @@ const MoonCarousel = ({ data }) => {
                       <div key={item.moon_id} className="single-item-container">
                         <Card
                           sx={{
-                            width: 250,
-                            height: 325,
+                            width: 200,
+                            height: 440,
                             bgcolor: "rgb(36, 37, 93)",
-                            padding: "1rem",
+                            padding: ".5rem",
+                            boxShadow: 6
                           }}
                         >
                           {/* <div className="un">

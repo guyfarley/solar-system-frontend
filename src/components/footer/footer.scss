@@ -20,13 +20,14 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  
+
+
   &__wrapper {
     background-color: $color-dark-2;
     display: flex;
     flex-direction: column;
   }
+
   &__nav {
     display: flex;
     flex-direction: column;
@@ -34,37 +35,41 @@ a:visited {
     padding-bottom: 2rem;
     justify-content: space-around;
     border-bottom: 1px solid $color-light-2;
-    &--name{
+
+    &--name {
       margin: -1rem auto 0;
       display: flex;
-      
+
       color: $color-light-1;
-      
+
     }
-    &--title{
+
+    &--title {
       display: flex;
       justify-content: space-around;
       width: 45%;
-      
+
     }
   }
-  &__copyright{
+
+  &__copyright {
     padding-bottom: 1rem;
-    color:$color-light-3;
+    color: $color-light-3;
   }
-  &__team
-  { 
+
+  &__team {
     display: flex;
     justify-content: space-between;
     width: 170px;
     align-items: center;
     margin: 0 auto;
-    
+
     &--mem {
       width: 45px;
       height: 45px;
       background-color: transparent;
       border-radius: 50%;
+
       // background-image: url('../../assets/images/guy.png');
       // background-size: cover;
       &:hover {
@@ -75,16 +80,18 @@ a:visited {
         transition-duration: 1s;
         cursor: pointer;
       }
-      &--img{
+
+      &--img {
         width: 45px;
         height: 45px;
         border-radius: 50%;
+
         &:hover {
           width: 75px;
           height: 75px;
           transition-property: all;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration:  1s;
+          transition-duration: 1s;
         }
       }
     }
