@@ -1,6 +1,7 @@
 import Header from "../../components/header/header.js";
 import PlanetBanner from "../../components/planetBanner/planetBanner.js";
 import PlanetInfo from "../../components/planetInfo/planetInfo.js";
+import IdentifyingFacts from "../../components/identifyingFacts/identifyingFacts.js";
 // import planets from "../../data.js";
 import MoonCarousel from "../../components/moonCarousel/moonCarousel.js";
 import { useParams } from "react-router-dom";
@@ -41,6 +42,7 @@ const Planet = () => {
       <div className="planet">
         <PlanetBanner data={planetData} />
         <PlanetInfo data={planetData} />
+        <IdentifyingFacts data={planetData} />
         <MoonCarousel data={planetData} />
         <Footer />
       </div>
