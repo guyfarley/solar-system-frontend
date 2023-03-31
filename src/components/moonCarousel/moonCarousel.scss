@@ -1,20 +1,6 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-//$layout-breakpoint-small: 800px;
-
-// .moon-carousel {
-//   position: relative;
-//   width: 100%;
-//   max-width: $desktop-width;
-//   //height: 40vh;
-//   // margin: 50vh auto 1rem;
-//   @include tablet {
-//     // margin: 7vh auto 10vh;
-//   }
-
-// }
-
 .moonCarousel {
   position: relative;
   width: 100%;
@@ -71,7 +57,7 @@
   &__input {
     font-size: 1rem;
     color: white;
-    text-align: flex-start;
+    text-align: center;
     line-height: 1.5rem;
 
     &--moon {
@@ -165,16 +151,3 @@ a:visited {
   color: $color-light-2;
   text-decoration: none;
 }
-
-
-// @media (min-width: $layout-breakpoint-small) {
-//   .moon-carousel {
-//     margin: 10vh auto 10vh;
-//   }
-
-//   .planet__header {
-//     text-align: center;
-//     padding-left: 1rem;
-//     margin-bottom: 2rem;
-//   }
-// }

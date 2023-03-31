@@ -1,5 +1,6 @@
 @use "../../styles/variables" as *;
-$layout-breakpoint-small: 800px;
+@use "../../styles/mixins" as *;
+
 
 .planet-info {
   position: relative;
@@ -19,11 +20,19 @@ $layout-breakpoint-small: 800px;
   &__planet-data {
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &__container {
     display: block;
     width: 100%;
+
+    @include tablet {
+      width: 50%;
+    }
   }
 
   &__container-large {
@@ -39,6 +48,10 @@ $layout-breakpoint-small: 800px;
     text-align: start;
     padding: 1rem 0rem 1rem 2rem;
     color: white;
+
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
   }
 
   &__data {
@@ -47,6 +60,10 @@ $layout-breakpoint-small: 800px;
     text-align: start;
     padding: 1rem 0rem 1.5rem 2rem;
     color: black;
+
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
   }
 
   &__title-large {
@@ -57,6 +74,10 @@ $layout-breakpoint-small: 800px;
     text-align: start;
     padding: 1rem 0rem 1rem 2rem;
     color: white;
+
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
   }
 
   &__data-large {
@@ -65,33 +86,9 @@ $layout-breakpoint-small: 800px;
     text-align: start;
     padding: 1rem 0rem 1rem 2rem;
     color: black;
-  }
-}
 
-@media (min-width: $layout-breakpoint-small) {
-  .planet-info__planet-data {
-    flex-direction: row;
-  }
-
-  .planet-info__container {
-    width: 50%;
-  }
-
-  .planet-info__title {
-    padding: 1rem 0rem 1rem 4rem;
-  }
-
-  .planet-info__data {
-    padding: 1rem 0rem 1rem 4rem;
-
-  }
-
-  .planet-info__title-large {
-    padding: 1rem 0rem 1rem 4rem;
-
-  }
-
-  .planet-info__data-large {
-    padding: 1rem 0rem 1rem 4rem;
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
   }
 }

@@ -35,6 +35,25 @@ const Carousel = () => {
 
   const listRef = useRef(null);
 
+
+  // change planet types in database to stringified types for rendering
+  const newPlanets = planetData.map((planet) => {
+    let stringifiedType;
+
+    if (planet.planet_type === "gas_giant") {
+      stringifiedType = "Gas Giant";
+    } else if (planet.planet_type === "terrestrial") {
+      stringifiedType = "Terrestrial";
+    } else if (planet.planet_type === "dwarf_planet") {
+      stringifiedType = "Dwarf Planet";
+    } else if (planet.planet_type === "ice_giant") {
+      stringifiedType = "Ice Giant";
+    }
+
+    return { ...planet, planet_type: stringifiedType }
+  });
+
+
   const handleClick = (name) => {
     window.scrollTo(0, 0);
     // console.log('planet clicked: ', name);
@@ -70,10 +89,10 @@ const Carousel = () => {
       ></ChevronLeftIcon>
 
       <div className="items-container" ref={listRef}>
-        {planetData.map((item) => {
+        {newPlanets.map((item) => {
           return (
             <div key={item.planet_id} className="single-item-container">
-              <Card sx={{ width: 200 }}>
+              <Card sx={{ width: 200, boxShadow: 6 }}>
                 <div className="un">
                   <div className={item.planet_id}>
                     <div className={`${item.planet_id}-l1`}></div>
