@@ -16,14 +16,16 @@ import { useState, useEffect, useContext } from "react";
 import { PlanetsContext } from "../../context/context";
 
 const Carousel = () => {
-  const URL = "http://localhost:8080/";
+
+  const SERVER = process.env.SERVER || "http://localhost:8080/";
+  // const URL = "http://localhost:8080/";
 
   const [planetData, setPlanetData] = useState([]);
   const { updateClickedPlanets } = useContext(PlanetsContext);
 
   const getPlanets2 = async () => {
     try {
-      const response = await axios.get(URL);
+      const response = await axios.get(SERVER);
       setPlanetData(response.data.rows);
     } catch (error) {
       console.error(error);
