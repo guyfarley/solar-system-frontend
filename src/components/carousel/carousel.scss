@@ -1,4 +1,6 @@
 @use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 
 .slide-container {
   display: flex;
@@ -29,6 +31,11 @@
 .button-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+ 
+  @include tablet{
+    flex-direction: row;
+  }
 }
 
 .css-11qr2p8-MuiButtonBase-root-MuiButton-root {
@@ -38,7 +45,8 @@
 .carousel-button {
   // background-color: $color-dark-1 !important;
   color: white !important;
-
+  
+  
   a:visited {
     color: $color-light-2;
   }

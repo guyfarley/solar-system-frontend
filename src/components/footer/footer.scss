@@ -1,4 +1,6 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 
 a:link {
   color: white;
@@ -20,56 +22,75 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
+  max-width: $lgScreen-width;
+  margin: 0 auto;
+  
   &__wrapper {
     background-color: $color-dark-2;
     display: flex;
     flex-direction: column;
   }
-
   &__nav {
     display: flex;
     flex-direction: column;
-    margin: 4rem 4rem 2rem;
-    padding-bottom: 2rem;
+    margin: 2rem 2rem 2rem;
+    padding-bottom: 1rem;
     justify-content: space-around;
     border-bottom: 1px solid $color-light-2;
-
-    &--name {
-      margin: -1rem auto 0;
-      display: flex;
-
-      color: $color-light-1;
-
+    align-items: center;
+    @include tablet {
+      padding-bottom: 2rem;
+      margin: 4rem 4rem 2rem;
     }
-
-    &--title {
+    
+    @include tablet {
+      align-items: start;
+    }
+   
+    &--name{
       display: flex;
+      color: $color-light-1;
+      margin: 1rem auto 0;
+      @include tablet {
+        margin: -1rem auto 0;
+      }
+      
+     
+      
+    }
+    &--title{
+      display: flex;
+      flex-direction: column;
       justify-content: space-around;
       width: 45%;
-
+      @include tablet {
+        flex-direction: row;
+      }
+      &--link {
+        margin-bottom: .75rem;
+        @include tablet {
+          margin-bottom: 0;
+        }
+      }
     }
   }
-
-  &__copyright {
+  &__copyright{
     padding-bottom: 1rem;
-    color: $color-light-3;
+    color:$color-light-3;
   }
-
-  &__team {
+  &__team
+  { 
     display: flex;
     justify-content: space-between;
     width: 170px;
     align-items: center;
     margin: 0 auto;
-
+    
     &--mem {
       width: 45px;
       height: 45px;
       background-color: transparent;
       border-radius: 50%;
-
       // background-image: url('../../assets/images/guy.png');
       // background-size: cover;
       &:hover {
@@ -80,18 +101,16 @@ a:visited {
         transition-duration: 1s;
         cursor: pointer;
       }
-
-      &--img {
+      &--img{
         width: 45px;
         height: 45px;
         border-radius: 50%;
-
         &:hover {
           width: 75px;
           height: 75px;
           transition-property: all;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration: 1s;
+          transition-duration:  1s;
         }
       }
     }

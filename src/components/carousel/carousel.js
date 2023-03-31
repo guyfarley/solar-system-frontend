@@ -35,7 +35,6 @@ const Carousel = () => {
 
   const listRef = useRef(null);
 
-
   // change planet types in database to stringified types for rendering
   const newPlanets = planetData.map((planet) => {
     let stringifiedType;
@@ -50,15 +49,14 @@ const Carousel = () => {
       stringifiedType = "Ice Giant";
     }
 
-    return { ...planet, planet_type: stringifiedType }
+    return { ...planet, planet_type: stringifiedType };
   });
-
 
   const handleClick = (name) => {
     window.scrollTo(0, 0);
     // console.log('planet clicked: ', name);
     updateClickedPlanets(name);
-  }
+  };
 
   const scrollLeft = () => {
     if (listRef.current) {

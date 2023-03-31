@@ -15,6 +15,14 @@ const PlanetInfo = ({ data }) => {
     planetType = "Ice Giant";
   }
 
+  //function to put spaces in the number data every three characters
+  function numberWithSpaces(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+
+  let size = numberWithSpaces(data[0].distance_from_sun);
+  let distance = numberWithSpaces(data[0].planet_size);
+
   return (
     <section className="planet-info">
       {/* <div className="planet-info__header">
@@ -24,11 +32,11 @@ const PlanetInfo = ({ data }) => {
       <div className="planet-info__planet-data">
         <div className="planet-info__container">
           <div className="planet-info__title">Planet Size (Diameter)</div>
-          <div className="planet-info__data">{`${data[0].planet_size} miles`}</div>
+          <div className="planet-info__data">{distance} miles</div>
         </div>
         <div className="planet-info__container">
           <div className="planet-info__title">Distance from Sun</div>
-          <div className="planet-info__data">{`${data[0].distance_from_sun} miles`}</div>
+          <div className="planet-info__data">{size} miles</div>
         </div>
       </div>
 

@@ -1,12 +1,16 @@
 @use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 
 .explore {
     padding: 2rem;
     max-width: $desktop-width;
     margin: 1rem auto;
+    
     &__header {
         font-size: 3rem;
         text-align: start;
+        
     }
     &__subhead {
         font-size: 1.25rem;

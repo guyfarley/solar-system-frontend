@@ -13,13 +13,13 @@ const Footer = () => {
         <div className="footer__nav">
           <div className="footer__nav--title">
             <Link smooth to="/#explore-planets">
-              <h4>Planets</h4>
+              <h4 className="footer__nav--title--link">Planets</h4>
             </Link>
             <Link smooth to="/#fun-facts">
-              <h4>Fun Facts</h4>
+              <h4 className="footer__nav--title--link">Fun Facts</h4>
             </Link>
             <Link smooth to="/#resources">
-              <h4>Resources</h4>
+              <h4 className="footer__nav--title--link">Resources</h4>
             </Link>
           </div>
           <div className="footer__nav--name">
@@ -29,7 +29,7 @@ const Footer = () => {
                 fill: "$color-light-1",
               }}
             />
-            <h3>TEAM PLUTO</h3>
+            <h3 className="footer__nav--title--link"> TEAM PLUTO</h3>
           </div>
         </div>
         <div className="footer__team">

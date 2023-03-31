@@ -70,7 +70,7 @@ const MoonCarousel = ({ data }) => {
                             height: 440,
                             bgcolor: "rgb(36, 37, 93)",
                             padding: ".5rem",
-                            boxShadow: 6
+                            boxShadow: 6,
                           }}
                         >
                           {/* <div className="un">

@@ -1,21 +1,19 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 
 .resources {
     background-color: $color-dark-3;
     width: 100%;
     height: 100%;
     padding: 3rem;
-    //max-width: $desktop-width;
+    max-width: $lgScreen-width;
     margin: 1rem auto;
     position: relative;
 
     &__header {
         font-size: 3rem;
-        margin-top: 46px;
-        position: sticky;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
+       
     }
 
     &__title {
@@ -34,42 +32,67 @@
     }
 
     &__div-parent-wrapper {
-        z-index: 999;
         margin-top: 3rem;
-        height: 500px;
-        position: inherit;
+      
     }
 
     &__div-child-wrapper {
-        margin-bottom: 5rem;
         height: 50%;
         display: flex;
         justify-content: space-between;
+        @include tablet {
+            margin-bottom: 5rem;
+        }
+   
     }
 
     &__div1 {
         width: 100%;
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            flex-direction: row;
+        }
+        
+        
     }
 
     &__div2 {
-        width: 40%;
         display: flex;
         justify-content: space-between;
+        @include tablet {
+            width: 10%;
+        }
+        @include desktop {
+            width: 30%;
+        }
+       
+       
     }
 }
 
 .resourceCard {
-    width: 18rem;
-    height: 12rem;
+    margin-bottom: 1rem;
+    width: 22rem;
+    height: 14rem;
     border-radius: 10px;
     box-shadow: 0 25px 50px -12px rgba(240, 237, 237, 0.25);
-    ;
+    overflow: hidden;
+    @include tablet {
+        margin-bottom: 0;
 
+    }
     &__img {
         border-radius: 10px;
         width: 100%;
         height: 100%;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+        &:hover {
+            transform: scale(1.5,1.5);
+        }
     }
 }

@@ -1,3 +1,6 @@
+@use '../../styles/mixins' as *;
+
+
 .planet-banner {
     position: relative;
     background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url("../../assets/images/stars2.jpg");
@@ -17,7 +20,14 @@
         color: white;
         position:absolute;
         left: 10%;
-        bottom: 25%;
+        bottom: 10%;
+        @include tablet {
+            font-size: 5rem;
+            color: white;
+            position:absolute;
+            left: 10%;
+            bottom: 25%;
+        }
     }
     
 }

@@ -1,8 +1,15 @@
 @use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 
 .planet {
-    padding: 2rem;
+    //padding: 2rem;
     max-width: $desktop-width;
-    margin: 1rem auto;
+    margin: 1rem auto 0;
+    @include tablet {
+        padding: 2rem;
+        margin: 1rem auto;
+    }
+   
 
 }
