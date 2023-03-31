@@ -32,8 +32,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
- 
-  @include tablet{
+
+  @include tablet {
     flex-direction: row;
   }
 }
@@ -45,11 +45,13 @@
 .carousel-button {
   // background-color: $color-dark-1 !important;
   color: white !important;
-  
-  
+  margin-bottom: 5px !important;
+
+
   a:visited {
     color: $color-light-2;
   }
+
 }
 
 // a:link {
