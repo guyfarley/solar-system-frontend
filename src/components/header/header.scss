@@ -1,0 +1,23 @@
+@use "../../styles/variables" as *;
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $color-light-2;
+  text-decoration: none;
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: $color-light-1;
+}
+
+.header {
+  background-color: $color-dark-2 !important;
+
+  &__container {
+    background-color: $color-dark-2;
+  }
+}

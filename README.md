@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Team Pluto: Learn about the Solar System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hackathon project: Create a full-stack application with the following requirements:
+Requirements:
+PLANETS
+-- Each planet of the solar system must have its own profile page.
+-- Each page must include at a minimum (Name of the planet, size, distance from the Sun, three identifying facts, solid or gas core, and a visual representation of the planet)
+-- NOTE: No images, assets, emojis, or SVGs are permitted. The visual representation of each planet must be made ENTIRELY out of CSS.
+-- If the planet has a moon, you must display the following information for every moon (Name, history behind name, and size).
+-- Planet pages must include at least two different component styles.
+-- If a planet has more than one moon, the moon information must be displayed in repeating elements.
+-- All planet and moon content MUST be stored in a database.
 
-## Available Scripts
+Backend:
+-- You must use foreign keys.
+-- Planets and Moons must be stored separate from one another.
+-- You must incorporate one ENUM for the planet data.
+-- ENUM used for the planet data is the type of planet: dwarf planet, ice, terrestrial, gas
 
-In the project directory, you can run:
+Homepage:
+-- The homepage should be an overview of the solar system.
+-- The data included will be up to each team.
+-- The homepage must include at least two components that are NOT used on any planet page.
+-- Homepage content does not need to be stored in a database and can be coded into your components.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚒️ Tools
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ul>
+<li>React</li>
+<li>Express</li>
+<li>Axios</li>
+<li>Sass</li>
+<li>MUI</li>
+<li>MySQL</li>
+<li>AWS</li>
+</ul>
 
-### `npm test`
+## 👩‍💻 Installation Steps : Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. To start using this app you first need to clone the repository:
 
-### `npm run build`
+git clone git@github.com:guyfarley/solar-system-frontend.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Then you will need to install all the required packages for the application. Run this command (if you're using npm):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm i
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Run the frontend by the following command
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Clone and run the backend by going to the following repo:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://github.com/guyfarley/solar-system-backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5.  Following the README file within the backend repo to clone and run the backend.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🖊️ Wireframe
+https://www.figma.com/file/SKLo9xQkuOUE3LnJN2Jczx/SolarSystemHackathon?node-id=0%3A1&t=TJt5GIPi0GyAOFmV-1
 
-## Learn More
+## 📸 Images
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎥 Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚀 Team

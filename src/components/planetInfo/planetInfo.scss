@@ -1,0 +1,93 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+
+.planet-info {
+  position: relative;
+  width: 100%;
+  //height: 40vh;
+  max-width: $desktop-width;
+  margin: 4rem auto 1rem;
+
+  &__header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: start;
+    // position: relative;
+    margin: 1rem;
+  }
+
+  &__planet-data {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__container {
+    display: block;
+    width: 100%;
+
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &__container-large {
+    display: block;
+    width: 100%;
+  }
+
+  &__title {
+    color:white;
+    background-color: black;
+    width: 100%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: start;
+    padding: 1rem 0rem 1rem 2rem;
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
+  }
+
+  &__data {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: start;
+    padding: 1rem .5rem;
+    color: black;
+    line-height: 2rem;
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
+  }
+
+  &__title-large {
+    background-color: black;
+    width: 100%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: start;
+    padding: 1rem 0rem 1rem 2rem;
+    color: white;
+
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
+  }
+
+  &__data-large {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: start;
+    padding: 1rem 0rem 1rem 2rem;
+    color: black;
+
+    @include tablet {
+      padding: 1rem 0rem 1rem 4rem;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.moonCarousel {
+  position: relative;
+  width: 100%;
+  max-width: $desktop-width;
+  margin-bottom: 3rem;
+
+  @include tablet {}
+
+  &__header {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    
+
+    &--title {
+      font-size: 3rem;
+      text-align: flex-start;
+      color: $color-dark-3;
+      text-align: flex-start;
+    }
+
+    &--subtitle {
+      font-size: 1.25rem;
+      text-align: flex-start;
+      margin: 1.5rem 2rem 2rem;
+      color: $color-dark-3;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: .5rem 0;
+
+    &--history {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: baseline;
+
+      &--label {
+        align-items: center;
+        margin: .5rem auto .25rem;
+        color: $color-light-1;
+      }
+    }
+
+    &--label {
+      font-size: .75rem;
+      margin-right: 1rem;
+      color: $color-light-1;
+    }
+  }
+
+  &__input {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+
+    &--moon {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+}
+
+.slide-container {
+  display: flex;
+  align-items: center;
+  max-width: 80rem;
+  overflow-y: auto;
+}
+
+.single-item-container {
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  // min-width: 10rem;
+}
+
+.items-container {
+  display: flex;
+  overflow-y: hidden;
+  justify-content: flex-start;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.items-container::-webkit-scrollbar {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-11qr2p8-MuiButtonBase-root-MuiButton-root {
+  background-color: $color-dark-2 !important;
+}
+
+.moon-size {
+  margin-top: 1rem;
+  text-align: flex-start;
+
+  &-history {
+    margin-top: .5rem;
+    text-align: flex-start;
+  }
+}
+
+.carousel__container {
+  display: flex;
+  justify-content: center;
+}
+
+.planet__header {
+  // font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+
+  // position: relative;
+  @include tablet {
+    text-align: center;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    text-align: flex-start;
+  }
+}
+
+.no-moons {
+  font-size: 3rem;
+  text-align: flex-start;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $color-light-2;
+  text-decoration: none;
+}
