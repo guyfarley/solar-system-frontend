@@ -1,6 +1,10 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 a:link {
+  @include tablet {
+    color:$color-light-1;
+  }
   color: white;
   text-decoration: none;
 }
@@ -19,5 +23,16 @@ a:visited {
 
   &__container {
     background-color: $color-dark-2;
+  }
+}
+
+.nav{
+  &__planets {
+    font-family: $font-primary;
+    text-align: center;
+    color:$color-dark-2;
+    @include desktop{
+      color:white;
+    }
   }
 }
