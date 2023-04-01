@@ -6,7 +6,7 @@
 
 - Guy Farley
 - Kayle Robson
-- Luna
+- Madison Brown 
 
 ## How to Run This Application
 
