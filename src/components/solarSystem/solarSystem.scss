@@ -1,24 +1,21 @@
+@use "../../styles/mixins" as *;
+
 .universe {
     position: relative;
     background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars.png');
-    //background: #0000006b;
     background-size: 100%;
     width: 100%;
-    //max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     height: 80vh;
     overflow: hidden;
     padding-top: 4rem;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+  
 
 }
 
 .solarSystem {
     padding-top: 2rem;
-    //background: #0000009e;
     width: 100%;
     height: 100%;
     display: flex;
