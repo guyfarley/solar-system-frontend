@@ -45,11 +45,12 @@ function SolarSystem() {
   //handle move from mobile move
   //doesn"t work
   const handleTouchMove = (e) => {
+    //prevent default so I can move the container
     e.preventDefault();
+    //turn draggin to true so that I can target container and move
     setDragging(true);
     const container = containerRef.current;
-    //here is the new code
-    //const touch = e.touches[0];
+
     const offsetX = container.offsetLeft - e.changedTouches[0].clientX;
     const offsetY = container.offsetTop - e.changedTouches[0].clientY;
 
