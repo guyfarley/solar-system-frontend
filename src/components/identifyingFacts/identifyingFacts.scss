@@ -78,7 +78,8 @@ $layout-breakpoint-small: 800px;
             color:white;
             //margin-left: 10%;
             margin-bottom: 2%;
-            background-color: $color-dark-2;
+            background: radial-gradient(circle at 2rem 2rem, #f0f0e6, $color-dark-2);
+            // background-color: $color-dark-2;
             float: left;
             border-radius: 50%;
             height: 200px;
@@ -95,6 +96,8 @@ $layout-breakpoint-small: 800px;
             margin-left: 10%;
             margin-bottom: 10%;
             background-color: $color-dark-2;
+            background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
+
             float: left;
             border-radius: 50%;
             height: 200px;
@@ -115,6 +118,8 @@ $layout-breakpoint-small: 800px;
         text-align: center;
         color:white;
         background-color: $color-dark-2;
+        background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
+
         border-radius: 50%;
         height: 200px;
         width: 200px;
@@ -127,6 +132,8 @@ $layout-breakpoint-small: 800px;
             //margin-left: 10%;
             margin-bottom: 2%;
             background-color: $color-dark-2;
+            background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
+
             float: left;
             border-radius: 50%;
             height: 200px;
@@ -143,6 +150,8 @@ $layout-breakpoint-small: 800px;
             margin: 0 auto;
             margin-top: 10%;
             background-color: $color-dark-2;
+            background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
+
             border-radius: 50%;
             height: 200px;
             width: 200px;
@@ -161,6 +170,8 @@ $layout-breakpoint-small: 800px;
         text-align: center;
         color:white;
         background-color: $color-dark-2;
+        background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
+
         border-radius: 50%;
         height: 200px;
         width: 200px;
