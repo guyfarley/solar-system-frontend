@@ -4,31 +4,19 @@
 $layout-breakpoint-small: 800px;
 
 .identifying-facts {
-    //mobile
-  
-    //position: relative;
-    //width: 100%;
-    //max-width: $desktop-width;
     margin: 4em auto 1rem;
-    //tablet
-
-    //desktop
-  
 
     &__header {
         font-size: 3rem;
         margin-top: 2.5rem;
 
         &--title {
-            
             font-size: 3rem;
             text-align: flex-start;
             color: $color-dark-3;
             text-align: flex-start;
             margin-bottom: 3%;
-            // @include tablet {
-            //     color: $color-light-1;
-            // }
+         
         }
     }
 
@@ -38,19 +26,22 @@ $layout-breakpoint-small: 800px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 2rem;
         //width: 100%;
         //margin-bottom: 6%;
-        
+
         //tablet
         @include tablet {
             display: flex;
             flex-direction: column;
 
         }
+
         //desktop
         @include desktop {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             width: 100%;
             margin-bottom: 6%;
             align-items: center;
@@ -65,8 +56,9 @@ $layout-breakpoint-small: 800px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color:white;
-        background-color: $color-dark-2;
+        color: white;
+        // background-color: $color-dark-2;
+        background: radial-gradient(circle at .4rem .4rem, #1eb10de2, #194f1c);
         border-radius: 50%;
         height: 200px;
         width: 200px;
@@ -75,10 +67,9 @@ $layout-breakpoint-small: 800px;
         //tablet
         @include tablet {
             padding: 2%;
-            color:white;
+            color: white;
             //margin-left: 10%;
             margin-bottom: 2%;
-            background: radial-gradient(circle at 2rem 2rem, #f0f0e6, $color-dark-2);
             // background-color: $color-dark-2;
             float: left;
             border-radius: 50%;
@@ -92,16 +83,14 @@ $layout-breakpoint-small: 800px;
         //desktop
         @include desktop {
             padding: 2%;
-            color:white;
+            color: white;
             margin-left: 10%;
             margin-bottom: 10%;
-            background-color: $color-dark-2;
-            background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
-
+            // background-color: $color-dark-2;
             float: left;
             border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            height: 18vw;
+            width: 18vw;
             display: flex;
             align-items: center;
             text-align: center;
@@ -116,10 +105,9 @@ $layout-breakpoint-small: 800px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color:white;
-        background-color: $color-dark-2;
-        background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
-
+        color: white;
+        background: radial-gradient(circle at 1rem 1rem, #889da5, rgb(16, 16, 17));
+        // background-color: $color-dark-2;
         border-radius: 50%;
         height: 200px;
         width: 200px;
@@ -128,12 +116,10 @@ $layout-breakpoint-small: 800px;
         //tablet
         @include tablet {
             padding: 2%;
-            color:white;
+            color: white;
             //margin-left: 10%;
             margin-bottom: 2%;
-            background-color: $color-dark-2;
-            background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
-
+            // background-color: $color-dark-2;
             float: left;
             border-radius: 50%;
             height: 200px;
@@ -146,15 +132,13 @@ $layout-breakpoint-small: 800px;
         //desktop
         @include desktop {
             padding: 2%;
-            color:white;
+            color: white;
             margin: 0 auto;
             margin-top: 10%;
-            background-color: $color-dark-2;
-            background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
-
+            // background-color: $color-dark-2;
             border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            height: 18vw;
+            width: 18vw;
             display: flex;
             align-items: center;
             text-align: center;
@@ -168,10 +152,9 @@ $layout-breakpoint-small: 800px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color:white;
-        background-color: $color-dark-2;
-        background: radial-gradient(circle at 2rem 2rem, $color-light-3, $color-dark-2);
-
+        color: white;
+        background: radial-gradient(circle at .75rem .75rem, #146caf, rgb(10, 10, 107));
+        // background-color: $color-dark-2;
         border-radius: 50%;
         height: 200px;
         width: 200px;
@@ -180,8 +163,8 @@ $layout-breakpoint-small: 800px;
         //tablet
         @include tablet {
             padding: 2%;
-            color:white;
-            background-color: $color-dark-2;
+            color: white;
+            // background-color: $color-dark-2;
             float: left;
             border-radius: 50%;
             height: 200px;
@@ -194,12 +177,12 @@ $layout-breakpoint-small: 800px;
         //desktop
         @include desktop {
             padding: 2%;
-            color:white;
+            color: white;
             float: right;
-            background-color: $color-dark-2;
+            // background-color: $color-dark-2;
             border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            height: 18vw;
+            width: 18vw;
             display: flex;
             align-items: center;
             text-align: center;
