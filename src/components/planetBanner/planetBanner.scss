@@ -33,197 +33,196 @@
 }
 
 
-.pl {
-    &-me {
-        width: 2rem;
-        height: 2rem;
-        background: radial-gradient(circle at 1.5rem 1.5rem, #7f7f7f, #383737);
-        border-radius: 50%;
+// .pl {
+//     &-me {
+//         width: 2rem;
+//         height: 2rem;
+//         background: radial-gradient(circle at 1.5rem 1.5rem, #7f7f7f, #383737);
+//         border-radius: 50%;
         
-    }
+//     }
     
-    &-ve {
-        width: 5rem;
-        height: 5rem;
-        background: #e1a605;
-        background: radial-gradient(circle at 3rem 3rem, #f8c53ac2, #bb9b66, #070707);
-        border-radius: 50%;
+//     &-ve {
+//         width: 5rem;
+//         height: 5rem;
+//         background: #e1a605;
+//         background: radial-gradient(circle at 3rem 3rem, #f8c53ac2, #bb9b66, #070707);
+//         border-radius: 50%;
         
-    }
+//     }
     
-    &-ea {
-        width: 5rem;
-        height: 5rem;
-        background: radial-gradient(circle at 2rem 1rem, #f5f7f5, #1d03a1);
-        border-radius: 50%;
-        position: relative;
+//     &-ea {
+//         width: 5rem;
+//         height: 5rem;
+//         background: radial-gradient(circle at 2rem 1rem, #f5f7f5, #1d03a1);
+//         border-radius: 50%;
+//         position: relative;
         
-        &-l1 {
-            background-color: rgb(48, 114, 22);
-            border-radius: 50%;
-            filter: blur(10px);
-            width: 25%;
-            height: 50%;
-            top: 30%;
-            left: 20%;
-            box-shadow:
-            -2px 2px 5px 1px rgb(48, 114, 22);
-            position: absolute;
-        }
+//         &-l1 {
+//             background-color: rgb(48, 114, 22);
+//             border-radius: 50%;
+//             filter: blur(10px);
+//             width: 25%;
+//             height: 50%;
+//             top: 30%;
+//             left: 20%;
+//             box-shadow:
+//             -2px 2px 5px 1px rgb(48, 114, 22);
+//             position: absolute;
+//         }
         
-        &-l2 {
-            background-color: rgb(48, 114, 22);
-            filter: blur(10px);
-            border-radius: 40%;
-            width: 60%;
-            height: 30%;
-            position: absolute;
-            top: 20%;
-            left: 30%;
-            box-shadow:
-            2px -2px 5px 1px rgb(48, 114, 22);
-            position: absolute;
-        }
+//         &-l2 {
+//             background-color: rgb(48, 114, 22);
+//             filter: blur(10px);
+//             border-radius: 40%;
+//             width: 60%;
+//             height: 30%;
+//             position: absolute;
+//             top: 20%;
+//             left: 30%;
+//             box-shadow:
+//             2px -2px 5px 1px rgb(48, 114, 22);
+//             position: absolute;
+//         }
         
-        &-l3 {
-            background-color: rgb(247, 250, 246);
-            filter: blur(8px);
-            border-radius: 40%;
-            width: 99%;
-            height: 5%;
-            position: absolute;
-            top: 20%;
-            left: 1%;
-            box-shadow:
-            2px -2px 5px 1px rgb(250, 251, 250);
-            position: absolute;
-        }
+//         &-l3 {
+//             background-color: rgb(247, 250, 246);
+//             filter: blur(8px);
+//             border-radius: 40%;
+//             width: 99%;
+//             height: 5%;
+//             position: absolute;
+//             top: 20%;
+//             left: 1%;
+//             box-shadow:
+//             2px -2px 5px 1px rgb(250, 251, 250);
+//             position: absolute;
+//         }
         
-        &-l4 {
-            background-color: rgb(247, 250, 246);
-            filter: blur(8px);
-            border-radius: 40%;
-            width: 99%;
-            height: 5%;
-            position: absolute;
-            top: 70%;
-            left: 1%;
-            box-shadow:
-            2px -2px 5px 1px rgb(250, 251, 250);
-            position: absolute;
-        }
+//         &-l4 {
+//             background-color: rgb(247, 250, 246);
+//             filter: blur(8px);
+//             border-radius: 40%;
+//             width: 99%;
+//             height: 5%;
+//             position: absolute;
+//             top: 70%;
+//             left: 1%;
+//             box-shadow:
+//             2px -2px 5px 1px rgb(250, 251, 250);
+//             position: absolute;
+//         }
         
-    }
+//     }
     
-    &-ma {
-        width: 2.7rem;
-        height: 2.7rem;
-        background: radial-gradient(circle at 2rem 2rem, #e82020, #5e301e);
-        border-radius: 50%;
-    }
+//     &-ma {
+//         width: 2.7rem;
+//         height: 2.7rem;
+//         background: radial-gradient(circle at 2rem 2rem,  #e82020,#e95f0ad2, #5e301e);
+//         border-radius: 50%;
+//     }
     
-    &-ju {
-        width: 11rem;
-        height: 11rem;
-        //background: #edbe48;
-        background: radial-gradient(circle at 2rem 3rem, #edbe48, #383737);
-        position: relative;
-        border-radius: 50%;
+//     &-ju {
+//         width: 11rem;
+//         height: 11rem;
+//         background: radial-gradient(circle at 2rem 3rem, #edbe48, #383737);
+//         position: relative;
+//         border-radius: 50%;
         
-        &-l1 {
+//         &-l1 {
             
-            background-color: white;
-            filter: blur(5px);
-            width: 100%;
-            height: 2%;
-            top: 30%;
-            right: 1%;
-            box-shadow:
-            2px 10px 5px 2px #866102;
-            position: absolute;
-        }
+//             background-color: white;
+//             filter: blur(5px);
+//             width: 100%;
+//             height: 2%;
+//             top: 30%;
+//             right: 1%;
+//             box-shadow:
+//             2px 10px 5px 2px #866102;
+//             position: absolute;
+//         }
         
-        &-l2 {
-            background-color: white;
-            filter: blur(5px);
-            width: 100%;
-            height: 2%;
-            position: absolute;
-            top: 60%;
-            right: 1%;
-            box-shadow:
-            2px 10px 5px 2px #866102;
-            position: absolute;
-        }
+//         &-l2 {
+//             background-color: white;
+//             filter: blur(5px);
+//             width: 100%;
+//             height: 2%;
+//             position: absolute;
+//             top: 60%;
+//             right: 1%;
+//             box-shadow:
+//             2px 10px 5px 2px #866102;
+//             position: absolute;
+//         }
         
-    }
+//     }
     
-    &-sa {
-        width: 7rem;
-        height: 7rem;
-        background: radial-gradient(circle at 4rem 1rem, #f8f3eb, #f5cf97);
-        border-radius: 50%;
-        position: relative;
+//     &-sa {
+//         width: 7rem;
+//         height: 7rem;
+//         background: radial-gradient(circle at 4rem 1rem, #f8f3eb, #f5cf97);
+//         border-radius: 50%;
+//         position: relative;
         
-        &-l1 {
-            background-color: white;
-            filter: blur(7px);
-            width: 100%;
-            height: 2%;
-            top: 15%;
-            right: 1%;
-            box-shadow:
-            2px 10px 5px 2px #866102;
-            position: absolute;
-        }
+//         &-l1 {
+//             background-color: white;
+//             filter: blur(7px);
+//             width: 100%;
+//             height: 2%;
+//             top: 15%;
+//             right: 1%;
+//             box-shadow:
+//             2px 10px 5px 2px #866102;
+//             position: absolute;
+//         }
         
-        &-l2 {
-            background-color: white;
-            filter: blur(7px);
-            width: 100%;
-            height: 2%;
-            position: absolute;
-            top: 70%;
-            right: 1%;
-            box-shadow:
-            2px 10px 5px 2px #866102;
-            position: absolute;
-        }
+//         &-l2 {
+//             background-color: white;
+//             filter: blur(7px);
+//             width: 100%;
+//             height: 2%;
+//             position: absolute;
+//             top: 70%;
+//             right: 1%;
+//             box-shadow:
+//             2px 10px 5px 2px #866102;
+//             position: absolute;
+//         }
         
-        &-l3 {
-            width: 1.4rem;
-            height: 1.4rem;
-            background: radial-gradient(circle at center, white, transparent 80%), conic-gradient(from 25deg, transparent 35deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent 280deg, transparent 353deg);
-            border-radius: 50%;
-            transform: scaleX(9);
-            margin: 3rem;
-            position: absolute;
+//         &-l3 {
+//             width: 1.4rem;
+//             height: 1.4rem;
+//             background: radial-gradient(circle at center, white, transparent 80%), conic-gradient(from 25deg, transparent 35deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent 280deg, transparent 353deg);
+//             border-radius: 50%;
+//             transform: scaleX(9);
+//             margin: 3rem;
+//             position: absolute;
             
-        }
+//         }
         
-    }
+//     }
     
-    &-ur {
-        width: 6rem;
-        height: 6rem;
-        background: radial-gradient(circle at 4rem 3rem, #889da5, rgb(16, 16, 17));
-        border-radius: 50%;
+//     &-ur {
+//         width: 6rem;
+//         height: 6rem;
+//         background: radial-gradient(circle at 4rem 3rem, #889da5, rgb(16, 16, 17));
+//         border-radius: 50%;
         
-    }
+//     }
     
-    &-ne {
-        width: 6rem;
-        height: 6rem;
-        background: radial-gradient(circle at 3rem 2rem, #7039f0, rgb(16, 16, 17));
-        border-radius: 50%;
+//     &-ne {
+//         width: 6rem;
+//         height: 6rem;
+//         background: radial-gradient(circle at 3rem 2rem, #7039f0, rgb(16, 16, 17));
+//         border-radius: 50%;
         
-    }
+//     }
     
-    &-pl {
-        width: 1.5rem;
-        height: 1.5rem;
-        background: radial-gradient(circle at .25rem 1rem, rgb(244, 208, 154), rgb(11, 11, 11));
-        border-radius: 50%;
+//     &-pl {
+//         width: 1.5rem;
+//         height: 1.5rem;
+//         background: radial-gradient(circle at .25rem 1rem, rgb(244, 208, 154), rgb(11, 11, 11));
+//         border-radius: 50%;
         
-    }
-}
+//     }
+//}

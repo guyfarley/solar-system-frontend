@@ -10,7 +10,7 @@
     &-me {
         width: 2rem;
         height: 2rem;
-        background: radial-gradient(circle at 1.5rem 1.5rem, #7f7f7f, #383737);
+        background: radial-gradient(circle at 1.5rem 1.5rem,#333232, #7f7f7f, #383737);
         border-radius: 50%;
         position: absolute;
         
@@ -89,7 +89,8 @@
     &-ma {
         width: 2.7rem;
         height: 2.7rem;
-        background: radial-gradient(circle at 2rem 2rem, #e82020, #5e301e);
+        background: radial-gradient(circle at 2rem 2rem,  #e82020,#e9600ae2, #5e301e);
+        //background: radial-gradient(circle at 2rem 2rem, #e82020,#f8c53ac2 #5e301e);
         border-radius: 50%;        
     }
     
@@ -165,7 +166,7 @@
             transform: scaleX(9);
             margin: 3rem;
             position: absolute;
-
+            
         }
         
     }
@@ -175,6 +176,41 @@
         height: 6rem;
         background: radial-gradient(circle at 4rem 3rem, #889da5, rgb(16, 16, 17));
         border-radius: 50%;
+        position: relative;
+        
+        &-l1 {
+            
+            background-color: white;
+            filter: blur(9px);
+            height: 80%;
+            width: 2%;
+            // top: 0;
+            right: 80%;
+            box-shadow:
+            2px 10px 5px 2px #eef0f0;
+            position: absolute;
+        }
+        
+        &-l2 {
+            background-color: white;
+            filter: blur(8px);
+            height: 95%;
+            width: 2%;
+            right: 25%;
+            box-shadow:
+            2px 10px 5px 2px #028186;
+            position: absolute;
+        }
+        &-l3 {
+            background-color: white;
+            filter: blur(5px);
+            height: 95%;
+            width: 1%;
+            right: 50%;
+            box-shadow:
+            2px 10px 5px 2px #028186;
+            position: absolute;
+        }
         
     }
     
