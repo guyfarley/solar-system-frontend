@@ -48,7 +48,7 @@ const Resources = () => {
           <div className="resources__div1">
             {" "}
             <a
-              href="https://www.youtube.com/watch?v=libKVRa01L8"
+              href="https://www.youtube.com/watch?v=Vb2ZXRh74WU"
               target="_blank"
               rel="noreferrer"
             >
@@ -61,7 +61,7 @@ const Resources = () => {
               </div>
             </a>
             <a
-              href="https://www.youtube.com/watch?v=Vb2ZXRh74WU"
+              href="https://www.youtube.com/watch?v=libKVRa01L8"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,11 +1,19 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 $layout-breakpoint-small: 800px;
 
 .identifying-facts {
-    position: relative;
-    width: 100%;
-    max-width: $desktop-width;
+    //mobile
+  
+    //position: relative;
+    //width: 100%;
+    //max-width: $desktop-width;
     margin: 4em auto 1rem;
+    //tablet
+
+    //desktop
+  
 
     &__header {
         font-size: 3rem;
@@ -18,13 +26,28 @@ $layout-breakpoint-small: 800px;
             color: $color-dark-3;
             text-align: flex-start;
             margin-bottom: 3%;
+            // @include tablet {
+            //     color: $color-light-1;
+            // }
         }
     }
 
     &__container {
+        //mobile
         display: flex;
-        width: 100%;
-        margin-bottom: 6%;
+        flex-direction: column;
+        //width: 100%;
+        //margin-bottom: 6%;
+        
+        //tablet
+        @include tablet {
+
+
+        }
+        //desktop
+        @include desktop {
+            flex-direction: row;
+        }
     }
 
     &__data1 {
