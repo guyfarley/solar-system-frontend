@@ -10,7 +10,7 @@
     height: 80vh;
     overflow: hidden;
     padding-top: 4rem;
-  
+
 
 }
 
@@ -280,7 +280,7 @@
     &-ma {
         width: .65rem;
         height: .65rem;
-        background: radial-gradient(circle at .4rem .4rem, #e82020,#e9600ae2, #5e301e);
+        background: radial-gradient(circle at .4rem .4rem, #e82020, #e9600ae2, #5e301e);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -408,9 +408,10 @@
         background: radial-gradient(circle at 1rem 1rem, #889da5, rgb(16, 16, 17));
         border-radius: 50%;
         position: absolute;
-        transform-style: preserve-3d; 
+        transform-style: preserve-3d;
+
         &--l1 {
-            
+
             background-color: white;
             filter: blur(5px);
             height: 80%;
@@ -418,11 +419,11 @@
             // top: 0;
             right: 80%;
             box-shadow:
-            2px 3px 5px 2px #eef0f0;
+                2px 3px 5px 2px #eef0f0;
             position: absolute;
-            
+
         }
-        
+
         &--l2 {
             background-color: white;
             filter: blur(4px);
@@ -430,9 +431,10 @@
             width: 2%;
             right: 25%;
             box-shadow:
-            2px 3px 5px 2px #028186;
+                2px 3px 5px 2px #028186;
             position: absolute;
         }
+
         &--l3 {
             background-color: white;
             filter: blur(2px);
@@ -440,7 +442,7 @@
             width: 1%;
             right: 50%;
             box-shadow:
-            2px 3px 5px 2px #028186;
+                2px 3px 5px 2px #028186;
             position: absolute;
         }
 
