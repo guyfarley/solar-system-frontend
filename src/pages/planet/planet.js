@@ -12,7 +12,12 @@ import Footer from "../../components/footer/footer.js";
 
 const Planet = () => {
   const { planetSlug } = useParams();
-  const URLplanet = `http://localhost:8080/planet/${planetSlug}`;
+  const SERVER = process.env.REACT_APP_SERVER;
+  // const SERVER = process.env.SERVER || "http://localhost:8080/";
+
+  const URLplanet = `${SERVER}planet/${planetSlug}`;
+  // const URLplanet = `http://localhost:8080/planet/${planetSlug}`;
+
   const [isLoading, setLoading] = useState(true);
   const [planetData, setPlanetData] = useState([]);
 
