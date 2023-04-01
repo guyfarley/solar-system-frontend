@@ -14,7 +14,7 @@ function SolarSystem() {
   // forces solar system to re-render when clickecPlanets changes
   useEffect(() => {
     // console.log('re-rendered solar system');
-    return () => setValue(value => value + 1);
+    return () => setValue((value) => value + 1);
   }, [clickedPlanets]);
 
   //handles mouse down and up for moving the universe so the
@@ -212,6 +212,9 @@ function SolarSystem() {
               <div className="orbit__innerQuarter">
                 <div className="planet-ur--label">Uranus</div>
                 <div className="planet-ur"></div>
+                <div className="planet-ur--l1"></div>
+                <div className="planet-ur--l2"></div>
+                <div className="planet-ur--l3"></div>
               </div>
             </div>
           </>
@@ -219,6 +222,9 @@ function SolarSystem() {
           <div className="orbit orbit__uranus">
             <div className="orbit__innerQuarter">
               <div className="planet-ur"></div>
+              <div className="planet-ur--l1"></div>
+              <div className="planet-ur--l2"></div>
+              <div className="planet-ur--l3"></div>
             </div>
           </div>
         )}
@@ -256,7 +262,6 @@ function SolarSystem() {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );
