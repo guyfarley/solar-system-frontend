@@ -98,11 +98,11 @@ const Header = () => {
                 </Link>
               </MenuItem>
 
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/* <MenuItem onClick={handleCloseNavMenu}>
                 <Link smooth to="/#about-us">
                   <Typography className="nav__planets">About Us</Typography>
                 </Link>
-              </MenuItem>
+              </MenuItem> */}
             </Menu>
           </Box>
           <Link to="/">
@@ -153,14 +153,14 @@ const Header = () => {
                 <Typography textAlign="center">Fun Facts</Typography>
               </Link>
             </Button>
-            <Button
+            {/* <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, mr: 3, color: "black", display: "block" }}
             >
               <Link to="/#about-us">
                 <Typography textAlign="center">About Us</Typography>
               </Link>
-            </Button>
+            </Button> */}
           </Box>
         </Toolbar>
       </Container>
