@@ -1,11 +1,19 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 $layout-breakpoint-small: 800px;
 
 .identifying-facts {
-    position: relative;
-    width: 100%;
-    max-width: $desktop-width;
+    //mobile
+  
+    //position: relative;
+    //width: 100%;
+    //max-width: $desktop-width;
     margin: 4em auto 1rem;
+    //tablet
+
+    //desktop
+  
 
     &__header {
         font-size: 3rem;
@@ -18,58 +26,174 @@ $layout-breakpoint-small: 800px;
             color: $color-dark-3;
             text-align: flex-start;
             margin-bottom: 3%;
+            // @include tablet {
+            //     color: $color-light-1;
+            // }
         }
     }
 
     &__container {
+        //mobile
         display: flex;
-        width: 100%;
-        margin-bottom: 6%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //width: 100%;
+        //margin-bottom: 6%;
+        
+        //tablet
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+
+        }
+        //desktop
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 6%;
+            align-items: center;
+        }
     }
 
     &__data1 {
+        //mobile
         padding: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         color:white;
-        margin-left: 10%;
-        margin-bottom: 10%;
         background-color: $color-dark-2;
-        float: left;
         border-radius: 50%;
         height: 200px;
         width: 200px;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        justify-content: center;
+
+        //tablet
+        @include tablet {
+            padding: 2%;
+            color:white;
+            //margin-left: 10%;
+            margin-bottom: 2%;
+            background-color: $color-dark-2;
+            float: left;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        //desktop
+        @include desktop {
+            padding: 2%;
+            color:white;
+            margin-left: 10%;
+            margin-bottom: 10%;
+            background-color: $color-dark-2;
+            float: left;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__data2 {
+        //mobile
         padding: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         color:white;
-        margin: 0 auto;
-        margin-top: 10%;
         background-color: $color-dark-2;
         border-radius: 50%;
         height: 200px;
         width: 200px;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        justify-content: center;
+
+        //tablet
+        @include tablet {
+            padding: 2%;
+            color:white;
+            //margin-left: 10%;
+            margin-bottom: 2%;
+            background-color: $color-dark-2;
+            float: left;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        //desktop
+        @include desktop {
+            padding: 2%;
+            color:white;
+            margin: 0 auto;
+            margin-top: 10%;
+            background-color: $color-dark-2;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__data3 {
+        //mobile
         padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         color:white;
-        float: right;
         background-color: $color-dark-2;
         border-radius: 50%;
         height: 200px;
         width: 200px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin-right: 10%;
-        margin-bottom: 10%;
-    }
+        justify-content: center;
 
-    
+        //tablet
+        @include tablet {
+            padding: 2%;
+            color:white;
+            background-color: $color-dark-2;
+            float: left;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        //desktop
+        @include desktop {
+            padding: 2%;
+            color:white;
+            float: right;
+            background-color: $color-dark-2;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-right: 10%;
+            margin-bottom: 10%;
+        }
+    }
 }

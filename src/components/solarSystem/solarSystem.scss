@@ -1,24 +1,21 @@
+@use "../../styles/mixins" as *;
+
 .universe {
     position: relative;
-    background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars2.jpg');
-    //background: #0000006b;
+    background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars.png');
     background-size: 100%;
     width: 100%;
-    //max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     height: 80vh;
     overflow: hidden;
     padding-top: 4rem;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+  
 
 }
 
 .solarSystem {
     padding-top: 2rem;
-    //background: #0000009e;
     width: 100%;
     height: 100%;
     display: flex;
@@ -43,7 +40,7 @@
         0 0 10px 5px #fbf309;
     position: absolute;
     //to tilt for 3d look
-     //transform: scaleX(.2);
+    //transform: scaleX(.2);
 }
 
 .orbit {
@@ -283,7 +280,7 @@
     &-ma {
         width: .65rem;
         height: .65rem;
-        background: radial-gradient(circle at .4rem .4rem, #e82020, #5e301e);
+        background: radial-gradient(circle at .4rem .4rem, #e82020,#e9600ae2, #5e301e);
         border-radius: 50%;
         position: absolute;
         transform-style: preserve-3d;
@@ -341,8 +338,6 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.15rem;
             animation: maintain 50s linear infinite;
             // rotate: 40deg;
@@ -357,16 +352,6 @@
         position: absolute;
         transform-style: preserve-3d;
 
-        // &--ring {
-        //     width: .5rem;
-        //     height: .5rem;
-        //     background: radial-gradient(circle at center, white, transparent 60%), conic-gradient(from 25deg, transparent 45deg, rgba(243, 175, 74, 0.5) 75deg, rgb(243, 175, 74) 250deg, transparent 280deg, transparent 353deg);
-        //     border-radius: 50%;
-        //     transform: scaleX(8);
-        //     margin: 0.78rem;
-        //     position: absolute;
-
-        // }
         &--l1 {
             background-color: white;
             filter: blur(7px);
@@ -423,7 +408,41 @@
         background: radial-gradient(circle at 1rem 1rem, #889da5, rgb(16, 16, 17));
         border-radius: 50%;
         position: absolute;
-        transform-style: preserve-3d;
+        transform-style: preserve-3d; 
+        &--l1 {
+            
+            background-color: white;
+            filter: blur(5px);
+            height: 80%;
+            width: 2%;
+            // top: 0;
+            right: 80%;
+            box-shadow:
+            2px 3px 5px 2px #eef0f0;
+            position: absolute;
+            
+        }
+        
+        &--l2 {
+            background-color: white;
+            filter: blur(4px);
+            height: 95%;
+            width: 2%;
+            right: 25%;
+            box-shadow:
+            2px 3px 5px 2px #028186;
+            position: absolute;
+        }
+        &--l3 {
+            background-color: white;
+            filter: blur(2px);
+            height: 95%;
+            width: 1%;
+            right: 50%;
+            box-shadow:
+            2px 3px 5px 2px #028186;
+            position: absolute;
+        }
 
         &--label {
             position: relative;

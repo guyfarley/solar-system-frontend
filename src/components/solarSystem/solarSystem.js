@@ -6,16 +6,16 @@ import { PlanetsContext } from "../../context/context";
 function SolarSystem() {
   const { clickedPlanets } = useContext(PlanetsContext);
   // console.log(clickedPlanets);
-  const [value, setValue] = useState(0);
+  //const [value, setValue] = useState(0);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const containerRef = useRef(null);
 
   // forces solar system to re-render when clickecPlanets changes
-  useEffect(() => {
-    // console.log('re-rendered solar system');
-    return () => setValue(value => value + 1);
-  }, [clickedPlanets]);
+  // useEffect(() => {
+  //   // console.log('re-rendered solar system');
+  //   return () => setValue((value) => value + 1);
+  // }, [clickedPlanets]);
 
   //handles mouse down and up for moving the universe so the
   //user can see the entire universe within the div
@@ -45,18 +45,21 @@ function SolarSystem() {
   //handle move from mobile move
   //doesn"t work
   const handleTouchMove = (e) => {
+    e.preventDefault();
     setDragging(true);
     const container = containerRef.current;
-    const offsetX = container.offsetLeft - e.clientX;
-    const offsetY = container.offsetTop - e.clientY;
+    //here is the new code
+    //const touch = e.touches[0];
+    const offsetX = container.offsetLeft - e.changedTouches[0].clientX;
+    const offsetY = container.offsetTop - e.changedTouches[0].clientY;
 
     document.addEventListener("touchmove", handleTouchMove);
     document.addEventListener("touchend", handleTouchEnd);
 
     function handleTouchMove(e) {
       setPosition({
-        x: e.clientX + offsetX,
-        y: e.clientY + offsetY,
+        x: e.changedTouches[0].clientX + offsetX,
+        y: e.changedTouches[0].clientY + offsetY,
       });
     }
 
@@ -212,6 +215,9 @@ function SolarSystem() {
               <div className="orbit__innerQuarter">
                 <div className="planet-ur--label">Uranus</div>
                 <div className="planet-ur"></div>
+                <div className="planet-ur--l1"></div>
+                <div className="planet-ur--l2"></div>
+                <div className="planet-ur--l3"></div>
               </div>
             </div>
           </>
@@ -219,6 +225,9 @@ function SolarSystem() {
           <div className="orbit orbit__uranus">
             <div className="orbit__innerQuarter">
               <div className="planet-ur"></div>
+              <div className="planet-ur--l1"></div>
+              <div className="planet-ur--l2"></div>
+              <div className="planet-ur--l3"></div>
             </div>
           </div>
         )}
@@ -256,7 +265,6 @@ function SolarSystem() {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );

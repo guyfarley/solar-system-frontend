@@ -13,7 +13,6 @@ import { HashLink as Link } from "react-router-hash-link";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import "./header.scss";
 
-
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -83,27 +82,27 @@ const Header = () => {
             >
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link smooth to="/#explore-planets">
-                  <Typography textAlign="center">Planets</Typography>
+                  <Typography className="nav__planets">Planets</Typography>
                 </Link>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link smooth to="/#resources">
-                  <Typography textAlign="center">Resources</Typography>
+                  <Typography className="nav__planets">Resources</Typography>
                 </Link>
               </MenuItem>
 
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link smooth to="/#fun-facts">
-                  <Typography textAlign="center">Fun Facts</Typography>
+                  <Typography className="nav__planets">Fun Facts</Typography>
                 </Link>
               </MenuItem>
 
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/* <MenuItem onClick={handleCloseNavMenu}>
                 <Link smooth to="/#about-us">
-                  <Typography textAlign="center">About Us</Typography>
+                  <Typography className="nav__planets">About Us</Typography>
                 </Link>
-              </MenuItem>
+              </MenuItem> */}
             </Menu>
           </Box>
           <Link to="/">
@@ -154,14 +153,14 @@ const Header = () => {
                 <Typography textAlign="center">Fun Facts</Typography>
               </Link>
             </Button>
-            <Button
+            {/* <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, mr: 3, color: "black", display: "block" }}
             >
               <Link to="/#about-us">
                 <Typography textAlign="center">About Us</Typography>
               </Link>
-            </Button>
+            </Button> */}
           </Box>
         </Toolbar>
       </Container>
