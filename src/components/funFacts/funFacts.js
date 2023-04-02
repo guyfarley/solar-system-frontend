@@ -65,7 +65,7 @@ const FunFacts = () => {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                What is a double planetary system?
+                What is a Double Planetary System?
               </Typography>
               <Typography variant="body2" color="text.secondary">
 
@@ -102,7 +102,7 @@ const FunFacts = () => {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                Planet on it's side for 21 Earth years!
+                Planet on its side for 21 Earth years!
               </Typography>
               <Typography variant="body2" color="text.secondary">
 

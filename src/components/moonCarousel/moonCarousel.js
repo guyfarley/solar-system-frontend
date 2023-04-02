@@ -9,7 +9,7 @@ import "../solarSystem/solarSystem.scss";
 import { useState, useEffect } from "react";
 
 const MoonCarousel = ({ data }) => {
-  console.log("moon data from moon carousel", data);
+  //console.log("moon data from moon carousel", data);
   const listRef = useRef(null);
   const [hasMoons, setHasMoons] = useState(false);
   //Kayle I took this out so until the data comes in this doesn't trigger
@@ -40,7 +40,7 @@ const MoonCarousel = ({ data }) => {
       });
     }
   };
-
+  console.log(data);
   return (
     <>
       <div className="moonCarousel">
@@ -54,11 +54,15 @@ const MoonCarousel = ({ data }) => {
             </div>
             <div className="carousel__container">
               <div className="slide-container">
-                <ChevronLeftIcon
-                  fontSize="large"
-                  cursor="pointer"
-                  onClick={scrollLeft}
-                ></ChevronLeftIcon>
+                {data > 1 ? (
+                  <ChevronLeftIcon
+                    fontSize="large"
+                    cursor="pointer"
+                    onClick={scrollLeft}
+                  ></ChevronLeftIcon>
+                ) : (
+                  <div></div>
+                )}
 
                 <div className="items-container" ref={listRef}>
                   {data.map((item) => {
@@ -133,12 +137,15 @@ const MoonCarousel = ({ data }) => {
                     );
                   })}
                 </div>
-
-                <ChevronRightIcon
-                  fontSize="large"
-                  cursor="pointer"
-                  onClick={scrollRight}
-                ></ChevronRightIcon>
+                {data > 1 ? (
+                  <ChevronRightIcon
+                    fontSize="large"
+                    cursor="pointer"
+                    onClick={scrollRight}
+                  ></ChevronRightIcon>
+                ) : (
+                  <div></div>
+                )}
               </div>
             </div>
           </>

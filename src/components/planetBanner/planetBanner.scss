@@ -15,21 +15,23 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    &__name{
+
+    &__name {
         font-size: 5rem;
         color: white;
-        position:absolute;
-        left: 10%;
+        position: absolute;
+        // left: 10%;
         bottom: 10%;
+
         @include tablet {
             font-size: 5rem;
             color: white;
-            position:absolute;
+            position: absolute;
             left: 10%;
             bottom: 25%;
         }
     }
-    
+
 }
 
 
@@ -39,25 +41,25 @@
 //         height: 2rem;
 //         background: radial-gradient(circle at 1.5rem 1.5rem, #7f7f7f, #383737);
 //         border-radius: 50%;
-        
+
 //     }
-    
+
 //     &-ve {
 //         width: 5rem;
 //         height: 5rem;
 //         background: #e1a605;
 //         background: radial-gradient(circle at 3rem 3rem, #f8c53ac2, #bb9b66, #070707);
 //         border-radius: 50%;
-        
+
 //     }
-    
+
 //     &-ea {
 //         width: 5rem;
 //         height: 5rem;
 //         background: radial-gradient(circle at 2rem 1rem, #f5f7f5, #1d03a1);
 //         border-radius: 50%;
 //         position: relative;
-        
+
 //         &-l1 {
 //             background-color: rgb(48, 114, 22);
 //             border-radius: 50%;
@@ -70,7 +72,7 @@
 //             -2px 2px 5px 1px rgb(48, 114, 22);
 //             position: absolute;
 //         }
-        
+
 //         &-l2 {
 //             background-color: rgb(48, 114, 22);
 //             filter: blur(10px);
@@ -84,7 +86,7 @@
 //             2px -2px 5px 1px rgb(48, 114, 22);
 //             position: absolute;
 //         }
-        
+
 //         &-l3 {
 //             background-color: rgb(247, 250, 246);
 //             filter: blur(8px);
@@ -98,7 +100,7 @@
 //             2px -2px 5px 1px rgb(250, 251, 250);
 //             position: absolute;
 //         }
-        
+
 //         &-l4 {
 //             background-color: rgb(247, 250, 246);
 //             filter: blur(8px);
@@ -112,25 +114,25 @@
 //             2px -2px 5px 1px rgb(250, 251, 250);
 //             position: absolute;
 //         }
-        
+
 //     }
-    
+
 //     &-ma {
 //         width: 2.7rem;
 //         height: 2.7rem;
 //         background: radial-gradient(circle at 2rem 2rem,  #e82020,#e95f0ad2, #5e301e);
 //         border-radius: 50%;
 //     }
-    
+
 //     &-ju {
 //         width: 11rem;
 //         height: 11rem;
 //         background: radial-gradient(circle at 2rem 3rem, #edbe48, #383737);
 //         position: relative;
 //         border-radius: 50%;
-        
+
 //         &-l1 {
-            
+
 //             background-color: white;
 //             filter: blur(5px);
 //             width: 100%;
@@ -141,7 +143,7 @@
 //             2px 10px 5px 2px #866102;
 //             position: absolute;
 //         }
-        
+
 //         &-l2 {
 //             background-color: white;
 //             filter: blur(5px);
@@ -154,16 +156,16 @@
 //             2px 10px 5px 2px #866102;
 //             position: absolute;
 //         }
-        
+
 //     }
-    
+
 //     &-sa {
 //         width: 7rem;
 //         height: 7rem;
 //         background: radial-gradient(circle at 4rem 1rem, #f8f3eb, #f5cf97);
 //         border-radius: 50%;
 //         position: relative;
-        
+
 //         &-l1 {
 //             background-color: white;
 //             filter: blur(7px);
@@ -175,7 +177,7 @@
 //             2px 10px 5px 2px #866102;
 //             position: absolute;
 //         }
-        
+
 //         &-l2 {
 //             background-color: white;
 //             filter: blur(7px);
@@ -188,7 +190,7 @@
 //             2px 10px 5px 2px #866102;
 //             position: absolute;
 //         }
-        
+
 //         &-l3 {
 //             width: 1.4rem;
 //             height: 1.4rem;
@@ -197,32 +199,32 @@
 //             transform: scaleX(9);
 //             margin: 3rem;
 //             position: absolute;
-            
+
 //         }
-        
+
 //     }
-    
+
 //     &-ur {
 //         width: 6rem;
 //         height: 6rem;
 //         background: radial-gradient(circle at 4rem 3rem, #889da5, rgb(16, 16, 17));
 //         border-radius: 50%;
-        
+
 //     }
-    
+
 //     &-ne {
 //         width: 6rem;
 //         height: 6rem;
 //         background: radial-gradient(circle at 3rem 2rem, #7039f0, rgb(16, 16, 17));
 //         border-radius: 50%;
-        
+
 //     }
-    
+
 //     &-pl {
 //         width: 1.5rem;
 //         height: 1.5rem;
 //         background: radial-gradient(circle at .25rem 1rem, rgb(244, 208, 154), rgb(11, 11, 11));
 //         border-radius: 50%;
-        
+
 //     }
 //}
