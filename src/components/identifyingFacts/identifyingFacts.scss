@@ -5,49 +5,41 @@ $layout-breakpoint-small: 800px;
 
 .identifying-facts {
     margin: 4em auto 1rem;
-
     &__header {
-        font-size: 3rem;
-        margin-top: 2.5rem;
-
+       
         &--title {
             font-size: 3rem;
-            text-align: flex-start;
             color: $color-dark-3;
-            text-align: flex-start;
             margin-bottom: 3%;
-         
+            @include tablet {
+                margin-bottom: -6%;
+            }
+            
         }
     }
-
+    
     &__container {
         //mobile
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
-        //width: 100%;
-        //margin-bottom: 6%;
-
-        //tablet
+        flex-direction: column;
         @include tablet {
             display: flex;
-            flex-direction: column;
-
-        }
-
-        //desktop
-        @include desktop {
-            display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
+        }
+        @include desktop {
+            
+            //justify-content: space-around;
+            flex-direction: row;
             width: 100%;
             margin-bottom: 6%;
-            align-items: center;
+            
         }
     }
-
+    
     &__data1 {
         //mobile
         padding: 2%;
@@ -56,48 +48,65 @@ $layout-breakpoint-small: 800px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color: white;
-        // background-color: $color-dark-2;
-        background: radial-gradient(circle at .4rem .4rem, #1eb10de2, #194f1c);
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
         justify-content: center;
-
+        color: whitesmoke;
+        background: radial-gradient(circle at 2rem 1rem, $color-light-2, $color-dark-3, black);
+        border-radius: 50%;
+        height: 12.5rem;
+        width: 12.5rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        @include tablet {
+            
+            height: 14rem;
+            width: 14rem;
+        }
+        
+        //desktop
+        @include desktop {  
+            font-size: 1.25rem;
+            margin-bottom: 10%;
+            height: 16rem;
+            width: 16rem;
+            
+        }
+        
+    }
+    
+    &__data2 {
+        padding: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: whitesmoke;
+        background: radial-gradient(circle at  2rem 1rem, #959696,rgba(14, 14, 14, 0.736), rgb(16, 16, 17));
+        border-radius: 50%;
+        height: 12.5rem;
+        width: 12.5rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        
         //tablet
         @include tablet {
-            padding: 2%;
-            color: white;
-            //margin-left: 10%;
-            margin-bottom: 2%;
-            // background-color: $color-dark-2;
-            float: left;
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            display: flex;
-            align-items: center;
-            text-align: center;
+            margin-top: 20%;
+            height: 14rem;
+            width: 14rem;
         }
-
+        
         //desktop
         @include desktop {
-            padding: 2%;
-            color: white;
-            margin-left: 10%;
-            margin-bottom: 10%;
-            // background-color: $color-dark-2;
-            float: left;
-            border-radius: 50%;
-            height: 18vw;
-            width: 18vw;
-            display: flex;
-            align-items: center;
-            text-align: center;
+            font-size: 1.25rem;
+          
+            height: 16rem;
+            width: 16rem;;
+            
         }
     }
-
-    &__data2 {
+    
+    &__data3 {
         //mobile
         padding: 2%;
         margin-bottom: 2%;
@@ -105,89 +114,28 @@ $layout-breakpoint-small: 800px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color: white;
-        background: radial-gradient(circle at 1rem 1rem, #889da5, rgb(16, 16, 17));
-        // background-color: $color-dark-2;
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
         justify-content: center;
-
-        //tablet
-        @include tablet {
-            padding: 2%;
-            color: white;
-            //margin-left: 10%;
-            margin-bottom: 2%;
-            // background-color: $color-dark-2;
-            float: left;
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-
-        //desktop
-        @include desktop {
-            padding: 2%;
-            color: white;
-            margin: 0 auto;
-            margin-top: 10%;
-            // background-color: $color-dark-2;
-            border-radius: 50%;
-            height: 18vw;
-            width: 18vw;
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-    }
-
-    &__data3 {
-        //mobile
-        padding: 2%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        color: white;
-        background: radial-gradient(circle at .75rem .75rem, #146caf, rgb(10, 10, 107));
-        // background-color: $color-dark-2;
+        color: whitesmoke;
+        background: radial-gradient(circle at  2rem 1rem, $color-light-1, $color-dark-1, black);
         border-radius: 50%;
-        height: 200px;
-        width: 200px;
-        justify-content: center;
+        height: 12.5rem;
+        width: 12.5rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
 
-        //tablet
         @include tablet {
-            padding: 2%;
-            color: white;
-            // background-color: $color-dark-2;
-            float: left;
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            display: flex;
-            align-items: center;
-            text-align: center;
+            height: 14rem;
+            width: 14rem;
         }
-
+        
         //desktop
-        @include desktop {
-            padding: 2%;
-            color: white;
-            float: right;
-            // background-color: $color-dark-2;
-            border-radius: 50%;
-            height: 18vw;
-            width: 18vw;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin-right: 10%;
+        @include desktop {  
+            font-size: 1.25rem;
+
             margin-bottom: 10%;
+            height: 16rem;
+            width: 16rem;
+            
         }
     }
 }
