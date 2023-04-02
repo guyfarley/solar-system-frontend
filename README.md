@@ -79,5 +79,4 @@ To install and run locally, you may follow these steps:
 
 
 ## 📸 Images/Gifs
-<img src="https://intergalactic-planetary.netlify.app/galaticgif.gif" alt="gif of application"/>
-
+![galaticgif](https://user-images.githubusercontent.com/66695865/229334794-a15d6902-6e5a-4317-98a5-fbb3de0197aa.gif)
