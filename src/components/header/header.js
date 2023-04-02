@@ -33,24 +33,6 @@ const Header = () => {
               sx={{ display: { xs: "none", md: "flex" }, mr: 3 }}
             />
           </Link>
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 3,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography> */}
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -97,12 +79,6 @@ const Header = () => {
                   <Typography className="nav__planets">Fun Facts</Typography>
                 </Link>
               </MenuItem>
-
-              {/* <MenuItem onClick={handleCloseNavMenu}>
-                <Link smooth to="/#about-us">
-                  <Typography className="nav__planets">About Us</Typography>
-                </Link>
-              </MenuItem> */}
             </Menu>
           </Box>
           <Link to="/">
@@ -110,24 +86,7 @@ const Header = () => {
               sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
             />
           </Link>
-          {/* <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography> */}
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
               onClick={handleCloseNavMenu}
@@ -153,14 +112,6 @@ const Header = () => {
                 <Typography textAlign="center">Fun Facts</Typography>
               </Link>
             </Button>
-            {/* <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, mr: 3, color: "black", display: "block" }}
-            >
-              <Link to="/#about-us">
-                <Typography textAlign="center">About Us</Typography>
-              </Link>
-            </Button> */}
           </Box>
         </Toolbar>
       </Container>

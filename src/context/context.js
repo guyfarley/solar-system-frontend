@@ -16,7 +16,6 @@ const PlanetsProvider = ({ children }) => {
     Pluto: false,
   });
 
-  // update a specific install with submitted form data
   const updateClickedPlanets = (id) => {
     let resetPlanets = {
       Mercury: false,
@@ -31,19 +30,8 @@ const PlanetsProvider = ({ children }) => {
     };
     let updatedPlanets = { ...resetPlanets, [id]: true }
     console.log('updated planets: ', updatedPlanets);
-    // let updatedPlanets = installs.map(install => {
-    //   if (install.storeNum === formData.storeNum) {
-    //     install = formData;
-    //   }
-    //   return install;
-    // })
     setClickedPlanets(updatedPlanets);
   }
-
-  // add an install to state installs, from submitted form data
-  // const addStateInstall = (formData) => {
-  //   setInstalls([...installs, formData]);
-  // }
 
   return (
     <PlanetsContext.Provider

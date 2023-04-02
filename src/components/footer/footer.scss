@@ -57,9 +57,6 @@ a:visited {
       @include tablet {
         margin: -1rem auto 0;
       }
-
-
-
     }
 
     &--title {
@@ -101,8 +98,6 @@ a:visited {
       background-color: transparent;
       border-radius: 50%;
 
-      // background-image: url('../../assets/images/guy.png');
-      // background-size: cover;
       &:hover {
         width: 75px;
         height: 75px;
