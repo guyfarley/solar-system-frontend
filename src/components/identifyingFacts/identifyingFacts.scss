@@ -82,7 +82,7 @@ $layout-breakpoint-small: 800px;
         text-align: center;
         justify-content: center;
         color: whitesmoke;
-        background: radial-gradient(circle at  2rem 1rem, #959696,rgba(14, 14, 14, 0.736), rgb(16, 16, 17));
+        background: radial-gradient(circle at  3rem 1rem, $color-light-1,$color-light-2, black);
         border-radius: 50%;
         height: 12.5rem;
         width: 12.5rem;
