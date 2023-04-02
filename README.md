@@ -50,7 +50,7 @@ This application was developed for a Dear Junior Dev Hackathon, between March 24
 
 ## Deployed Site
 <p>We deployed using Netlify and Heroku</p>
-<p>Check it out 👉 <https://intergalactic-planetary.netlify.app/></p>
+<p>Check it out 👉 <a href="https://intergalactic-planetary.netlify.app/">HERE</a></p>
 
 
 ## ⚒️ Tools Used
