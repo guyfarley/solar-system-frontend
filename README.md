@@ -48,13 +48,14 @@ This application was developed for a Dear Junior Dev Hackathon, between March 24
 ### 📝 Trello board for tickets/tasks
 <a href="https://trello.com/b/HAw11w0p/quackathon" target="_blank">Ticket board</a>
 
+## 📸 Visual Presentation
+![galaticgif](https://user-images.githubusercontent.com/66695865/229334794-a15d6902-6e5a-4317-98a5-fbb3de0197aa.gif)
+
 ## Deployed Site
 <p>We deployed using Netlify and Heroku</p>
 <p>Check it out 👉 <a href="https://intergalactic-planetary.netlify.app/" target="_blank">HERE</a></p>
 
-
 ## ⚒️ Tools Used
-
 - React
 - Express
 - Axios
@@ -73,13 +74,12 @@ To install and run locally, you may follow these steps:
 
 3. Run the frontend by the following command `npm start`
 
-4. Clone and run the backend by going to the following repo: <https://github.com/guyfarley/solar-system-backend>
+4. Create a .env file in the root folder and add the following to the file: REACT_APP_SERVER = http://localhost:8080/
 
-5. Following the `README` file within the backend repo to clone and run the backend.
+5. Clone and run the backend by going to the following repo: <https://github.com/guyfarley/solar-system-backend>
 
+6. Following the `README` file within the backend repo to clone and run the backend.
 
-## 📸 Visual Presentation
-![galaticgif](https://user-images.githubusercontent.com/66695865/229334794-a15d6902-6e5a-4317-98a5-fbb3de0197aa.gif)
 
 ## 🔨 Things to Work On
 - Getting the Solar System Banner in mobile to move around on touch so the user can see all the planets
