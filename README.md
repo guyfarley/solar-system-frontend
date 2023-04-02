@@ -80,3 +80,7 @@ To install and run locally, you may follow these steps:
 
 ## 📸 Visual Presentation
 ![galaticgif](https://user-images.githubusercontent.com/66695865/229334794-a15d6902-6e5a-4317-98a5-fbb3de0197aa.gif)
+
+## 🔨 Things to Work On
+- Getting the Solar System Banner in mobile to move around on touch so the user can see all the planets
+- Take the scroll arrows off the moon carousel when there is only one moon
