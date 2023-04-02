@@ -9,11 +9,8 @@ import "../solarSystem/solarSystem.scss";
 import { useState, useEffect } from "react";
 
 const MoonCarousel = ({ data }) => {
-  console.log("moon data from moon carousel", data);
   const listRef = useRef(null);
   const [hasMoons, setHasMoons] = useState(false);
-  //Kayle I took this out so until the data comes in this doesn't trigger
-  //let isPlanet = false;
 
   useEffect(() => {
     if (data[0].num_moons !== 0) {
@@ -40,7 +37,7 @@ const MoonCarousel = ({ data }) => {
       });
     }
   };
-
+  console.log(data);
   return (
     <>
       <div className="moonCarousel">
@@ -54,11 +51,15 @@ const MoonCarousel = ({ data }) => {
             </div>
             <div className="carousel__container">
               <div className="slide-container">
-                <ChevronLeftIcon
-                  fontSize="large"
-                  cursor="pointer"
-                  onClick={scrollLeft}
-                ></ChevronLeftIcon>
+                {data.length > 1 ? (
+                  <ChevronLeftIcon
+                    fontSize="large"
+                    cursor="pointer"
+                    onClick={scrollLeft}
+                  ></ChevronLeftIcon>
+                ) : (
+                  <div></div>
+                )}
 
                 <div className="items-container" ref={listRef}>
                   {data.map((item) => {
@@ -73,13 +74,6 @@ const MoonCarousel = ({ data }) => {
                             boxShadow: 6,
                           }}
                         >
-                          {/* <div className="un">
-                  <div className={item.planet_id}>
-                    <div className={`${item.planet_id}-l1`}></div>
-                    <div className={`${item.planet_id}-l2`}></div>
-                  </div>
-                </div> */}
-
                           <CardContent>
                             <div className="moonCarousel__title">
                               <p className="moonCarousel__title--label">
@@ -109,36 +103,20 @@ const MoonCarousel = ({ data }) => {
                               </p>
                             </div>
                           </CardContent>
-
-                          {/* <CardActions className="button-container">
-                  <Button
-                    className="carousel-button"
-                    size="small"
-                    variant="contained"
-                  >
-                    Zoom
-                  </Button>
-                  <Button
-                    className="carousel-button"
-                    size="small"
-                    variant="contained"
-                    component={Link}
-                    to={`/planets/${item.planet_name}`}
-                  >
-                    Learn More
-                  </Button>
-                </CardActions> */}
                         </Card>
                       </div>
                     );
                   })}
                 </div>
-
-                <ChevronRightIcon
-                  fontSize="large"
-                  cursor="pointer"
-                  onClick={scrollRight}
-                ></ChevronRightIcon>
+                {data.length > 1 ? (
+                  <ChevronRightIcon
+                    fontSize="large"
+                    cursor="pointer"
+                    onClick={scrollRight}
+                  ></ChevronRightIcon>
+                ) : (
+                  <div></div>
+                )}
               </div>
             </div>
           </>

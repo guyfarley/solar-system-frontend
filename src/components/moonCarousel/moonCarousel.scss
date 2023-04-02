@@ -12,7 +12,7 @@
   &__header {
     font-size: 3rem;
     margin-top: 2.5rem;
-    
+
 
     &--title {
       font-size: 3rem;
@@ -79,7 +79,6 @@
   padding: 20px;
   text-align: center;
   cursor: pointer;
-  // min-width: 10rem;
 }
 
 .items-container {
@@ -119,13 +118,11 @@
 }
 
 .planet__header {
-  // font-size: 3rem;
   text-align: center;
   padding-top: 3rem;
   padding-left: 1rem;
   margin-bottom: 2rem;
 
-  // position: relative;
   @include tablet {
     text-align: center;
     padding-left: 1rem;
