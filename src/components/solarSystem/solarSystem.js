@@ -6,16 +6,16 @@ import { PlanetsContext } from "../../context/context";
 function SolarSystem() {
   const { clickedPlanets } = useContext(PlanetsContext);
   // console.log(clickedPlanets);
-  //const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const containerRef = useRef(null);
 
   // forces solar system to re-render when clickecPlanets changes
-  // useEffect(() => {
-  //   // console.log('re-rendered solar system');
-  //   return () => setValue((value) => value + 1);
-  // }, [clickedPlanets]);
+  useEffect(() => {
+    // console.log('re-rendered solar system');
+    return () => setValue((value) => value + 1);
+  }, [clickedPlanets]);
 
   //handles mouse down and up for moving the universe so the
   //user can see the entire universe within the div
@@ -45,21 +45,18 @@ function SolarSystem() {
   //handle move from mobile move
   //doesn"t work
   const handleTouchMove = (e) => {
-    e.preventDefault();
     setDragging(true);
     const container = containerRef.current;
-    //here is the new code
-    //const touch = e.touches[0];
-    const offsetX = container.offsetLeft - e.changedTouches[0].clientX;
-    const offsetY = container.offsetTop - e.changedTouches[0].clientY;
+    const offsetX = container.offsetLeft - e.clientX;
+    const offsetY = container.offsetTop - e.clientY;
 
     document.addEventListener("touchmove", handleTouchMove);
     document.addEventListener("touchend", handleTouchEnd);
 
     function handleTouchMove(e) {
       setPosition({
-        x: e.changedTouches[0].clientX + offsetX,
-        y: e.changedTouches[0].clientY + offsetY,
+        x: e.clientX + offsetX,
+        y: e.clientY + offsetY,
       });
     }
 
@@ -69,7 +66,6 @@ function SolarSystem() {
       document.removeEventListener("touchend", handleTouchEnd);
     }
   };
-
   return (
     <div ref={containerRef} className="universe" id="uni">
       <div

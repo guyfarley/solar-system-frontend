@@ -9,7 +9,7 @@ const ExplorePlanets = () => {
     <section className="explore">
       <h1 className="explore__header">Explore the Planets</h1>
       <h3 className="explore__subhead">
-        Click on a planet to locate in the solar system
+        Locate in the solar system above, or learn more!
       </h3>
       <Carousel />
     </section>
