@@ -43,14 +43,14 @@ This application was developed for a Dear Junior Dev Hackathon, between March 24
 ## Planning and Preparation Documentation
 
 ### 🖊️ Wireframe
-<a href="https://www.figma.com/file/SKLo9xQkuOUE3LnJN2Jczx/SolarSystemHackathon?node-id=0%3A1&t=TJt5GIPi0GyAOFmV-1">WireFrame</a>
+<a href="https://www.figma.com/file/SKLo9xQkuOUE3LnJN2Jczx/SolarSystemHackathon?node-id=0%3A1&t=TJt5GIPi0GyAOFmV-1" target="_blank">WireFrame</a>
 
 ### 📝 Trello board for tickets/tasks
-<a href="https://trello.com/b/HAw11w0p/quackathon"/>Ticket board</a>
+<a href="https://trello.com/b/HAw11w0p/quackathon" target="_blank">Ticket board</a>
 
 ## Deployed Site
 <p>We deployed using Netlify and Heroku</p>
-<p>Check it out 👉 <a href="https://intergalactic-planetary.netlify.app/">HERE</a></p>
+<p>Check it out 👉 <a href="https://intergalactic-planetary.netlify.app/" target="_blank">HERE</a></p>
 
 
 ## ⚒️ Tools Used
@@ -79,5 +79,5 @@ To install and run locally, you may follow these steps:
 
 
 ## 📸 Images/Gifs
-
+<img src="https://intergalactic-planetary.netlify.app/galaticgif.gif" alt="gif of application"/>
 
