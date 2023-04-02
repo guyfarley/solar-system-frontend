@@ -1,18 +1,18 @@
 # Team Pluto Presents: Intergalactic Planetary
 
-## An Interactive Solar System Experience
+<p>A full-stack application which teaches students about our solar system.  The Homepage lets the user flip through all the planets within the solar system (which includes Pluto), gives the user other resources to extend their knowledge (we recommend checking out the solar system rap!), and a few fun facts about our solar system.  </p>
+<p>The planet cards on the home page have a 'Learn more' section where the user is directed to the individual page for that planet.  The planet cards also have a locate button and when selected the planet is located on the solar system within the banner on the homepage.</p>
+<p>Each planet has it's own planet page.  The planet page includes basic information about the planet, 3 identifying facts on the specific planet, and the moons for the specific planet.  Up to 10 moons for each planet are shown with the name of the moon, the size, and the name history for that moon.</p>
+<p>The application if fully responsive in mobile, tablet, and desktop.</p>
+<p>The project is a week long hackathon with a team consisting of three developers who came together through the Hackathon discord channel, wireframed an idea, planned tickets/tasks through a Trello board, and communicated daily via Discord. </p>
 
-## Created by Team Pluto
+## Created by Team Pluto 🚀
 
-- Guy Farley
-- Kayle Robson
-- Madison Brown 
+- <a href="https://github.com/guyfarley" target="_blank">Guy Farley</a>
+- <a href="https://github.com/revyrob" target="_blank">Kayle Robson</a>
+- <a href="https://github.com/madxb98" target="_blank">Madison Brown </a>
 
-## How to Run This Application
-
-Deployed at <https://intergalactic-planetary.netlify.app/>
-
-## Problem Domain
+## Hackathon Parameters
 
 This application was developed for a Dear Junior Dev Hackathon, between March 24 and April 2, 2023. Requirements:
 
@@ -40,6 +40,19 @@ This application was developed for a Dear Junior Dev Hackathon, between March 24
 - The homepage must include at least two components that are NOT used on any planet page.
 - Homepage content does not need to be stored in a database and can be coded into your components.
 
+## Planning and Preparation Documentation
+
+### 🖊️ Wireframe
+<https://www.figma.com/file/SKLo9xQkuOUE3LnJN2Jczx/SolarSystemHackathon?node-id=0%3A1&t=TJt5GIPi0GyAOFmV-1>
+
+### 📝 Trello board for tickets/tasks
+https://trello.com/b/HAw11w0p/quackathon
+
+## Deployed Site
+We deployed using Netlify and Heroku
+Check it out 👉 <https://intergalactic-planetary.netlify.app/>
+
+
 ## ⚒️ Tools Used
 
 - React
@@ -64,14 +77,7 @@ To install and run locally, you may follow these steps:
 
 5. Following the `README` file within the backend repo to clone and run the backend.
 
-## Visual Documentation
 
-### 🖊️ Wireframe
+## 📸 Images/Gifs
 
-<https://www.figma.com/file/SKLo9xQkuOUE3LnJN2Jczx/SolarSystemHackathon?node-id=0%3A1&t=TJt5GIPi0GyAOFmV-1>
 
-## 📸 Images
-
-## 🎥 Demo
-
-## 🚀 Team
