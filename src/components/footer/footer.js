@@ -29,7 +29,7 @@ const Footer = () => {
                 fill: "$color-light-1",
               }}
             />
-            <h3 className="footer__nav--title--link"> TEAM PLUTO</h3>
+            <h3 className="footer__nav--title--link"> TEAM INTERGALACTIC</h3>
           </div>
         </div>
         <div className="footer__team">
@@ -54,7 +54,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="footer__copyright">©️ Team Pluto 2023</div>
+      <div className="footer__copyright">©️ Team Intergalactic 2023</div>
     </section>
   );
 };

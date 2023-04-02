@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-//import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -18,9 +17,6 @@ import { PlanetsContext } from "../../context/context";
 const Carousel = () => {
 
   const SERVER = process.env.REACT_APP_SERVER;
-  // const SERVER = process.env.SERVER || "http://localhost:8080/";
-  // const URL = "http://localhost:8080/";
-
   const [planetData, setPlanetData] = useState([]);
   const { updateClickedPlanets } = useContext(PlanetsContext);
 
@@ -57,7 +53,6 @@ const Carousel = () => {
 
   const handleClick = (name) => {
     window.scrollTo(0, 0);
-    // console.log('planet clicked: ', name);
     updateClickedPlanets(name);
   };
 

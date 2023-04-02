@@ -5,7 +5,6 @@ import { PlanetsContext } from "../../context/context";
 
 function SolarSystem() {
   const { clickedPlanets } = useContext(PlanetsContext);
-  // console.log(clickedPlanets);
   const [value, setValue] = useState(0);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
@@ -13,7 +12,6 @@ function SolarSystem() {
 
   // forces solar system to re-render when clickecPlanets changes
   useEffect(() => {
-    // console.log('re-rendered solar system');
     return () => setValue((value) => value + 1);
   }, [clickedPlanets]);
 
@@ -43,7 +41,7 @@ function SolarSystem() {
   };
 
   //handle move from mobile move
-  //doesn"t work
+  //doesn't work
   const handleTouchMove = (e) => {
     setDragging(true);
     const container = containerRef.current;

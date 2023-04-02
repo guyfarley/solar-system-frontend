@@ -4,14 +4,12 @@
     position: relative;
     background-image: linear-gradient(0deg, rgba(16, 15, 15, 0.4), rgba(27, 16, 22, 0.4)), url('../../assets/images/stars.png');
     background-size: 100%;
-    width: 100%;    
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     height: 80vh;
     overflow: hidden;
     padding-top: 4rem;
-
-
 }
 
 .solarSystem {
@@ -21,11 +19,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;    
-  
+    position: absolute;
     //to tilt for 3d look
     //transform: scaleX(5);
-
 }
 
 
@@ -61,7 +57,6 @@
         height: 2rem;
         margin-top: -1rem;
         margin-left: -4%;
-
     }
 
     &__innerQuarter {
@@ -95,14 +90,12 @@
         width: 100px;
         height: 100px;
         animation: rotating 3s infinite linear;
-
     }
 
     &__venus {
         width: 150px;
         height: 150px;
         animation: rotating1 6s infinite linear;
-
     }
 
     &__earth {
@@ -168,11 +161,8 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.05rem;
             animation: maintain 3s linear infinite;
-            // rotate: 90deg;
         }
 
     }
@@ -191,8 +181,6 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.25rem;
             animation: maintain 6s linear infinite;
             rotate: -40deg;
@@ -268,8 +256,6 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.25rem;
             animation: maintain 6.5s linear infinite;
             rotate: -90deg;
@@ -290,8 +276,6 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.25rem;
             animation: maintain 13s linear infinite;
             rotate: 180deg;
@@ -340,7 +324,6 @@
             z-index: 10;
             margin-left: 0.15rem;
             animation: maintain 50s linear infinite;
-            // rotate: 40deg;
         }
     }
 
@@ -393,8 +376,6 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.15rem;
             animation: maintain 100s linear infinite;
             rotate: -40deg;
@@ -416,7 +397,6 @@
             filter: blur(5px);
             height: 80%;
             width: 2%;
-            // top: 0;
             right: 80%;
             box-shadow:
                 2px 3px 5px 2px #eef0f0;
@@ -451,8 +431,6 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.15rem;
             animation: maintain 300s linear infinite;
             rotate: -90deg;
@@ -472,8 +450,6 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.15rem;
             animation: maintain 600s linear infinite;
             rotate: -180deg;
@@ -493,15 +469,11 @@
             font-size: large;
             color: white;
             z-index: 10;
-            // top: 50%;
-            // left: 50%;
             margin-left: 0.15rem;
             animation: maintain 1200s linear infinite;
-            // rotate: -180deg;
         }
     }
 }
-
 
 
 
