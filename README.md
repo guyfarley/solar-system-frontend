@@ -79,5 +79,4 @@ To install and run locally, you may follow these steps:
 
 
 ## 📸 Images/Gifs
-
-
+![galaticgif](https://user-images.githubusercontent.com/66695865/229334294-8921379d-6b93-435e-bcea-02657a12f538.gif)
