@@ -78,5 +78,5 @@ To install and run locally, you may follow these steps:
 5. Following the `README` file within the backend repo to clone and run the backend.
 
 
-## 📸 Images/Gifs
+## 📸 Visual Presentation
 ![galaticgif](https://user-images.githubusercontent.com/66695865/229334794-a15d6902-6e5a-4317-98a5-fbb3de0197aa.gif)
