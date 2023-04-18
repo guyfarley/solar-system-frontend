@@ -10,32 +10,34 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import "./carousel.scss";
 import "../solarSystem/solarSystem.scss";
-import axios from "axios";
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import { PlanetsContext } from "../../context/context";
+// import data from planet-data.js instead
+import { allPlanets } from "../../planet-data";
+// import axios from "axios";
 
 const Carousel = () => {
 
-  const SERVER = process.env.REACT_APP_SERVER;
-  const [planetData, setPlanetData] = useState([]);
+  // const SERVER = process.env.REACT_APP_SERVER;
+  // const [planetData, setPlanetData] = useState([]);
   const { updateClickedPlanets } = useContext(PlanetsContext);
 
-  const getPlanets2 = async () => {
-    try {
-      const response = await axios.get(SERVER);
-      setPlanetData(response.data.rows);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  useEffect(() => {
-    getPlanets2();
-  }, []);
+  // const getPlanets2 = async () => {
+  //   try {
+  //     const response = await axios.get(SERVER);
+  //     setPlanetData(response.data.rows);
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
+  // useEffect(() => {
+  //   getPlanets2();
+  // }, []);
 
   const listRef = useRef(null);
 
   // change planet types in database to stringified types for rendering
-  const newPlanets = planetData.map((planet) => {
+  const newPlanets = allPlanets.map((planet) => {
     let stringifiedType;
 
     if (planet.planet_type === "gas_giant") {
