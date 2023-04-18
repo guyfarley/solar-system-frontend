@@ -88,3 +88,26 @@ To install and run locally, you may follow these steps:
 ## 🔨 Things to Work On
 
 - Getting the Solar System Banner in mobile to move around on touch so the user can see all the planets
+
+## Backend Deployment
+
+- As of April 18, 2023 the server and database deployments have been taken offline to save cost. Our frontend code has been refactored to pull data from an internal data file (src/planet-data.js) instead.
+- As proof that the application was designed to work with our external server and database, we took the following screenshots for documentation before re-deploying the current frontend:
+
+### MySQL Database hosted on Amazon RDS
+
+![Amazon RDS Instance](./src/assets/images/aws_1.png)
+
+![Amazon RDS Instance 2](./src/assets/images/aws_2.png)
+
+### Server Deployed on Heroku
+
+![Heroku Deployed Server](./src/assets/images/heroku_3.png)
+
+### JSON Data Received from "/" Route
+
+![JSON Data Received from Slash Route](./src/assets/images/heroku_1.png)
+
+### JSON Data Received from "/planet/[planet_id]" Route
+
+![JSON Data Received from Planet Route](./src/assets/images/heroku_2.png)
