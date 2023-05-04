@@ -13,7 +13,7 @@ const MoonCarousel = ({ data }) => {
   const [hasMoons, setHasMoons] = useState(false);
 
   useEffect(() => {
-    if (data[0].num_moons !== 0) {
+    if (data) {
       setHasMoons(true);
     }
   }, []);
@@ -37,7 +37,7 @@ const MoonCarousel = ({ data }) => {
       });
     }
   };
-  console.log(data);
+
   return (
     <>
       <div className="moonCarousel">
