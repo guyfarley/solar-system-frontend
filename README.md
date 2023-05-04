@@ -91,7 +91,7 @@ To install and run locally, you may follow these steps:
 
 ## Backend Deployment
 
-- As of April 18, 2023 the server and database deployments have been taken offline to save cost. Our frontend code has been refactored to pull data from an internal data file (src/planet-data.js) instead.
+- As of May 4, 2023 the server and database deployments have been taken offline to save cost. Our frontend code has been refactored to pull data from an internal data file (src/planet-data.js) instead.
 - As proof that the application was designed to work with our external server and database, we took the following screenshots for documentation before re-deploying the current frontend:
 
 ### MySQL Database hosted on Amazon RDS
